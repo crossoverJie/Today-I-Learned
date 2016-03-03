@@ -54,3 +54,7 @@
 Copyright (c) 2016 ADoyle. The project is licensed under the **BSD 3-clause License**.
 
 See the [LICENSE][] file for the specific language governing permissions and limitations under the License.
+
+
+[Issue]: https://github.com/adoyle-h/Today-I-Learned/issues
+[LICENSE]: ./LICENSE
