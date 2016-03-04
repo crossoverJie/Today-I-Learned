@@ -7,12 +7,14 @@
 <!-- MarkdownTOC -->
 
 - [分类](#分类)
-    - [关于学习](#关于学习)
+    - [TIL](#til)
+    - [箴言](#箴言)
     - [NodeJS](#nodejs)
     - [Javascript](#javascript)
     - [Ruby](#ruby)
     - [Elixir](#elixir)
     - [Rust](#rust)
+    - [Redis](#redis)
 - [反馈问题或建议](#反馈问题或建议)
 - [版权声明](#版权声明)
 
@@ -21,11 +23,11 @@
 <a name="分类"></a>
 ## 分类
 
-<a name="关于学习"></a>
-### 关于学习
+<a name="til"></a>
+### [TIL](./TIL.md)
 
-- [TIL](learning/TIL.md)
-- [箴言](learning/maxim.md)
+<a name="箴言"></a>
+### [箴言](./maxim.md)
 
 <a name="nodejs"></a>
 ### NodeJS
@@ -41,6 +43,11 @@
 
 <a name="rust"></a>
 ### Rust
+
+<a name="redis"></a>
+### Redis
+
+- [Redis Cluster 相关](redis/cluster.md)
 
 
 <a name="反馈问题或建议"></a>
