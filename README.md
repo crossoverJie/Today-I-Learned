@@ -32,6 +32,8 @@
 <a name="nodejs"></a>
 ### NodeJS
 
+- [命令行的工具和类库](cli-libraries-and-tools.md)
+
 <a name="javascript"></a>
 ### Javascript
 
