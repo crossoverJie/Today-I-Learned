@@ -40,6 +40,8 @@
 <a name="ruby"></a>
 ### Ruby
 
+- [使用 scientist 科学重构代码](using-scientist-for-refactoring.md)
+
 <a name="elixir"></a>
 ### Elixir
 
