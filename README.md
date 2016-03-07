@@ -15,6 +15,7 @@
     - [Elixir](#elixir)
     - [Rust](#rust)
     - [Redis](#redis)
+    - [MongoDB](#mongodb)
 - [反馈问题或建议](#反馈问题或建议)
 - [版权声明](#版权声明)
 
@@ -53,6 +54,10 @@
 
 - [Redis Cluster 相关](redis/cluster.md)
 
+<a name="mongodb"></a>
+### MongoDB
+
+- [MongoDB 的丢数据问题](mongo/data-lost.md)
 
 <a name="反馈问题或建议"></a>
 ## 反馈问题或建议
