@@ -9,7 +9,6 @@
 - [分类](#分类)
     - [TIL](#til)
     - [箴言](#箴言)
-    - [NodeJS](#nodejs)
     - [Javascript](#javascript)
     - [Ruby](#ruby)
     - [Elixir](#elixir)
@@ -30,18 +29,24 @@
 <a name="箴言"></a>
 ### [箴言](./maxim.md)
 
-<a name="nodejs"></a>
-### NodeJS
-
-- [命令行的工具和类库](cli-libraries-and-tools.md)
-
 <a name="javascript"></a>
 ### Javascript
+
+- [XMLHttpRequest 的继承者：Fetch](javascript/fetch.md)
+
+<a name="nodejs"></a>
+#### NodeJS
+
+- [命令行的工具和类库](nodejs/cli-libraries-and-tools.md)
+
+#### 前端
+
+- [redux 入门](front-end/redux-ABC.md)
 
 <a name="ruby"></a>
 ### Ruby
 
-- [使用 scientist 科学重构代码](using-scientist-for-refactoring.md)
+- [使用 scientist 科学重构代码](ruby/using-scientist-for-refactoring.md)
 
 <a name="elixir"></a>
 ### Elixir
