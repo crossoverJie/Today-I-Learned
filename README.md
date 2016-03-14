@@ -9,6 +9,7 @@
 - [分类](#分类)
     - [TIL](#til)
     - [箴言](#箴言)
+    - [思考](#思考)
     - [Javascript](#javascript)
     - [Ruby](#ruby)
     - [Elixir](#elixir)
@@ -28,6 +29,11 @@
 
 <a name="箴言"></a>
 ### [箴言](./maxim.md)
+
+<a name="思考"></a>
+### 思考
+
+- [项目代码如何组织](thinking/how-to-make-code-organization.md)
 
 <a name="javascript"></a>
 ### Javascript
