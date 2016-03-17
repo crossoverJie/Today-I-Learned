@@ -64,6 +64,7 @@
 ### Redis
 
 - [Redis Cluster 相关](redis/cluster.md)
+- [拷贝一个 Sorted Set 到新的 key](redis/copy-a-sorted-set.md)
 
 <a name="mongodb"></a>
 ### MongoDB
