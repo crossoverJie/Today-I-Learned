@@ -33,6 +33,7 @@
 <a name="思考"></a>
 ### 思考
 
+- [提问的智慧](thinking/smartquestion.md)
 - [项目代码如何组织](thinking/how-to-make-code-organization.md)
 
 <a name="javascript"></a>
