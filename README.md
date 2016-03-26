@@ -48,6 +48,7 @@
 ### Linux
 
 - [unlink 是删除任何文件](linux/unlink.md)
+- [慎用双引号与单引号](linux/quotes-in-bash.md)
 
 <a name="javascript"></a>
 ### Javascript
