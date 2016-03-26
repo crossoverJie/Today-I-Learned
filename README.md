@@ -36,6 +36,7 @@
 
 - [提问的智慧](thinking/smartquestion.md)
 - [项目代码如何组织](thinking/how-to-make-code-organization.md)
+- [不完整的函数](thinking/non-total-function.md)
 
 <a name="函数式编程"></a>
 ### 函数式编程
