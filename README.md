@@ -11,6 +11,7 @@
     - [箴言](#箴言)
     - [思考](#思考)
     - [函数式编程](#函数式编程)
+    - [Linux](#linux)
     - [Javascript](#javascript)
     - [Ruby](#ruby)
     - [Elixir](#elixir)
@@ -42,6 +43,11 @@
 ### 函数式编程
 
 - [什么是 Monad](fp/what-is-monad.md)
+
+<a name="linux"></a>
+### Linux
+
+- [unlink 是删除任何文件](linux/unlink.md)
 
 <a name="javascript"></a>
 ### Javascript
