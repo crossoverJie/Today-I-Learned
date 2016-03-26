@@ -10,6 +10,7 @@
     - [TIL](#til)
     - [箴言](#箴言)
     - [思考](#思考)
+    - [函数式编程](#函数式编程)
     - [Javascript](#javascript)
     - [Ruby](#ruby)
     - [Elixir](#elixir)
@@ -35,6 +36,11 @@
 
 - [提问的智慧](thinking/smartquestion.md)
 - [项目代码如何组织](thinking/how-to-make-code-organization.md)
+
+<a name="函数式编程"></a>
+### 函数式编程
+
+- [什么是 Monad](fp/what-is-monad.md)
 
 <a name="javascript"></a>
 ### Javascript
