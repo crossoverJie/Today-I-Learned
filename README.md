@@ -10,6 +10,7 @@
     - [TIL](#til)
     - [箴言](#箴言)
     - [思考](#思考)
+    - [Web](#web)
     - [函数式编程](#函数式编程)
     - [Linux](#linux)
     - [Javascript](#javascript)
@@ -38,6 +39,9 @@
 - [提问的智慧](thinking/smartquestion.md)
 - [项目代码如何组织](thinking/how-to-make-code-organization.md)
 - [不完整的函数](thinking/non-total-function.md)
+
+<a name="web"></a>
+### Web
 
 <a name="函数式编程"></a>
 ### 函数式编程
@@ -71,6 +75,8 @@
 
 <a name="elixir"></a>
 ### Elixir
+
+- [tuple 与 list 的选择](elixir/choosing-between-tuple-and-list.md)
 
 <a name="rust"></a>
 ### Rust
