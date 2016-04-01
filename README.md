@@ -54,6 +54,7 @@
 - [unlink 是删除任何文件](linux/unlink.md)
 - [XDG 基础目录标准](linux/XDG-base-directory-spec.md)
 - [慎用双引号与单引号](linux/quotes-in-bash.md)
+- [学习 Vim](linux/vim-learning.md)
 
 <a name="javascript"></a>
 ### Javascript
