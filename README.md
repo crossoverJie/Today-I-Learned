@@ -55,6 +55,7 @@
 - [XDG 基础目录标准](linux/XDG-base-directory-spec.md)
 - [慎用双引号与单引号](linux/quotes-in-bash.md)
 - [学习 Vim](linux/vim-learning.md)
+- [文件描述符，open file table 与 inode](linux/fd-oft-inode.md)
 
 <a name="javascript"></a>
 ### Javascript
