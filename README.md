@@ -19,6 +19,7 @@
     - [Rust](#rust)
     - [Redis](#redis)
     - [MongoDB](#mongodb)
+    - [其他](#其他)
 - [反馈问题或建议](#反馈问题或建议)
 - [版权声明](#版权声明)
 
@@ -95,6 +96,12 @@
 ### MongoDB
 
 - [MongoDB 的丢数据问题](mongo/data-lost.md)
+
+
+<a name="其他"></a>
+### 其他
+
+- [mac 里的 tmux 内无法用 sublime 打开文件](others/subl-in-tmux-on-mac.md)
 
 <a name="反馈问题或建议"></a>
 ## 反馈问题或建议
