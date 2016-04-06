@@ -7,8 +7,6 @@
 <!-- MarkdownTOC -->
 
 - [分类](#分类)
-    - [TIL](#til)
-    - [箴言](#箴言)
     - [思考](#思考)
     - [Web](#web)
     - [函数式编程](#函数式编程)
@@ -27,12 +25,6 @@
 
 <a name="分类"></a>
 ## 分类
-
-<a name="til"></a>
-### [TIL](./TIL.md)
-
-<a name="箴言"></a>
-### [箴言](./maxim.md)
 
 <a name="思考"></a>
 ### 思考
@@ -102,6 +94,8 @@
 ### 其他
 
 - [mac 里的 tmux 内无法用 sublime 打开文件](others/subl-in-tmux-on-mac.md)
+- [TIL](./others/TIL.md)
+- [箴言](./others/maxim.md)
 
 <a name="反馈问题或建议"></a>
 ## 反馈问题或建议

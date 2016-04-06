@@ -1,4 +1,4 @@
-## TIL
+## Today I learned (TIL) 资源列表
 
 其他人的 Today I learned 列表：
 
