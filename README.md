@@ -50,6 +50,7 @@
 - [学习 Vim](linux/vim-learning.md)
 - [文件描述符，open file table 与 inode](linux/fd-oft-inode.md)
 - [IO、select、epoll](linux/io-select-epoll.md)
+- [Bash 小知识](linux/bash-learning.md)
 
 <a name="javascript"></a>
 ### Javascript
