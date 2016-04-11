@@ -61,6 +61,7 @@
 #### NodeJS
 
 - [命令行的工具和类库](nodejs/cli-libraries-and-tools.md)
+- [EJS 渲染引擎的空白问题](nodejs/ejs-blanks.md)
 
 #### 前端
 
