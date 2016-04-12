@@ -53,11 +53,11 @@
 - [文件描述符，open file table 与 inode](linux/fd-oft-inode.md)
 - [IO、select、epoll](linux/io-select-epoll.md)
 - [Bash 小知识](linux/bash-learning.md)
+- [history 命令](linux/history.md)
 
 <a name="javascript"></a>
 ### Javascript
 
-- [XMLHttpRequest 的继承者：Fetch](javascript/fetch.md)
 
 <a name="nodejs"></a>
 ### NodeJS
@@ -68,6 +68,7 @@
 <a name="前端"></a>
 ### 前端
 
+- [XMLHttpRequest 的继承者：Fetch](front-end/fetch.md)
 - [redux 入门](front-end/redux-ABC.md)
 - [Webkit 浏览器渲染效率](front-end/webkit-render-performance.md)
 
