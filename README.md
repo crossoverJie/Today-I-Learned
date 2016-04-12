@@ -12,6 +12,8 @@
     - [函数式编程](#函数式编程)
     - [Linux](#linux)
     - [Javascript](#javascript)
+    - [NodeJS](#nodejs)
+    - [前端](#前端)
     - [Ruby](#ruby)
     - [Elixir](#elixir)
     - [Rust](#rust)
@@ -58,14 +60,16 @@
 - [XMLHttpRequest 的继承者：Fetch](javascript/fetch.md)
 
 <a name="nodejs"></a>
-#### NodeJS
+### NodeJS
 
 - [命令行的工具和类库](nodejs/cli-libraries-and-tools.md)
 - [EJS 渲染引擎的空白问题](nodejs/ejs-blanks.md)
 
-#### 前端
+<a name="前端"></a>
+### 前端
 
 - [redux 入门](front-end/redux-ABC.md)
+- [Webkit 浏览器渲染效率](front-end/webkit-render-performance.md)
 
 <a name="ruby"></a>
 ### Ruby
