@@ -58,6 +58,7 @@
 <a name="javascript"></a>
 ### Javascript
 
+- [Promise 的坑](javascript/trap-of-promise.md)
 
 <a name="nodejs"></a>
 ### NodeJS
