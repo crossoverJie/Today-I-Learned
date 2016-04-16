@@ -54,6 +54,7 @@
 - [IO、select、epoll](linux/io-select-epoll.md)
 - [Bash 小知识](linux/bash-learning.md)
 - [history 命令](linux/history.md)
+- [快速删文件](linux/fast-remove-files.md)
 
 <a name="javascript"></a>
 ### Javascript
