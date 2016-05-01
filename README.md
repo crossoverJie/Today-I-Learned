@@ -106,6 +106,7 @@
 - [mac 里的 tmux 内无法用 sublime 打开文件](others/subl-in-tmux-on-mac.md)
 - [TIL](./others/TIL.md)
 - [箴言](./others/maxim.md)
+- [vim textwidth=78 的约定](others/textwidth-78-of-vim.md)
 
 <a name="反馈问题或建议"></a>
 ## 反馈问题或建议
