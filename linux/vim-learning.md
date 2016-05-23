@@ -17,7 +17,7 @@
 ![](https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png)
 
 
-## 调试
+### 调试
 `vim --startuptime timefile <文件名>` 调试 vim 启动各阶段所用时间。
 
 实时分析:
@@ -30,4 +30,22 @@
 :profile pause
 :noautocmd qall!
 ```
+
+### 技巧
+
+#### 搜索时使用正则匹配单词边界。
+
+比如 `/the\b` 会匹配到 `the`，也会匹配到 `then`。
+应该使用 `/the\>` 来匹配。因为 `\b` 在 vim 的正则里是无效的，使用 `\<` 和 `\>` 代替。
+
+默认的 `*` 和 `#` 是匹配边界的，`g*` 和 `g#` 不匹配边界。
+
+[参考](http://stackoverflow.com/questions/8404349/in-vim-how-do-you-search-for-a-word-boundary-character-like-the-b-in-regexp)
+
+#### 改变字符大小写
+
+`~` 或者 `vu`、`vU`
+
+[参考](http://vim.wikia.com/wiki/Switching_case_of_characters)
+
 
