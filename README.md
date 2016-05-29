@@ -55,6 +55,7 @@
 - [Bash 小知识](linux/bash-learning.md)
 - [history 命令](linux/history.md)
 - [快速删文件](linux/fast-remove-files.md)
+- [奇怪的 ESC](linux/weird-esc-key.md)
 
 <a name="javascript"></a>
 ### Javascript
