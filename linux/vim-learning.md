@@ -44,8 +44,15 @@
 
 #### 改变字符大小写
 
-`~` 或者 `vu`、`vU`
+使用 `~` 或者 `vu`、`vU`
 
 [参考](http://vim.wikia.com/wiki/Switching_case_of_characters)
 
+#### swap 文件
+
+|    命令   |          描述          |
+|:---------:|:----------------------:|
+| :preserve |   保存修改到交换文件   |
+|  :recover |     从交换文件恢复     |
+| :swapname | 查看当前交换文件的名称 |
 
