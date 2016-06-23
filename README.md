@@ -69,6 +69,7 @@
 - [命令行的工具和类库](nodejs/cli-libraries-and-tools.md)
 - [EJS 渲染引擎的空白问题](nodejs/ejs-blanks.md)
 - [EventEmitter 需要注意的三个地方](nodejs/three-notes-of-eventemitter.md)
+- [Error.captureStackTrace 的 stack 缺少 message 问题](nodejs/error-captureStackTrace.md)
 
 <a name="前端"></a>
 ### 前端
