@@ -77,6 +77,7 @@
 - [XMLHttpRequest 的继承者：Fetch](front-end/fetch.md)
 - [redux 入门](front-end/redux-ABC.md)
 - [Webkit 浏览器渲染效率](front-end/webkit-render-performance.md)
+- [浮动侧边栏](front-end/float-sidebar.md)
 
 <a name="ruby"></a>
 ### Ruby
