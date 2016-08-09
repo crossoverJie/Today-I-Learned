@@ -11,6 +11,7 @@
     - [Web](#web)
     - [函数式编程](#函数式编程)
     - [Linux](#linux)
+    - [Vim](#vim)
     - [Javascript](#javascript)
     - [NodeJS](#nodejs)
     - [前端](#前端)
@@ -50,7 +51,6 @@
 - [unlink 是删除任何文件](linux/unlink.md)
 - [XDG 基础目录标准](linux/XDG-base-directory-spec.md)
 - [慎用双引号与单引号](linux/quotes-in-bash.md)
-- [学习 Vim](linux/vim-learning.md)
 - [文件描述符，open file table 与 inode](linux/fd-oft-inode.md)
 - [IO、select、epoll](linux/io-select-epoll.md)
 - [Bash 小知识](linux/bash-learning.md)
@@ -58,6 +58,11 @@
 - [快速删文件](linux/fast-remove-files.md)
 - [奇怪的 ESC](linux/weird-esc-key.md)
 - [用户线程，内核线程，CPU 超线程技术](linux/about-multi-thread.md)
+
+<a name="vim"></a>
+### Vim
+
+- [学习 Vim](vim/vim-learning.md)
 
 <a name="javascript"></a>
 ### Javascript
