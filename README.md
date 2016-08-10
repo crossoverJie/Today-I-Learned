@@ -123,6 +123,7 @@
 - [箴言](./others/maxim.md)
 - [vim textwidth=78 的约定](others/textwidth-78-of-vim.md)
 - [如何在 github 项目里搜索代码](others/how-to-use-github-to-browse-codes.md)
+- [homebrew 使用代理下载](others/homebrew-proxy.md)
 
 <a name="反馈问题或建议"></a>
 ## 反馈问题或建议
