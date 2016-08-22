@@ -63,6 +63,7 @@
 ### Vim
 
 - [学习 Vim](vim/vim-learning.md)
+- [unite.vim](vim/unite.vim.md)
 
 <a name="javascript"></a>
 ### Javascript
