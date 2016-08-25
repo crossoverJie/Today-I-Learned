@@ -79,6 +79,7 @@
 - [EventEmitter 需要注意的三个地方](nodejs/three-notes-of-eventemitter.md)
 - [Error.captureStackTrace 的 stack 缺少 message 问题](nodejs/error-captureStackTrace.md)
 - [有必要添加 'use strict' 吗？](nodejs/implicit-strict-mode.md)
+- [不要对函数参数重新赋值](nodejs/don-t-reassign-function-arguments.md)
 
 <a name="前端"></a>
 ### 前端
