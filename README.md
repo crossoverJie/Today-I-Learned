@@ -64,6 +64,7 @@
 
 - [学习 Vim](vim/vim-learning.md)
 - [unite.vim](vim/unite.vim.md)
+- [indentLine 自定义符号](vim/indentline.md)
 
 <a name="javascript"></a>
 ### Javascript
