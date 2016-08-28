@@ -65,6 +65,7 @@
 - [学习 Vim](vim/vim-learning.md)
 - [unite.vim](vim/unite.vim.md)
 - [indentLine 自定义符号](vim/indentline.md)
+- [在 vim 中执行 shell 命令，同时将结果输出到 buffer](vim/pipe-shell-output-to-buffer.md)
 
 <a name="javascript"></a>
 ### Javascript
