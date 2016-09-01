@@ -90,6 +90,7 @@
 - [redux 入门](front-end/redux-ABC.md)
 - [Webkit 浏览器渲染效率](front-end/webkit-render-performance.md)
 - [浮动侧边栏](front-end/float-sidebar.md)
+- [学习 Chrome DevTools](front-end/learning-chrome-dev-tools.md)
 
 <a name="ruby"></a>
 ### Ruby
