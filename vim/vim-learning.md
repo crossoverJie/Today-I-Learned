@@ -56,3 +56,9 @@
 |  :recover |     从交换文件恢复     |
 | :swapname | 查看当前交换文件的名称 |
 
+#### `[]`,`{}`,`""`,`''` 快速操作
+
+vim documentation 有两个章节：[object-motions][] 和 [object-select][]。非常有用。
+
+[object-motions]: http://vimdoc.sourceforge.net/htmldoc/motion.html#object-motions
+[object-select]: http://vimdoc.sourceforge.net/htmldoc/motion.html#object-select
