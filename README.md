@@ -130,6 +130,7 @@
 - [vim textwidth=78 的约定](others/textwidth-78-of-vim.md)
 - [如何在 github 项目里搜索代码](others/how-to-use-github-to-browse-codes.md)
 - [homebrew 使用代理下载](others/homebrew-proxy.md)
+- [文件命名，下划线还是中划线？](./others/file-naming-with-underscores-and-dashes.md)
 
 <a name="反馈问题或建议"></a>
 ## 反馈问题或建议
