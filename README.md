@@ -4,7 +4,7 @@
 
 ## TOC
 
-<!-- MarkdownTOC -->
+<!-- MarkdownTOC depth=4 -->
 
 - [分类](#分类)
     - [思考](#思考)
@@ -15,6 +15,7 @@
     - [Javascript](#javascript)
     - [NodeJS](#nodejs)
     - [前端](#前端)
+        - [React](#react)
     - [Ruby](#ruby)
     - [Elixir](#elixir)
     - [Rust](#rust)
@@ -91,6 +92,10 @@
 - [Webkit 浏览器渲染效率](./front-end/webkit-render-performance.md)
 - [浮动侧边栏](./front-end/float-sidebar.md)
 - [学习 Chrome DevTools](./front-end/learning-chrome-dev-tools.md)
+
+<a name="react"></a>
+#### React
+- [不要在 render 里直接定义 ref callback](./front-end/react/dont-define-ref-callback-in-render.md)
 
 <a name="ruby"></a>
 ### Ruby
