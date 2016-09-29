@@ -20,6 +20,8 @@
 ### 调试
 `vim --startuptime timefile <文件名>` 调试 vim 启动各阶段所用时间。
 
+`awk '{if ($2 > 100 && NR > 6) print $2, $(NF-1), $NF, NR}' timefile | sort -r`  查看占用时间 >100ms 的步骤
+
 实时分析:
 
 ```
