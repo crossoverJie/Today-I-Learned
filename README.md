@@ -96,6 +96,7 @@
 <a name="react"></a>
 #### React
 - [不要在 render 里直接定义 ref callback](./front-end/react/dont-define-ref-callback-in-render.md)
+- [ref callback 何时触发？](./front-end/react/when-ref-callback-get-invoked.md)
 
 <a name="ruby"></a>
 ### Ruby
