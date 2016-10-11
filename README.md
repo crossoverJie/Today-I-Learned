@@ -92,6 +92,7 @@
 - [Webkit 浏览器渲染效率](./front-end/webkit-render-performance.md)
 - [浮动侧边栏](./front-end/float-sidebar.md)
 - [学习 Chrome DevTools](./front-end/learning-chrome-dev-tools.md)
+- [webpack 配置为数组](./front-end/webpack-config-is-an-array.md)
 
 <a name="react"></a>
 #### React
