@@ -62,6 +62,7 @@
 - [/usr/bin/env](./linux/usr-bin-env.md)
 - [连接 tty](./linux/connect-tty.md)
 - [在 alpine 中找不到 setup-apkcache 等 setup-* 命令](./linux/setup-scripts-in-alpine.md)
+- [修正 Docker for mac 时区问题](./linux/fix-timezone-in-docker-for-mac.md)
 
 <a name="vim"></a>
 ### Vim
