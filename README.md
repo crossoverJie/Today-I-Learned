@@ -61,6 +61,7 @@
 - [用户线程，内核线程，CPU 超线程技术](./linux/about-multi-thread.md)
 - [/usr/bin/env](./linux/usr-bin-env.md)
 - [连接 tty](./linux/connect-tty.md)
+- [在 alpine 中找不到 setup-apkcache 等 setup-* 命令](./linux/setup-scripts-in-alpine.md)
 
 <a name="vim"></a>
 ### Vim
