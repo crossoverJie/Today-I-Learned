@@ -60,6 +60,7 @@
 - [奇怪的 ESC](./linux/weird-esc-key.md)
 - [用户线程，内核线程，CPU 超线程技术](./linux/about-multi-thread.md)
 - [/usr/bin/env](./linux/usr-bin-env.md)
+- [连接 tty](./linux/connect-tty.md)
 
 <a name="vim"></a>
 ### Vim
