@@ -71,6 +71,7 @@
 - [unite.vim](./vim/unite.vim.md)
 - [indentLine 自定义符号](./vim/indentline.md)
 - [在 vim 中执行 shell 命令，同时将结果输出到 buffer](./vim/pipe-shell-output-to-buffer.md)
+- [在 vim 中运行终端，以及如何退出终端模式](./vim/run-terminal-in-vim.md)
 
 <a name="javascript"></a>
 ### Javascript
