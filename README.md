@@ -96,6 +96,7 @@
 - [有必要添加 'use strict' 吗？](http://adoyle.me/blog/implicit-strict-mode.html)
 - [不要对函数参数重新赋值](./nodejs/don-t-reassign-function-arguments.md)
 - [npm run scripts](./nodejs/npm-run-scripts.md)
+- [调整 rejectUnauthorized 选项来容许 https 证书无效](./nodejs/rejectUnauthorized-of-https.md)
 
 <a name="前端"></a>
 ### 前端
