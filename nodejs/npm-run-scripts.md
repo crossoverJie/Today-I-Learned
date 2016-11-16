@@ -24,3 +24,9 @@
 - `npm-run-all --parallel watch:*`
 
 [npm-run-all]: https://github.com/mysticatea/npm-run-all
+
+### npm run env
+
+`npm run env` 是 npm 自带的 script，用来显示所有可以被 script 访问到的环境变量。
+
+可以执行 `npm help run` 来查找 env 相关信息。
