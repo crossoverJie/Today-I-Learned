@@ -108,6 +108,7 @@
 - [学习 Chrome DevTools](./front-end/learning-chrome-dev-tools.md)
 - [webpack 配置为数组](./front-end/webpack-config-is-an-array.md)
 - [使用 browserify 和 uglifyjs](./front-end/using-browserify-and-uglifyjs.md)
+- [z-index](./front-end/z-index.md)
 
 <a name="react"></a>
 #### React
