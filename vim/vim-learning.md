@@ -64,3 +64,19 @@ vim documentation 有两个章节：[object-motions][] 和 [object-select][]。�
 
 [object-motions]: http://vimdoc.sourceforge.net/htmldoc/motion.html#object-motions
 [object-select]: http://vimdoc.sourceforge.net/htmldoc/motion.html#object-select
+
+### 等号，缩进对齐
+
+#### :g 和 :v 和 :p 命令
+
+`:[range]g[lobal]/{pattern}/[cmd]` 正则匹配到的行执行命令
+
+`:[range]v[global]/{pattern}/[cmd]` Same as :g!
+
+`:[range]p[rint] {count} [flags]` 输出行到 Ex 栏
+
+使用方法
+
+- 删除空白行 `:g/^$/d`
+- 删除以#号开头的行 `:g/^#/d`
+- 查询输出当前文件内所有匹配正则的行 `:g/regex/`
