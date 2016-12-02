@@ -5,3 +5,17 @@
 - `:tabnew | r!` 读取 shell 命令结果到新的 tab
 - `:new | r! ` 新的 window
 - `:vnew | r!` 新的垂直 window
+
+## 将 vim EX command 的输出，输出到 buffer 中
+
+可以使用 `:redir` 将输出重定向到寄存器或文件中去。比如：
+
+```
+" 1. 重定向到寄存器 w
+:redir @w
+" 2. 执行命令
+" 3. 切换到其他 buffer，从寄存器 w 中粘贴结果
+"wp
+" 4. 中止重定向
+:redir END
+```
