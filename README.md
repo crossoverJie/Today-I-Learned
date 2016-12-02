@@ -8,6 +8,7 @@
 
 - [分类](#分类)
     - [思考](#思考)
+    - [设计](#设计)
     - [Web](#web)
     - [函数式编程](#函数式编程)
     - [Linux](#linux)
@@ -38,6 +39,11 @@
 - [提问的智慧](./thinking/smartquestion.md)
 - [项目代码如何组织](./thinking/how-to-make-code-organization.md)
 - [不完整的函数](./thinking/non-total-function.md)
+
+<a name="设计"></a>
+### 设计
+
+- [使用 sketchtool 操作 sketch 文档：diff 以及其他功能](./design/sketchtool-for-diff.md)
 
 <a name="web"></a>
 ### Web
