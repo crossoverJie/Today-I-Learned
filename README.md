@@ -102,6 +102,7 @@
 - [不要对函数参数重新赋值](./nodejs/don-t-reassign-function-arguments.md)
 - [npm run scripts](./nodejs/npm-run-scripts.md)
 - [调整 rejectUnauthorized 选项来容许 https 证书无效](./nodejs/rejectUnauthorized-of-https.md)
+- [npm publish 不会包含 .gitignore 文件](./nodejs/missing-gitignore-when-node-publish.md)
 
 <a name="前端"></a>
 ### 前端
