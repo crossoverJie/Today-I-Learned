@@ -161,6 +161,7 @@
 - [Homebrew 使用代理和镜像源加速下载](./others/homebrew-proxy-and-mirror.md)
 - [文件命名，下划线还是中划线？](./others/file-naming-with-underscores-and-dashes.md)
 - [备份 homebrew](./others/backup-brew.md)
+- [在 Github Markdown 中如何填写图片的链接](./others/relative-link-in-github-markdown.md)
 
 <a name="反馈问题或建议"></a>
 ## 反馈问题或建议
