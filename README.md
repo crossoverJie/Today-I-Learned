@@ -162,6 +162,7 @@
 - [文件命名，下划线还是中划线？](./others/file-naming-with-underscores-and-dashes.md)
 - [备份 homebrew](./others/backup-brew.md)
 - [在 Github Markdown 中如何填写图片的链接](./others/relative-link-in-github-markdown.md)
+- [Github Markdown 中的锚点引用](./others/anchor-in-github-markdown.md)
 
 <a name="反馈问题或建议"></a>
 ## 反馈问题或建议
