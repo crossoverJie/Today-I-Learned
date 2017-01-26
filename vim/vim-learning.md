@@ -2,6 +2,24 @@
 
 先看完 [vim-galore](https://github.com/mhinz/vim-galore)
 
+### TOC
+
+<!-- MarkdownTOC depth=2 GFM -->
+
+- [概念](#概念)
+- [Cheatsheets](#cheatsheets)
+- [调试](#调试)
+- [技巧](#技巧)
+    - [搜索时使用正则匹配单词边界。](#搜索时使用正则匹配单词边界)
+    - [改变字符大小写](#改变字符大小写)
+    - [swap 文件](#swap-文件)
+    - [`[]`,`{}`,`""`,`''` 快速操作](#-快速操作)
+- [等号，缩进对齐](#等号缩进对齐)
+    - [:g 和 :v 和 :p 命令](#g-和-v-和-p-命令)
+- [单词边界](#单词边界)
+
+<!-- /MarkdownTOC -->
+
 ### 概念
 
 - normal、insert、visual 等模式
@@ -80,3 +98,9 @@ vim documentation 有两个章节：[object-motions][] 和 [object-select][]。�
 - 删除空白行 `:g/^$/d`
 - 删除以#号开头的行 `:g/^#/d`
 - 查询输出当前文件内所有匹配正则的行 `:g/regex/`
+
+### 单词边界
+
+使用 `iskeyword` 来改变单词边界的定义。用来改变 motion。
+
+例如 `autocmd BufRead *.js set isk-=.`，针对所有 js 文件，将 `.` 排除出去
