@@ -42,7 +42,7 @@
 
 实时分析:
 
-```
+```vim
 :profile start profile.log
 :profile func *
 :profile file *

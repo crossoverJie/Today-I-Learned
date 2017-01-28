@@ -7,7 +7,7 @@
 
 因为会导致 ref = null，所以 ref callback 建议这么定义：
 
-```
+```js
 (r) => {
     this.a = r;
     this.b = _.get(r, 'b', null);    // 防止空指针引用错误

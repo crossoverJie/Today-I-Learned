@@ -10,7 +10,6 @@
 
 我在 bashrc 这么写把它全禁用掉了：
 
-```
+```sh
 for i in "-" "n" "p" "" {0..9}; do bind -r "\e$i"; done
 ```
-
