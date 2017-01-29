@@ -104,6 +104,7 @@
 - [npm run scripts](./nodejs/npm-run-scripts.md)
 - [调整 rejectUnauthorized 选项来容许 https 证书无效](./nodejs/rejectUnauthorized-of-https.md)
 - [npm publish 不会包含 .gitignore 文件](./nodejs/missing-gitignore-when-node-publish.md)
+- [nvm 不是一个可执行文件，而是一个函数](./nodejs/nvm-is-not-a-executable-but-a-function.md)
 
 <a name="前端"></a>
 ### 前端

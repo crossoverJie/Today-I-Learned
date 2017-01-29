@@ -1,0 +1,15 @@
+## nvm 不是一个可执行文件，而是一个函数
+
+当你安装完 nvm，执行 `which nvm` 却会发现没有输出，并且 exit code 是 1。别慌，这是正常的。
+
+因为 nvm 只是一个函数。
+
+试试 `type -t nvm`，你会发现输出 `function`。
+
+编写 shell 脚本时可能会踩到这个坑，特此记录。
+
+
+详解：
+
+- http://stackoverflow.com/a/26820817
+- https://github.com/creationix/nvm/issues/540
