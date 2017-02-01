@@ -1,5 +1,18 @@
 ## Bash 小知识
 
+### TOC
+
+<!-- MarkdownTOC GFM -->
+
+- [man bash](#man-bash)
+- [kill %jobspec](#kill-jobspec)
+- [<Tab> 补全文件路径开启颜色](#tab-补全文件路径开启颜色)
+- [bash-completion](#bash-completion)
+- [PS1 等提示符的定义](#ps1-等提示符的定义)
+- [右侧打印](#右侧打印)
+
+<!-- /MarkdownTOC -->
+
 ### man bash
 
 在 /usr/share/doc/bash/ 能找到 bash PDF 和 HTML 文档。
@@ -24,3 +37,35 @@ kill 命令不止能杀掉进程，还能直接关闭后台托管进程。
 
 参考[这个问题](http://superuser.com/questions/251107/how-to-get-a-colored-tab-completion)
 
+### bash-completion
+
+https://github.com/scop/bash-completion 比内置 bash 补全更全面。
+
+bash 3.0+ 版本通过 `brew install bash-completion` 来安装。
+
+bash 4.0+ 版本通过 `brew install bash-completion2` 来安装。
+
+### PS1 等提示符的定义
+
+Bash 有四个可以定制的提示符
+
+- PS1 是在每个命令前都显示的主要提示符，大部分用户都是定制这个值。
+- PS2 命令需要输入时的第二提示符(比如多行命令).
+- PS3 不常用，Bash 的内置 select 显示交互菜单时使用. 和其它提示符不一样，它不扩展 Bash escape sequences. 通常在使用包含 select 的脚本时会需要定制此提示符。
+- PS4 也不常用，在调试 bash 脚本时显示。
+所有提示符都可以通过设置变量到需要的数值进行定义(通常在 ~/.bashrc)
+
+https://wiki.archlinux.org/index.php/Color_Bash_Prompt_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#.E6.8F.90.E7.A4.BA.E7.AC.A6.E3.80.80
+
+### 右侧打印
+
+```sh
+rightprompt()
+{
+    printf "%*s" $COLUMNS "right prompt"
+}
+
+export PS1='\[$(tput sc; rightprompt; tput rc)\]left prompt > '
+```
+
+https://wiki.archlinux.org/index.php/Color_Bash_Prompt_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#Right-justified_text
