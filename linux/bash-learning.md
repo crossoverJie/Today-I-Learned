@@ -10,6 +10,9 @@
 - [bash-completion](#bash-completion)
 - [PS1 等提示符的定义](#ps1-等提示符的定义)
 - [右侧打印](#右侧打印)
+- [打印所有 bash options (set -o 或 shopt)](#打印所有-bash-options-set--o-或-shopt)
+- [提取一句话的第一个单词](#提取一句话的第一个单词)
+- [/usr/libexec/path_helper](#usrlibexecpath_helper)
 
 <!-- /MarkdownTOC -->
 
@@ -69,3 +72,25 @@ export PS1='\[$(tput sc; rightprompt; tput rc)\]left prompt > '
 ```
 
 https://wiki.archlinux.org/index.php/Color_Bash_Prompt_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#Right-justified_text
+
+
+### 打印所有 bash options (set -o 或 shopt)
+
+注意 set 和 shopt 是两个用处不同的命令，配置不一样
+
+- `set -o`
+- `shopt -p` 或 `shopt`。这两个命令输出不同格式
+
+### 提取一句话的第一个单词
+
+```sh
+str='  word1 word2'
+word_list=($str)
+echo ${word_list[0]}
+```
+
+### /usr/libexec/path_helper
+
+/usr/libexec/path_helper -s
+
+http://unix.stackexchange.com/questions/210158/how-can-i-list-bashs-options-for-the-current-shell
