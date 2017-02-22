@@ -8,5 +8,5 @@
 
 ### 使用镜像
 
-homebrew git 镜像：https://lug.ustc.edu.cn/wiki/mirrors/help/brew.git
-Homebrew Bottles 镜像：https://lug.ustc.edu.cn/wiki/mirrors/help/homebrew-bottles
+- homebrew git 镜像：https://lug.ustc.edu.cn/wiki/mirrors/help/brew.git
+- Homebrew Bottles 镜像：https://lug.ustc.edu.cn/wiki/mirrors/help/homebrew-bottles
