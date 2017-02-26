@@ -117,6 +117,7 @@
 - [webpack 配置为数组](./front-end/webpack-config-is-an-array.md)
 - [使用 browserify 和 uglifyjs](./front-end/using-browserify-and-uglifyjs.md)
 - [z-index](./front-end/z-index.md)
+- [HTTP 缓存机制](./front-end/http-cache.md)
 
 <a name="react"></a>
 #### React
