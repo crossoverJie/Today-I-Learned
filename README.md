@@ -167,6 +167,7 @@
 - [在 Github Markdown 中如何填写图片的链接](./others/relative-link-in-github-markdown.md)
 - [Github Markdown 中的锚点引用](./others/anchor-in-github-markdown.md)
 - [Chrome 小技巧](./others/chrome-tricks.md)
+- [如何审核代码](./others/how-to-review-code.md)
 
 <a name="反馈问题或建议"></a>
 ## 反馈问题或建议
