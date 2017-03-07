@@ -118,6 +118,7 @@
 - [使用 browserify 和 uglifyjs](./front-end/using-browserify-and-uglifyjs.md)
 - [z-index](./front-end/z-index.md)
 - [HTTP 缓存机制](./front-end/http-cache.md)
+- [关于 webpack 2](./front-end/all-about-webpack-2.md)
 
 <a name="react"></a>
 #### React
