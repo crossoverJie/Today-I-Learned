@@ -13,6 +13,7 @@
 - [打印所有 bash options (set -o 或 shopt)](#打印所有-bash-options-set--o-或-shopt)
 - [提取一句话的第一个单词](#提取一句话的第一个单词)
 - [/usr/libexec/path_helper](#usrlibexecpath_helper)
+- [设置环境变量与命令写同一行](#设置环境变量与命令写同一行)
 
 <!-- /MarkdownTOC -->
 
@@ -94,3 +95,11 @@ echo ${word_list[0]}
 /usr/libexec/path_helper -s
 
 http://unix.stackexchange.com/questions/210158/how-can-i-list-bashs-options-for-the-current-shell
+
+### 设置环境变量与命令写同一行
+
+比如 `hello=world echo $hello` 并不会输出信息
+
+`hello=world; echo $hello` 或者  `hello=world && echo $hello` 才可以。
+
+但是 `hello=world <命令>` 在`<命令>`中是能获取到 `$hello` 的值。
