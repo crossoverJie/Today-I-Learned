@@ -119,6 +119,8 @@
 - [z-index](./front-end/z-index.md)
 - [HTTP 缓存机制](./front-end/http-cache.md)
 - [关于 webpack 2](./front-end/all-about-webpack-2.md)
+- [`<script async>` 与 `<script defer>`](./front-end/async-defer-script-dom.md)
+- [CORS](./front-end/cors.md)
 
 <a name="react"></a>
 #### React
