@@ -34,6 +34,12 @@
 
 ![](https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png)
 
+![](http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_print.png)
+
+> which from http://michael.peopleofhonoronly.com/vim/
+
+https://vim.rtorr.com/lang/zh_tw/
+
 
 ### 调试
 `vim --startuptime timefile <文件名>` 调试 vim 启动各阶段所用时间。
