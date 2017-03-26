@@ -17,6 +17,7 @@
 - [等号，缩进对齐](#等号缩进对齐)
     - [:g 和 :v 和 :p 命令](#g-和-v-和-p-命令)
 - [单词边界](#单词边界)
+- [在 vim 里直接打开连接](#在-vim-里直接打开连接)
 
 <!-- /MarkdownTOC -->
 
@@ -110,3 +111,13 @@ vim documentation 有两个章节：[object-motions][] 和 [object-select][]。�
 使用 `iskeyword` 来改变单词边界的定义。用来改变 motion。
 
 例如 `autocmd BufRead *.js set isk-=.`，针对所有 js 文件，将 `.` 排除出去
+
+### 在 vim 里直接打开连接
+
+鼠标移到链接上，按键 `gx` 即可。  
+`:h gx` 查看帮助
+
+但是 gx 无法打开完整的链接，比如 https://www.youtube.com/watch?v=wlR5gYd6um0  
+[open-browser.vim](https://github.com/tyru/open-browser.vim) 可以解决这个问题
+
+`netrw_filehandler` 可以用来扩展 gx 的解析。
