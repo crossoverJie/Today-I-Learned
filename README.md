@@ -102,6 +102,7 @@
 - [有必要添加 'use strict' 吗？](http://adoyle.me/blog/implicit-strict-mode.html)
 - [不要对函数参数重新赋值](./nodejs/don-t-reassign-function-arguments.md)
 - [npm run scripts](./nodejs/npm-run-scripts.md)
+- [npm commands](./nodejs/npm-commands.md)
 - [调整 rejectUnauthorized 选项来容许 https 证书无效](./nodejs/rejectUnauthorized-of-https.md)
 - [npm publish 不会包含 .gitignore 文件](./nodejs/missing-gitignore-when-node-publish.md)
 - [nvm 不是一个可执行文件，而是一个函数](./nodejs/nvm-is-not-a-executable-but-a-function.md)
