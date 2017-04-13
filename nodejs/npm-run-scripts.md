@@ -30,3 +30,21 @@
 `npm run env` 是 npm 自带的 script，用来显示所有可以被 script 访问到的环境变量。
 
 可以执行 `npm help run` 来查找 env 相关信息。
+
+
+### 发布
+
+参考用
+
+```json
+{
+    "pub": "npm run pub-patch",
+    "pub-patch": "npm-run-all version-patch pub-common",
+    "pub-minor": "npm-run-all version-minor pub-common",
+    "pub-major": "npm-run-all version-major pub-common",
+    "pub-common": "npm publish && git push --tags && git rebase develop master && git push --all && git checkout develop",
+    "version-patch": "npm version patch -m 'Bump: patch version to %s'",
+    "version-minor": "npm version minor -m 'Bump: minor version to %s'",
+    "version-major": "npm version major -m 'Bump: major version to %s'"
+}
+```
