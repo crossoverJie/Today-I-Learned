@@ -1,5 +1,10 @@
 ## 使用 Promise 的技巧
 
+### 好文章
+
+- [taoofcode - Promise Anti-patterns](http://taoofcode.net/promise-anti-patterns/)
+- [exploringjs - 25. Promises for asynchronous programming](http://exploringjs.com/es6/ch_promises.html)
+
 ### 如何在链式处理中访问之前的 promise 返回的值？
 
 有两种方法：
