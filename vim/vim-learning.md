@@ -18,6 +18,9 @@
     - [:g 和 :v 和 :p 命令](#g-和-v-和-p-命令)
 - [单词边界](#单词边界)
 - [在 vim 里直接打开连接](#在-vim-里直接打开连接)
+- [CTRL-X mode](#ctrl-x-mode)
+    - [在 INSERT 模式下输入文件路径](#在-insert-模式下输入文件路径)
+- [autochdir](#autochdir)
 
 <!-- /MarkdownTOC -->
 
@@ -121,3 +124,30 @@ vim documentation 有两个章节：[object-motions][] 和 [object-select][]。�
 [open-browser.vim](https://github.com/tyru/open-browser.vim) 可以解决这个问题
 
 `netrw_filehandler` 可以用来扩展 gx 的解析。
+
+### CTRL-X mode
+
+`:h ins-completion`
+
+#### 在 INSERT 模式下输入文件路径
+
+敲击 `ctrl-x ctrl-f` 会触发相对路径。
+
+以 `/` 开头敲击 `ctrl-x ctrl-f` 会触发绝对路径。
+
+`ctrl-n` `ctrl-f` `ctrl-p` 用来上下移动选择。
+
+详见 `:h compl-filename`
+
+### autochdir
+
+`set autochdir` 可以让当前目录自动切换到打开的文件所在目录。这会影响到文件路径补全，有时很有用。
+
+```
+:autocmd InsertEnter * let save_cwd = getcwd() | set autochdir
+:autocmd InsertLeave * set noautochdir | execute 'cd' fnameescape(save_cwd)
+```
+
+这样设置，可以只在 Insert 状态下起作用。
+
+参考自 https://superuser.com/a/604180
