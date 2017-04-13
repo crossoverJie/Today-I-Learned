@@ -91,6 +91,7 @@
 - [Promise 的坑](./javascript/trap-of-promise.md)
 - [使用 Promise 的技巧](./javascript/trick-of-promise.md)
 - [Babel 小技巧](./javascript/babel-tricks.md)
+- [JS 编程技巧](./javascript/tricks-of-js.md)
 
 <a name="nodejs"></a>
 ### NodeJS
