@@ -138,6 +138,7 @@
 ### Elixir
 
 - [tuple 与 list 的选择](./elixir/choosing-between-tuple-and-list.md)
+- [尾递归优化](./elixir/choosing-between-tuple-and-list.md)
 
 <a name="rust"></a>
 ### Rust
