@@ -1,5 +1,7 @@
 ## 连接 tty
 
+`tty` 命令查看当前 tty
+
 `screen /dev/tty`
 
 可惜的是 tmux 居然无法做到。
