@@ -82,6 +82,7 @@
 ### Vim
 
 - [学习 Vim](./vim/vim-learning.md)
+- [学习 Neovim](./vim/neovim-learning.md)
 - [vim 插件教程](./vim/plugins-tutorial.md)
 - [在 vim 中执行 shell 命令，同时将结果输出到 buffer](./vim/pipe-shell-output-to-buffer.md)
 - [在 vim 中运行终端，以及如何退出终端模式](./vim/run-terminal-in-vim.md)
