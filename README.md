@@ -24,6 +24,7 @@
     - [Rust](#rust)
     - [Redis](#redis)
     - [MongoDB](#mongodb)
+    - [MySQL](#mysql)
     - [Git](#git)
     - [其他](#其他)
 - [反馈问题或建议](#反馈问题或建议)
@@ -163,6 +164,10 @@
 ### MongoDB
 
 - [MongoDB 的丢数据问题](./mongo/data-lost.md)
+
+### MySQL
+
+- [mysqldump](./mysql/mysqldump.md)
 
 <a name="git"></a>
 ### Git
