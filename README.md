@@ -9,6 +9,7 @@
 - [分类](#分类)
     - [思考](#思考)
     - [设计](#设计)
+        - [排版](#排版)
     - [Web](#web)
     - [函数式编程](#函数式编程)
     - [Linux](#linux)
@@ -45,6 +46,12 @@
 ### 设计
 
 - [使用 sketchtool 操作 sketch 文档：diff 以及其他功能](./design/sketchtool-for-diff.md)
+- [色彩空间理论](./design/color-space.md)
+- [8点栅格](./design/8-point-grid.md)
+
+#### 排版
+
+- [排版](./design/topography.md)
 
 <a name="web"></a>
 ### Web
