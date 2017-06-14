@@ -79,6 +79,7 @@
 - [连接 tty](./linux/connect-tty.md)
 - [在 alpine 中找不到 setup-apkcache 等 setup-* 命令](./linux/setup-scripts-in-alpine.md)
 - [ab 与 wrk 比较](./linux/ab-vs-wrk.md)
+- [编辑二进制文件](./linux/edit-binary-file.md)
 
 <a name="docker"></a>
 ### Docker
