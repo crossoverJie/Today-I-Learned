@@ -5,9 +5,16 @@
 
 ### 使用 screen 来进入 tty
 
-具体见[连接 tty][0]
+具体见[连接 tty](https://github.com/adoyle-h/Today-I-Learned/tree/master/linux/connect-tty.md)
 
-[0]: https://github.com/adoyle-h/Today-I-Learned/tree/master/linux/connect-tty.md
+按 `CTRL+A CTRL+\` 退出当前 screen。
+
+### 使用 docker 容器进入
+
+`docker run -it --pid=host --privileged debian:jessie nsenter -t 1 -m -p -n`
+
+### 使用 [doenter](https://github.com/fntlnz/doenter)
+
 
 ### 登录用户
 

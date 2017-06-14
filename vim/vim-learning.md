@@ -21,6 +21,10 @@
 - [CTRL-X mode](#ctrl-x-mode)
     - [在 INSERT 模式下输入文件路径](#在-insert-模式下输入文件路径)
 - [autochdir](#autochdir)
+- [一次打开多个文件](#一次打开多个文件)
+- [用管道读取内容](#用管道读取内容)
+- [diff 多个文件](#diff-多个文件)
+- [在每行末尾添加文字](#在每行末尾添加文字)
 
 <!-- /MarkdownTOC -->
 
@@ -151,3 +155,34 @@ vim documentation 有两个章节：[object-motions][] 和 [object-select][]。�
 这样设置，可以只在 Insert 状态下起作用。
 
 参考自 https://superuser.com/a/604180
+
+
+### 一次打开多个文件
+
+```
+-o[N]       Open N windows stacked horizontally.  If N is omitted, open one window for each file.  If N is less than the
+                number of file arguments, allocate windows for the first N files and hide the rest.
+
+-O[N]       Like -o, but tile windows vertically.
+
+-p[N]       Like -o, but for tab pages.
+```
+
+### 用管道读取内容
+
+`echo hello | vim -`
+
+```
+-           Read text from standard input until EOF, then open a buffer with that text.  Commands are read from standard
+            error, which should be a terminal.
+```
+
+### diff 多个文件
+
+`vim -d file1 file2 [file3 [file4]]`
+
+类似 `vimdiff [options] file1 file2 [file3 [file4]]`
+
+### 在每行末尾添加文字
+
+`:'<,'>norm A<文字>`。`<文字>` 为要添加的文字内容。
