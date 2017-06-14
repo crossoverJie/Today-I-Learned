@@ -173,6 +173,7 @@
 ### Git
 
 - [diff](./git/diff.md)
+- [用 shell 脚本查询 git commit hash](./git/a-shell-script-to-get-current-commit-hash.md)
 
 <a name="其他"></a>
 ### 其他
