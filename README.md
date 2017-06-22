@@ -81,6 +81,7 @@
 - [ab 与 wrk 比较](./linux/ab-vs-wrk.md)
 - [编辑二进制文件](./linux/edit-binary-file.md)
 - [Shebang](./linux/shebang.md)
+- [bash 开启 vi 模式](./linux/bash-in-vi-mode.md)
 
 <a name="docker"></a>
 ### Docker
