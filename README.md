@@ -106,6 +106,7 @@
 - [Babel 小技巧](./javascript/babel-tricks.md)
 - [JS 编程技巧](./javascript/tricks-of-js.md)
 - [JavaScript 中的相等性判断](./javascript/equality-comparisons.md)
+- [JS 的 fiber 技术](./javascript/fiber-in-js.md)
 
 <a name="nodejs"></a>
 ### NodeJS
