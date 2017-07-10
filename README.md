@@ -82,6 +82,7 @@
 - [编辑二进制文件](./linux/edit-binary-file.md)
 - [Shebang](./linux/shebang.md)
 - [bash 开启 vi 模式](./linux/bash-in-vi-mode.md)
+- [命令行中的乱码](./linux/messy-codes-in-console.md)
 
 <a name="docker"></a>
 ### Docker
