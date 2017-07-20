@@ -86,9 +86,12 @@
 
 <a name="docker"></a>
 ### Docker
+
+- [学习 Docker](./docker/docker-learning.md)
 - [进入 docker for mac 的虚拟机](./docker/docker-for-mac-tty.md)
 - [修正 Docker for mac 时区问题](./docker/fix-timezone-in-docker-for-mac.md)
 - [在后台运行 docker 容器且不会自动退出](./docker/run-docker-in-background.md)
+- [docker-compose 启动容器顺序](./docker/docker-compose-startup-order.md)
 
 <a name="vim"></a>
 ### Vim
