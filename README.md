@@ -84,6 +84,8 @@
 - [bash 开启 vi 模式](./linux/bash-in-vi-mode.md)
 - [命令行中的乱码](./linux/messy-codes-in-console.md)
 - [快速创建大文件](./linux/fast-generate-large-file.md)
+- [用环境变量替换文本内容 envsubst](./linux/envsubst.md)
+- [Here Strings and Here Documents](./linux/here-strings-and-here-documents.md)
 
 <a name="docker"></a>
 ### Docker
