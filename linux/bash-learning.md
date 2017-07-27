@@ -16,6 +16,7 @@
 - [/usr/libexec/path_helper](#usrlibexecpath_helper)
 - [设置环境变量与命令写同一行](#设置环境变量与命令写同一行)
 - [declare -r 与 readonly 的区别](#declare--r-与-readonly-的区别)
+- [得到上层绝对路径的快捷方法](#得到上层绝对路径的快捷方法)
 
 <!-- /MarkdownTOC -->
 
@@ -113,3 +114,11 @@ http://unix.stackexchange.com/questions/210158/how-can-i-list-bashs-options-for-
 ### declare -r 与 readonly 的区别
 
 https://stackoverflow.com/a/30362832/4622308
+
+### 得到上层绝对路径的快捷方法
+
+```sh
+path=$(pwd)      # 例如 /a/b/c
+# 移除掉从末尾匹配到 `/*` 的部分
+echo ${path%/*}  # => /a/b
+```
