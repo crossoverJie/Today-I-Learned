@@ -23,8 +23,9 @@
     - [Elixir](#elixir)
     - [Rust](#rust)
     - [Redis](#redis)
-    - [MongoDB](#mongodb)
-    - [MySQL](#mysql)
+    - [DataBase](#database)
+        - [MongoDB](#mongodb)
+        - [MySQL](#mysql)
     - [Git](#git)
     - [Racket](#racket)
     - [其他](#其他)
@@ -175,12 +176,17 @@
 - [Redis Cluster 相关](./redis/cluster.md)
 - [拷贝一个 Sorted Set 到新的 key](./redis/copy-a-sorted-set.md)
 
+<a name="database"></a>
+### DataBase
+
+- [flyway 用法](./database/flyway-usage.md)
+
 <a name="mongodb"></a>
-### MongoDB
+#### MongoDB
 
 - [MongoDB 的丢数据问题](./mongo/data-lost.md)
 
-### MySQL
+#### MySQL
 
 - [mysqldump](./mysql/mysqldump.md)
 
