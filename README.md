@@ -26,6 +26,7 @@
     - [MongoDB](#mongodb)
     - [MySQL](#mysql)
     - [Git](#git)
+    - [Racket](#racket)
     - [其他](#其他)
 - [反馈问题或建议](#反馈问题或建议)
 - [版权声明](#版权声明)
@@ -188,6 +189,11 @@
 
 - [diff](./git/diff.md)
 - [用 shell 脚本查询 git commit hash](./git/a-shell-script-to-get-current-commit-hash.md)
+
+<a name="racket"></a>
+### Racket
+
+- [学习 Racket](./racket/racket-learning.md)
 
 <a name="其他"></a>
 ### 其他
