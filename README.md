@@ -217,6 +217,7 @@
 - [Chrome 小技巧](./others/chrome-tricks.md)
 - [如何审核代码](./others/how-to-review-code.md)
 - [自动折叠 github 冗长的 diff](https://robots.thoughtbot.com/github-diff-supression)
+- [zookeeper 健康检查](./others/zookeeper-health-check.md)
 
 <a name="反馈问题或建议"></a>
 ## 反馈问题或建议
