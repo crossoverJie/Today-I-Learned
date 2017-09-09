@@ -150,6 +150,7 @@
 - [关于 webpack 2](./front-end/all-about-webpack-2.md)
 - [`<script async>` 与 `<script defer>`](./front-end/async-defer-script-dom.md)
 - [CORS](./front-end/cors.md)
+- [307 Internal Redirect 与浏览器的 HSTS 功能](./front-end/hsts-307.md)
 
 <a name="react"></a>
 #### React
