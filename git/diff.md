@@ -6,3 +6,6 @@
 
 `-U` 紧跟行数。
 
+### Diff/Merge Tool
+
+https://gist.github.com/karenyyng/f19ff75c60f18b4b8149
