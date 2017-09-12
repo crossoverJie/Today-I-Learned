@@ -8,6 +8,7 @@
 
 - [分类](#分类)
     - [思考](#思考)
+    - [运维](#运维)
     - [设计](#设计)
         - [排版](#排版)
     - [Web](#web)
@@ -44,6 +45,11 @@
 - [项目代码如何组织](./thinking/how-to-make-code-organization.md)
 - [不完整的函数](./thinking/non-total-function.md)
 - [如何编程](./thinking/how-to-programming.md)
+
+<a name="运维"></a>
+### 运维
+
+- [运维小技巧](./ops/ops-tricks.md)
 
 <a name="设计"></a>
 ### 设计
@@ -89,6 +95,7 @@
 - [快速创建大文件](./linux/fast-generate-large-file.md)
 - [用环境变量替换文本内容 envsubst](./linux/envsubst.md)
 - [Here Strings and Here Documents](./linux/here-strings-and-here-documents.md)
+- [查看进程的环境变量](./linux/inspect-process-environment.md)
 
 <a name="docker"></a>
 ### Docker
