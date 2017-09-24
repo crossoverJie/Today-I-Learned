@@ -204,6 +204,7 @@
 
 - [diff](./git/diff.md)
 - [用 shell 脚本查询 git commit hash](./git/a-shell-script-to-get-current-commit-hash.md)
+- [git credentials](./git/gitcredentials.md)
 
 <a name="racket"></a>
 ### Racket
