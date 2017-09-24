@@ -96,6 +96,7 @@
 - [用环境变量替换文本内容 envsubst](./linux/envsubst.md)
 - [Here Strings and Here Documents](./linux/here-strings-and-here-documents.md)
 - [查看进程的环境变量](./linux/inspect-process-environment.md)
+- [bash error exit](./linux/bash-error-exit.md)
 
 <a name="docker"></a>
 ### Docker
