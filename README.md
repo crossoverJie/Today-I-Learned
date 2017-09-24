@@ -97,6 +97,7 @@
 - [Here Strings and Here Documents](./linux/here-strings-and-here-documents.md)
 - [查看进程的环境变量](./linux/inspect-process-environment.md)
 - [bash error exit](./linux/bash-error-exit.md)
+- [hash 命令](./linux/hash-command.md)
 
 <a name="docker"></a>
 ### Docker
