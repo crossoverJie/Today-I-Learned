@@ -26,3 +26,7 @@
 ### 静态检查
 
 - [github.com/koalaman/shellcheck](https://github.com/koalaman/shellcheck)
+
+### Bash script 的缺点
+
+- 没有文件内的私有变量的概念，`source` 加载文件必须非常谨慎，容易导致变量被修改。
