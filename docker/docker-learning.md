@@ -19,6 +19,10 @@
 
 使用 `until apk update; do sleep 1; done` 让它失败后重装直到成功。
 
+#### docker-alpine 删除缓存
+
+`apk cache clean` 无效，因为默认没有开启 `Local Cache`。可以在最后执行 `rm -rf /var/cache/apk/*` 来删除缓存。
+
 ### 学习 swarm
 
 - https://github.com/play-with-docker/play-with-docker

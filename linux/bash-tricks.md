@@ -17,6 +17,7 @@
 - [设置环境变量与命令写同一行](#设置环境变量与命令写同一行)
 - [declare -r 与 readonly 的区别](#declare--r-与-readonly-的区别)
 - [得到上层绝对路径的快捷方法](#得到上层绝对路径的快捷方法)
+- [xtrace](#xtrace)
 
 <!-- /MarkdownTOC -->
 
@@ -122,3 +123,10 @@ path=$(pwd)      # 例如 /a/b/c
 # 移除掉从末尾匹配到 `/*` 的部分
 echo ${path%/*}  # => /a/b
 ```
+
+### xtrace
+
+使用 `set -o xtrace` 来跟踪命令，获取更详细的 debug 信息。
+
+自 Bash 4 开始支持 `BASH_XTRACEFD` 变量，它能改变 xtrace 输出指向到哪个文件描述符里，但最好别改动它，因为关闭 BASH_XTRACEFD 会导致文件描述符也关闭。
+BASH_XTRACEFD 默认为 2，所以 xtrace 默认输出到标准错误流。

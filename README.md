@@ -98,6 +98,8 @@
 - [查看进程的环境变量](./linux/inspect-process-environment.md)
 - [bash error exit](./linux/bash-error-exit.md)
 - [hash 命令](./linux/hash-command.md)
+- [tailf](./linux/tailf)
+- [管道重定向](./linux/pipe-redirect.md)
 
 <a name="docker"></a>
 ### Docker
