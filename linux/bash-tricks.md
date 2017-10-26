@@ -18,6 +18,8 @@
 - [declare -r 与 readonly 的区别](#declare--r-与-readonly-的区别)
 - [得到上层绝对路径的快捷方法](#得到上层绝对路径的快捷方法)
 - [xtrace](#xtrace)
+- [extglob](#extglob)
+- [分解字符串成数组](#分解字符串成数组)
 
 <!-- /MarkdownTOC -->
 
@@ -130,3 +132,17 @@ echo ${path%/*}  # => /a/b
 
 自 Bash 4 开始支持 `BASH_XTRACEFD` 变量，它能改变 xtrace 输出指向到哪个文件描述符里，但最好别改动它，因为关闭 BASH_XTRACEFD 会导致文件描述符也关闭。
 BASH_XTRACEFD 默认为 2，所以 xtrace 默认输出到标准错误流。
+
+### extglob
+
+> as if the extglob shell option were enabled. The ‘=’ operator is identical to ‘==’
+
+`[[]]` 条件判断中，当 extglob 选项开启，`=` 用法类似 `==`
+
+`shopt | grep extglob`
+
+### 分解字符串成数组
+
+比如以 `,` 分解字符串成数组。
+
+`IFS=',' read -r -a folders <<< "a,b,c,d"`

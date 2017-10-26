@@ -14,6 +14,7 @@
 - [Filenames and Pathnames in Shell: How to do it Correctly](https://www.dwheeler.com/essays/filenames-in-shell.html)
 - http://guide.bash.academy/ : 虽然未写完，但看起来不错，值得关注
 - [Bash changes](http://wiki.bash-hackers.org/scripting/bashchanges)
+- [Command-line-text-processing](https://github.com/learnbyexample/Command-line-text-processing): shell 文本处理教程
 
 ### 工具
 
