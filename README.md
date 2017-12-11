@@ -129,6 +129,7 @@
 - [JS 编程技巧](./javascript/tricks-of-js.md)
 - [JavaScript 中的相等性判断](./javascript/equality-comparisons.md)
 - [JS 的 fiber 技术](./javascript/fiber-in-js.md)
+- [为什么 eval('{}') 返回 undefined ？](./javascript/eval-empty-bracket.md)
 
 <a name="nodejs"></a>
 ### NodeJS
