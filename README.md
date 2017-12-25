@@ -110,6 +110,7 @@
 - [在后台运行 docker 容器且不会自动退出](./docker/run-docker-in-background.md)
 - [docker-compose 启动容器顺序](./docker/docker-compose-startup-order.md)
 - [volume](./docker/volume.md)
+- [docker 小技巧](./docker/docker-tricks.md)
 
 <a name="vim"></a>
 ### Vim
