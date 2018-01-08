@@ -9,8 +9,8 @@
         - [Mongo](#mongo)
         - [Mysql](#mysql)
     - [设计](#设计)
-    - [Elixir](#elixir)
     - [Docker](#docker)
+    - [Elixir](#elixir)
     - [函数式编程](#函数式编程)
     - [前端](#前端)
         - [React](#react)
@@ -51,11 +51,6 @@
 - [使用 sketchtool 操作 sketch 文档：diff 以及其他功能](design/sketchtool-for-diff.md)
 - [排版](design/topography.md)
 
-### Elixir
-
-- [tuple 与 list 的选择](elixir/choosing-between-tuple-and-list.md)
-- [尾递归优化](elixir/tail-call-optimization.md)
-
 ### Docker
 
 - [docker-compose 启动容器顺序](docker/docker-compose-startup-order.md)
@@ -65,6 +60,11 @@
 - [修正 Docker for mac 时区问题](docker/fix-timezone-in-docker-for-mac.md)
 - [在后台运行 docker 容器且不会自动退出](docker/run-docker-in-background.md)
 - [volume](docker/volume.md)
+
+### Elixir
+
+- [tuple 与 list 的选择](elixir/choosing-between-tuple-and-list.md)
+- [尾递归优化](elixir/tail-call-optimization.md)
 
 ### 函数式编程
 
@@ -81,6 +81,7 @@
 - [HTTP 缓存机制](front-end/http-cache.md)
 - [学习 Chrome DevTools](front-end/learning-chrome-dev-tools.md)
 - [redux 入门](front-end/redux-ABC.md)
+- [Mac 浏览器中显示滚动条](front-end/show-scroball-in-mac.md)
 - [使用 browserify 和 uglifyjs](front-end/using-browserify-and-uglifyjs.md)
 - [Webkit 浏览器渲染效率](front-end/webkit-render-performance.md)
 - [webpack 配置为数组](front-end/webpack-config-is-an-array.md)
@@ -131,8 +132,8 @@
 - [IO、select、epoll](linux/io-select-epoll.md)
 - [命令行中的乱码](linux/messy-codes-in-console.md)
 - [管道重定向](linux/pipe-redirect.md)
-- [在 alpine 中找不到 setup-apkcache 等 setup-* 命令](linux/setup-scripts-in-alpine.md)
 - [慎用双引号与单引号](linux/quotes-in-bash.md)
+- [在 alpine 中找不到 setup-apkcache 等 setup-* 命令](linux/setup-scripts-in-alpine.md)
 - [shebang](linux/shebang.md)
 - [tailf](linux/tailf.md)
 - [unlink 是删除任何文件](linux/unlink.md)
@@ -166,8 +167,8 @@
 - [Chrome 小技巧](others/chrome-tricks.md)
 - [文件命名，下划线还是中划线？](others/file-naming-with-underscores-and-dashes.md)
 - [Homebrew 使用代理和镜像源加速下载](others/homebrew-proxy-and-mirror.md)
-- [如何在 github 项目里搜索代码](others/how-to-use-github-to-browse-codes.md)
 - [如何审核代码](others/how-to-review-code.md)
+- [如何在 github 项目里搜索代码](others/how-to-use-github-to-browse-codes.md)
 - [箴言](others/maxim.md)
 - [在 Github Markdown 中如何填写图片的链接](others/relative-link-in-github-markdown.md)
 - [mac 里的 tmux 内无法用 sublime 打开文件](others/subl-in-tmux-on-mac.md)
@@ -190,8 +191,8 @@
 ### 思考
 
 - [项目代码如何组织](thinking/how-to-make-code-organization.md)
-- [不完整的函数](thinking/non-total-function.md)
 - [如何编程](thinking/how-to-programming.md)
+- [不完整的函数](thinking/non-total-function.md)
 - [提问的智慧](thinking/smartquestion.md)
 
 ### Vim

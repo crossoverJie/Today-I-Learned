@@ -6,6 +6,7 @@ const FS = require('fs');
 const json2md = require('json2md');
 const pkg = require('./package.json');
 const util = require('util');
+const _ = require('lodash');
 
 const debug = require('debug')('build');
 
@@ -81,48 +82,56 @@ async function getTitle(path) {
 async function enterDir(dirName, parentPath, parent, level = 3) {
     const dirPath = absPath(parentPath, dirName);
     const filenames = await readdir(dirPath);
+    const children = [];
     const cate = categories[dirPath] = categories[dirPath] || {
-        name: dirName, list: [], level, children: [],
+        name: dirName, level, children, isDir: true,
     };
-    if (parent) parent.children.push(cate);
-    const {list} = cate;
 
-    await Promise.map(filenames, (filename) => {
+    await Promise.map(filenames, (filename, index) => {
         const curPath = absPath(dirPath, filename);
         return getStat(curPath)
             .then((stats) => {
                 if (stats.isFile()) {
                     return getTitle(curPath).then((title) => {
                         const relPath = relativePath(curPath);
-                        list.push(`[${title}](${relPath})`);
+                        children[index] = `[${title}](${relPath})`;
                     });
                 } else if (stats.isDirectory()) {
-                    return enterDir(filename, dirPath, cate, level + 1);
+                    return enterDir(filename, dirPath, cate, level + 1)
+                        .then((cate) => {
+                            children[index] = cate;
+                        });
                 } else {
                     // ignore
                 }
             });
     });
+
+    return cate;
 }
 
 function handleCategories(categories, levelStd, structure) {
-    for (const path in categories) {
-        const cate = categories[path];
-        const {name, list, level, children = []} = cate;
-        let cateName = categoryNames[name] || toCamelCase(name);
+    _.chain(categories)
+        .each((cate) => {
+            const {name, level, children = []} = cate;
+            let cateName = categoryNames[name] || toCamelCase(name);
 
-        if (cate.level !== levelStd) {
-            continue;
-        }
+            if (cate.level !== levelStd) {
+                return;
+            }
 
-        toc.push({name: cateName, level});
-        structure.push(
-            {[`h${level}`]: cateName},
-            {ul: list}
-        )
+            const list = children.filter((c) => !c.isDir);
+            const childCates = children.filter((c) => c.isDir);
 
-        handleCategories(children, levelStd + 1, structure);
-    }
+            toc.push({name: cateName, level});
+            structure.push(
+                {[`h${level}`]: cateName},
+                {ul: list}
+            )
+
+            handleCategories(childCates, levelStd + 1, structure);
+        })
+        .value();
 }
 
 async function build() {
@@ -136,7 +145,8 @@ async function build() {
             .then((stats) => stats.isDirectory() ? dirName : null);
     })).filter((name) => name);
 
-    await Promise.map(dirNames, (filename) => enterDir(filename, __dirname));
+    const rootCategories = await Promise.map(dirNames,
+        (filename, index) => enterDir(filename, __dirname, null, 3));
 
     const structure = [
         {h1: '今天我学了什么 (Today I learned)'},
@@ -148,7 +158,7 @@ async function build() {
     toc.push({name: '分类', level: 2});
 
     debug('categories=%O', categories);
-    handleCategories(categories, 3, structure);
+    handleCategories(rootCategories, 3, structure);
 
     toc.push({name: '反馈问题或建议', level: 2});
     toc.push({name: '版权声明', level: 2});
