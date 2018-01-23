@@ -68,6 +68,8 @@
 
 ### 函数式编程
 
+- [chrome 开发者工具观察响应 Failed to load response data](fp/chrome-dev-tool-failed-to-inspect-response.md)
+- [重定向 window.location 是异步的](fp/redirect-location-is-async.md)
 - [什么是 Monad](fp/what-is-monad.md)
 
 ### 前端
@@ -96,6 +98,7 @@
 
 - [用 shell 脚本查询 git commit hash](git/a-shell-script-to-get-current-commit-hash.md)
 - [Git Diff](git/diff.md)
+- [Git 学习资料](git/git-books.md)
 - [git credentials](git/gitcredentials.md)
 
 ### Javascript
@@ -130,6 +133,7 @@
 - [Here Strings and Here Documents](linux/here-strings-and-here-documents.md)
 - [查看进程的环境变量](linux/inspect-process-environment.md)
 - [IO、select、epoll](linux/io-select-epoll.md)
+- [ip 与 ifconfig 命令](linux/ip-vs-ifconfig.md)
 - [命令行中的乱码](linux/messy-codes-in-console.md)
 - [管道重定向](linux/pipe-redirect.md)
 - [慎用双引号与单引号](linux/quotes-in-bash.md)
@@ -139,6 +143,7 @@
 - [unlink 是删除任何文件](linux/unlink.md)
 - [/usr/bin/env](linux/usr-bin-env.md)
 - [奇怪的 ESC](linux/weird-esc-key.md)
+- [监听 0.0.0.0 与 127.0.0.1 的区别](linux/whats-the-difference-between-ip-address-0-0-0-0-and-127-0-0-1.md)
 
 ### Nodejs
 
