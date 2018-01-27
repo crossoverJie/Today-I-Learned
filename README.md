@@ -68,6 +68,7 @@
 
 ### 函数式编程
 
+- [Cache-Control](fp/cache-control.md)
 - [chrome 开发者工具观察响应 Failed to load response data](fp/chrome-dev-tool-failed-to-inspect-response.md)
 - [重定向 window.location 是异步的](fp/redirect-location-is-async.md)
 - [什么是 Monad](fp/what-is-monad.md)
@@ -167,11 +168,13 @@
 ### 其他
 
 - [Today I learned (TIL) 资源列表](others/TIL.md)
+- [Alfred Workflow debug 技巧](others/alfred-workflow-debug.md)
 - [Github Markdown 中的锚点引用](others/anchor-in-github-markdown.md)
 - [备份 homebrew](others/backup-brew.md)
 - [Chrome 小技巧](others/chrome-tricks.md)
 - [文件命名，下划线还是中划线？](others/file-naming-with-underscores-and-dashes.md)
 - [Homebrew 使用代理和镜像源加速下载](others/homebrew-proxy-and-mirror.md)
+- [如何阅读标准](others/how-to-read-spec.md)
 - [如何审核代码](others/how-to-review-code.md)
 - [如何在 github 项目里搜索代码](others/how-to-use-github-to-browse-codes.md)
 - [箴言](others/maxim.md)
