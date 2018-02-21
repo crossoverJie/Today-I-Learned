@@ -175,6 +175,7 @@
 - [备份 homebrew](others/backup-brew.md)
 - [Chrome 小技巧](others/chrome-tricks.md)
 - [文件命名，下划线还是中划线？](others/file-naming-with-underscores-and-dashes.md)
+- [通过 Hash 密码到 url 来验证密码](others/hashed-password-to-url.md)
 - [Homebrew 使用代理和镜像源加速下载](others/homebrew-proxy-and-mirror.md)
 - [如何阅读标准](others/how-to-read-spec.md)
 - [如何审核代码](others/how-to-review-code.md)
