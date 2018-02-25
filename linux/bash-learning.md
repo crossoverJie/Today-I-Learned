@@ -16,28 +16,14 @@
 - [Bash changes](http://wiki.bash-hackers.org/scripting/bashchanges)
 - [Command-line-text-processing](https://github.com/learnbyexample/Command-line-text-processing): shell 文本处理教程
 
-### 工具
-
-- 形象解释shell 命令：[explainshell.com/](https://explainshell.com/)
-
-### Snippets
-
-- https://github.com/alexanderepstein/Bash-Snippets
-
-### 静态检查
-
-- [github.com/koalaman/shellcheck](https://github.com/koalaman/shellcheck)
-
 ### Bash script 的缺点
 
 - 没有文件内的私有变量的概念，`source` 加载文件必须非常谨慎，容易导致变量被修改。
 
-### 自动补全
-
-https://github.com/scop/bash-completion
-
-可通过 brew 安装，`brew install bash-completion` for bash 3.x，`brew install bash-completion@2` for bash 4.x。
-
 ### sh 与 bash 的不同
 
 http://stackoverflow.com/questions/5725296/difference-between-sh-and-bash
+
+### 工具
+
+详见[我的开发工具箱 - Shell Script Development](http://adoyle.me/my-development-tools/shell-script/)。
