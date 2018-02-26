@@ -120,6 +120,8 @@
 - [XDG 基础目录标准](linux/XDG-base-directory-spec.md)
 - [ab 与 wrk 比较](linux/ab-vs-wrk.md)
 - [用户线程，内核线程，CPU 超线程技术](linux/about-multi-thread.md)
+- [Alfred 找不到文件](linux/alfred-cannot-find-files.md)
+- [ansible 部署到 centos7 时，不能找到 service](linux/ansible-deploy-fault-with-centos7-and-service.md)
 - [bash error exit](linux/bash-error-exit.md)
 - [bash 开启 vi 模式](linux/bash-in-vi-mode.md)
 - [学习 Bash](linux/bash-learning.md)
