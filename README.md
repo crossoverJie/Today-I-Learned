@@ -77,6 +77,7 @@
 
 - [关于 webpack 2](front-end/all-about-webpack-2.md)
 - [`<script async>` 与 `<script defer>`](front-end/async-defer-script-dom.md)
+- [代码分离](front-end/code-split.md)
 - [CORS](front-end/cors.md)
 - [XMLHttpRequest 的继承者：Fetch](front-end/fetch.md)
 - [浮动侧边栏](front-end/float-sidebar.md)
