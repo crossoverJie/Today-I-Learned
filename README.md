@@ -71,6 +71,7 @@
 - [Cache-Control](fp/cache-control.md)
 - [chrome 开发者工具观察响应 Failed to load response data](fp/chrome-dev-tool-failed-to-inspect-response.md)
 - [重定向 window.location 是异步的](fp/redirect-location-is-async.md)
+- [webpack](fp/webpack.md)
 - [什么是 Monad](fp/what-is-monad.md)
 
 ### 前端
@@ -222,6 +223,7 @@
 - [vim 插件教程](vim/plugins-tutorial.md)
 - [在 vim 中运行终端，以及如何退出终端模式](vim/run-terminal-in-vim.md)
 - [学习 Vim](vim/vim-learning.md)
+- [VIM 搜索技巧](vim/vim-search-tips.md)
 
 ## 反馈问题或建议
 
