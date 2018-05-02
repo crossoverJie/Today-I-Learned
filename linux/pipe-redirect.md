@@ -43,3 +43,10 @@ HereDoc 详见 [./here-strings-and-here-documents.md](./here-strings-and-here-do
 > 摘录自 https://unmi.cc/linux-input-output-redirection/
 
 使用 tee 命令拆分输出
+
+
+### 只传递 stderr
+
+`(time sleep 1) 3>&1 1>&2 2>&3 | grep real`
+
+http://timmurphy.org/2011/05/26/piping-stderr-in-unix/
