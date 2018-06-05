@@ -18,6 +18,8 @@
 - [declare -r 与 readonly 的区别](#declare--r-与-readonly-的区别)
 - [得到上层绝对路径的快捷方法](#得到上层绝对路径的快捷方法)
 - [xtrace](#xtrace)
+- [让 xtrace 打印更多信息](#让-xtrace-打印更多信息)
+- [$- 查询 set options 开启状况](#--查询-set-options-开启状况)
 - [extglob](#extglob)
 - [分解字符串成数组](#分解字符串成数组)
 
@@ -132,6 +134,22 @@ echo ${path%/*}  # => /a/b
 
 自 Bash 4 开始支持 `BASH_XTRACEFD` 变量，它能改变 xtrace 输出指向到哪个文件描述符里，但最好别改动它，因为关闭 BASH_XTRACEFD 会导致文件描述符也关闭。
 BASH_XTRACEFD 默认为 2，所以 xtrace 默认输出到标准错误流。
+
+### 让 xtrace 打印更多信息
+
+通过修改 PS4 变量，比如下面这行会打印当前文件名:行号:当前函数。
+
+`PS4='+[${BASH_SOURCE}:${LINENO}:${FUNCNAME[0]:+${FUNCNAME[0]}}()]: '`
+
+参考自 http://wiki.bash-hackers.org/scripting/debuggingtips#making_xtrace_more_useful
+
+### $- 查询 set options 开启状况
+
+$- 是一串字符串，由 set option 的简写标记组成。
+
+`[[ $- =~ [x] ]]` 可以这样写来判断是否开启 -x，即 xtrace。
+
+`[[ $- =~ [xv] ]]` 还可以判断其他组合
 
 ### extglob
 
