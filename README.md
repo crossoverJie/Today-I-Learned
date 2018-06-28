@@ -17,6 +17,7 @@
     - [Git](#git)
     - [Javascript](#javascript)
     - [Linux](#linux)
+    - [Mac](#mac)
     - [Nodejs](#nodejs)
     - [运维](#运维)
     - [其他](#其他)
@@ -91,10 +92,12 @@
 - [使用 browserify 和 uglifyjs](front-end/using-browserify-and-uglifyjs.md)
 - [Webkit 浏览器渲染效率](front-end/webkit-render-performance.md)
 - [webpack 配置为数组](front-end/webpack-config-is-an-array.md)
+- [奇怪的 parse html](front-end/weird-parse-html.md)
 - [z-index](front-end/z-index.md)
 
 #### React
 
+- [Compound Components](front-end/react/compound-components.md)
 - [不要在 render 里直接定义 ref callback](front-end/react/dont-define-ref-callback-in-render.md)
 - [ref callback 何时触发？](front-end/react/when-ref-callback-get-invoked.md)
 
@@ -150,12 +153,17 @@
 - [命令行中提示用户 Yes/No](linux/read-prompt.md)
 - [在 alpine 中找不到 setup-apkcache 等 setup-* 命令](linux/setup-scripts-in-alpine.md)
 - [shebang](linux/shebang.md)
+- [拆分与合并文件](linux/split-and-merge-file.md)
 - [sudo, gksudo, kdesudo](linux/sudo-and-gui-sudo.md)
 - [tailf](linux/tailf.md)
 - [unlink 是删除任何文件](linux/unlink.md)
 - [/usr/bin/env](linux/usr-bin-env.md)
 - [奇怪的 ESC](linux/weird-esc-key.md)
 - [监听 0.0.0.0 与 127.0.0.1 的区别](linux/whats-the-difference-between-ip-address-0-0-0-0-and-127-0-0-1.md)
+
+### Mac
+
+- [Mac 下按住键盘不能输出重复的字符](mac/hold-down-key-cannot-keep-print-character.md)
 
 ### Nodejs
 
