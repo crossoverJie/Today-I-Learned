@@ -80,6 +80,7 @@
 - [关于 webpack 2](front-end/all-about-webpack-2.md)
 - [`<script async>` 与 `<script defer>`](front-end/async-defer-script-dom.md)
 - [代码分离](front-end/code-split.md)
+- [颜色对比度](front-end/color-contrast.md)
 - [CORS](front-end/cors.md)
 - [XMLHttpRequest 的继承者：Fetch](front-end/fetch.md)
 - [浮动侧边栏](front-end/float-sidebar.md)
@@ -97,6 +98,7 @@
 
 #### React
 
+- [组件生命周期](front-end/react/component-lifecycle.md)
 - [Compound Components](front-end/react/compound-components.md)
 - [不要在 render 里直接定义 ref callback](front-end/react/dont-define-ref-callback-in-render.md)
 - [ref callback 何时触发？](front-end/react/when-ref-callback-get-invoked.md)
