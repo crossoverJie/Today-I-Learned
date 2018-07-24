@@ -87,6 +87,7 @@
 - [307 Internal Redirect 与浏览器的 HSTS 功能](front-end/hsts-307.md)
 - [HTTP 缓存机制](front-end/http-cache.md)
 - [学习 Chrome DevTools](front-end/learning-chrome-dev-tools.md)
+- [前端工程的模块控制反转](front-end/module-ioc-in-web-application.md)
 - [redux 入门](front-end/redux-ABC.md)
 - [script 和 link 标签的事件属性](front-end/script-link-event.md)
 - [Mac 浏览器中显示滚动条](front-end/show-scroball-in-mac.md)
@@ -94,6 +95,7 @@
 - [Webkit 浏览器渲染效率](front-end/webkit-render-performance.md)
 - [webpack 配置为数组](front-end/webpack-config-is-an-array.md)
 - [奇怪的 parse html](front-end/weird-parse-html.md)
+- [富文本编辑器选型](front-end/wysiwyg-editor.md)
 - [z-index](front-end/z-index.md)
 
 #### React
