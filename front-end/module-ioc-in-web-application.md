@@ -19,3 +19,26 @@
 
 [B1]: https://medium.com/@cramforce/designing-very-large-javascript-applications-6e013a3291a3
 
+### Webpack 的 require.context
+
+官网的例子有些不详细，特别注明一下。
+
+```js
+const modules = [];
+
+function importAll(r) {
+    r.keys().forEach((key) => {
+        // key 是匹配文件的相对路径。
+        // r(key) 加载文件内容。r 相当于 require 函数
+        // r(key).default 是因为我用的是 es6 module 语法。
+        modules.push(r(key).default);
+    });
+}
+
+// require.context 跟 require.ensure 一样，参数不能用变量，必须是字面量。
+// 否则会被当做普通的 JS 代码处理，会导致 require is undefined 报错。
+// 第三个参数正则表达式是为了排除当前目录下的 index.js 文件。
+importAll(require.context('./', true, /^\.\/(?!index\.js).+.js$/));
+
+export default modules;
+```

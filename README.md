@@ -94,6 +94,7 @@
 - [使用 browserify 和 uglifyjs](front-end/using-browserify-and-uglifyjs.md)
 - [Webkit 浏览器渲染效率](front-end/webkit-render-performance.md)
 - [webpack 配置为数组](front-end/webpack-config-is-an-array.md)
+- [webpack 配置](front-end/webpack-config.md)
 - [奇怪的 parse html](front-end/weird-parse-html.md)
 - [富文本编辑器选型](front-end/wysiwyg-editor.md)
 - [z-index](front-end/z-index.md)
