@@ -82,6 +82,7 @@
 - [代码分离](front-end/code-split.md)
 - [颜色对比度](front-end/color-contrast.md)
 - [CORS](front-end/cors.md)
+- [css-modules vs css-in-js](front-end/css-modules-vs-css-in-js.md)
 - [XMLHttpRequest 的继承者：Fetch](front-end/fetch.md)
 - [浮动侧边栏](front-end/float-sidebar.md)
 - [307 Internal Redirect 与浏览器的 HSTS 功能](front-end/hsts-307.md)
@@ -111,6 +112,7 @@
 - [用 shell 脚本查询 git commit hash](git/a-shell-script-to-get-current-commit-hash.md)
 - [Git Diff](git/diff.md)
 - [Git 学习资料](git/git-books.md)
+- [git ssh 代理](git/git-ssh-proxy.md)
 - [git credentials](git/gitcredentials.md)
 
 ### Javascript
