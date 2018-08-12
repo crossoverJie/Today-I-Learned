@@ -92,6 +92,8 @@
 - [redux 入门](front-end/redux-ABC.md)
 - [script 和 link 标签的事件属性](front-end/script-link-event.md)
 - [Mac 浏览器中显示滚动条](front-end/show-scroball-in-mac.md)
+- [状态机与状态图](front-end/state-machine-and-statecharts.md)
+- [媒体查询的断点设置](front-end/the-breakpoint-in-media-query.md)
 - [使用 browserify 和 uglifyjs](front-end/using-browserify-and-uglifyjs.md)
 - [Webkit 浏览器渲染效率](front-end/webkit-render-performance.md)
 - [webpack 配置为数组](front-end/webpack-config-is-an-array.md)
