@@ -172,6 +172,7 @@
 
 ### Mac
 
+- [Mac 的 DNS 问题](mac/dns-troubles-in-mac.md)
 - [Mac 下按住键盘不能输出重复的字符](mac/hold-down-key-cannot-keep-print-character.md)
 
 ### Nodejs
