@@ -153,6 +153,7 @@
 - [hash 命令](linux/hash-command.md)
 - [Here Strings and Here Documents](linux/here-strings-and-here-documents.md)
 - [查看进程的环境变量](linux/inspect-process-environment.md)
+- [调用原生 shell 命令](linux/invoke-origin-shell-command-with-backslash.md)
 - [IO、select、epoll](linux/io-select-epoll.md)
 - [ip 与 ifconfig 命令](linux/ip-vs-ifconfig.md)
 - [sudo bash -c 'su - root'](linux/login-use-root.md)
