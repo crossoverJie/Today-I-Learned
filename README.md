@@ -6,6 +6,7 @@
 
 - [分类](#分类)
     - [数据库](#数据库)
+        - [Etcd](#etcd)
         - [Mongo](#mongo)
         - [Mysql](#mysql)
     - [设计](#设计)
@@ -34,6 +35,10 @@
 ### 数据库
 
 - [flyway 用法](database/flyway-usage.md)
+
+#### Etcd
+
+- [ETCD 报错 request ignored (cluster ID mismatch)](database/etcd/request-ignored-cluster-id-mismatch.md)
 
 #### Mongo
 
@@ -152,6 +157,7 @@
 - [file 命令](linux/file-command.md)
 - [hash 命令](linux/hash-command.md)
 - [Here Strings and Here Documents](linux/here-strings-and-here-documents.md)
+- [Hostname in Linux](linux/hostname.md)
 - [查看进程的环境变量](linux/inspect-process-environment.md)
 - [调用原生 shell 命令](linux/invoke-origin-shell-command-with-backslash.md)
 - [IO、select、epoll](linux/io-select-epoll.md)
@@ -205,6 +211,7 @@
 - [Chrome 小技巧](others/chrome-tricks.md)
 - [Mac 文件系统的剪切快捷键](others/cut-in-mac-file-system.md)
 - [文件命名，下划线还是中划线？](others/file-naming-with-underscores-and-dashes.md)
+- [github 中 markdown 折叠文本](others/fold-text-in-github.md)
 - [通过 Hash 密码到 url 来验证密码](others/hashed-password-to-url.md)
 - [Homebrew 使用代理和镜像源加速下载](others/homebrew-proxy-and-mirror.md)
 - [如何阅读标准](others/how-to-read-spec.md)
