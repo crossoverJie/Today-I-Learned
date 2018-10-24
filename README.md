@@ -49,6 +49,7 @@
 - [连接 MYSQL 显示中文](database/mysql/encoding-in-connection.md)
 - [mysqldump](database/mysql/mysqldump.md)
 - [Date/Datetime/Timestamp 比较](database/mysql/timestamp-vs-datetime.md)
+- [Transaction 与 autocommit](database/mysql/transaction-and-autocommit.md)
 
 ### 设计
 
@@ -84,6 +85,7 @@
 
 - [关于 webpack 2](front-end/all-about-webpack-2.md)
 - [`<script async>` 与 `<script defer>`](front-end/async-defer-script-dom.md)
+- [圆角的玩法](front-end/border-radius-tricks.md)
 - [代码分离](front-end/code-split.md)
 - [颜色对比度](front-end/color-contrast.md)
 - [CORS](front-end/cors.md)
