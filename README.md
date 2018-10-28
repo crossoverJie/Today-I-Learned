@@ -102,6 +102,7 @@
 - [状态机与状态图](front-end/state-machine-and-statecharts.md)
 - [媒体查询的断点设置](front-end/the-breakpoint-in-media-query.md)
 - [使用 browserify 和 uglifyjs](front-end/using-browserify-and-uglifyjs.md)
+- [wasm](front-end/wasm.md)
 - [Webkit 浏览器渲染效率](front-end/webkit-render-performance.md)
 - [webpack 配置为数组](front-end/webpack-config-is-an-array.md)
 - [webpack 配置](front-end/webpack-config.md)
