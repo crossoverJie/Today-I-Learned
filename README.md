@@ -55,6 +55,7 @@
 
 - [8 点栅格](design/8-point-grid.md)
 - [色彩空间](design/color-space.md)
+- [OpenType](design/opentype.md)
 - [使用 sketchtool 操作 sketch 文档：diff 以及其他功能](design/sketchtool-for-diff.md)
 - [排版](design/topography.md)
 
