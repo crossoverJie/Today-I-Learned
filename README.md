@@ -216,6 +216,7 @@
 - [Mac 文件系统的剪切快捷键](others/cut-in-mac-file-system.md)
 - [文件命名，下划线还是中划线？](others/file-naming-with-underscores-and-dashes.md)
 - [github 中 markdown 折叠文本](others/fold-text-in-github.md)
+- [从微信公众号提取原图](others/get-raw-image-from-weixin.md)
 - [通过 Hash 密码到 url 来验证密码](others/hashed-password-to-url.md)
 - [Homebrew 使用代理和镜像源加速下载](others/homebrew-proxy-and-mirror.md)
 - [如何阅读标准](others/how-to-read-spec.md)
