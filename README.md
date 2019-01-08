@@ -27,6 +27,7 @@
     - [Ruby](#ruby)
     - [思考](#思考)
     - [Vim](#vim)
+    - [Web](#web)
 - [反馈问题或建议](#反馈问题或建议)
 - [版权声明](#版权声明)
 
@@ -89,8 +90,10 @@
 - [圆角的玩法](front-end/border-radius-tricks.md)
 - [代码分离](front-end/code-split.md)
 - [颜色对比度](front-end/color-contrast.md)
+- [contentEditable](front-end/contentEditable.md)
 - [CORS](front-end/cors.md)
 - [css-modules vs css-in-js](front-end/css-modules-vs-css-in-js.md)
+- [前端类库打包的注意点](front-end/fe-library-bundle.md)
 - [XMLHttpRequest 的继承者：Fetch](front-end/fetch.md)
 - [浮动侧边栏](front-end/float-sidebar.md)
 - [307 Internal Redirect 与浏览器的 HSTS 功能](front-end/hsts-307.md)
@@ -153,6 +156,7 @@
 - [Bash 小技巧](linux/bash-tricks.md)
 - [linux 命令被 hash 缓存](linux/command-be-hashed.md)
 - [连接 tty](linux/connect-tty.md)
+- [判断文件编码](linux/detect-encoding-of-file.md)
 - [编辑二进制文件](linux/edit-binary-file.md)
 - [用环境变量替换文本内容 envsubst](linux/envsubst.md)
 - [快速创建大文件](linux/fast-generate-large-file.md)
@@ -208,6 +212,7 @@
 
 ### 其他
 
+- [0.30000000000000004](others/0.30000000000000004.md)
 - [Today I learned (TIL) 资源列表](others/TIL.md)
 - [Alfred Workflow debug 技巧](others/alfred-workflow-debug.md)
 - [Github Markdown 中的锚点引用](others/anchor-in-github-markdown.md)
@@ -257,6 +262,10 @@
 - [在 vim 中运行终端，以及如何退出终端模式](vim/run-terminal-in-vim.md)
 - [学习 Vim](vim/vim-learning.md)
 - [VIM 搜索技巧](vim/vim-search-tips.md)
+
+### Web
+
+- [URI 转义](web/uri-encode.md)
 
 ## 反馈问题或建议
 

@@ -11,6 +11,7 @@ https://sketch.systems/
 - [Statecharts - Controlling the behavior of complex systems](https://www.slideshare.net/lmatteis/statecharts-controlling-the-behavior-of-complex-systems)
 - [Patterns for using React with Statechart-based state machines](https://medium.freecodecamp.org/patterns-for-using-react-with-statechart-based-state-machines-33e6ab754605)
 - [The state reducer pattern](https://blog.kentcdodds.com/the-state-reducer-pattern-%EF%B8%8F-b40316cfac57)
+- [高效設計 UI 狀態、以及無痛與工程師溝通的 FSM 表格](https://medium.com/@vinceshao/better-way-of-designing-ui-states-chinese-a5c43e46d391)
 
 ### 不要混淆状态和数据
 
