@@ -230,6 +230,7 @@
 - [Hyper.js 中文问题](others/hyper-js-chinese-problems.md)
 - [箴言](others/maxim.md)
 - [在 Github Markdown 中如何填写图片的链接](others/relative-link-in-github-markdown.md)
+- [Semver](others/semver.md)
 - [mac 里的 tmux 内无法用 sublime 打开文件](others/subl-in-tmux-on-mac.md)
 - [vim textwidth=78 的约定](others/textwidth-78-of-vim.md)
 - [zookeeper 健康检查](others/zookeeper-health-check.md)
@@ -265,6 +266,7 @@
 
 ### Web
 
+- [URL QueryString 传数组参数](web/array-params-in-url.md)
 - [URI 转义](web/uri-encode.md)
 
 ## 反馈问题或建议
