@@ -26,6 +26,7 @@
     - [Redis](#redis)
     - [Ruby](#ruby)
     - [思考](#思考)
+    - [Typescript](#typescript)
     - [Vim](#vim)
     - [Web](#web)
 - [反馈问题或建议](#反馈问题或建议)
@@ -255,6 +256,11 @@
 - [不完整的函数](thinking/non-total-function.md)
 - [提问的智慧](thinking/smartquestion.md)
 
+### Typescript
+
+- [export default 的类型注明](typescript/type-annotations-for-export-default.md)
+- [Typescript 与 Rollup](typescript/typescript-and-rollup.md)
+
 ### Vim
 
 - [学习 Neovim](vim/neovim-learning.md)
@@ -278,7 +284,7 @@
 
 ## 版权声明
 
-Copyright (c) 2016-2018 ADoyle. The project is licensed under the **BSD 3-clause License**.
+Copyright (c) 2016-2019 ADoyle. The project is licensed under the **BSD 3-clause License**.
 
 See the [LICENSE][] file for the specific language governing permissions and limitations under the License.
 
