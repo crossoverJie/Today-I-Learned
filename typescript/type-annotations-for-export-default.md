@@ -22,3 +22,13 @@ export default {
 ```
 
 详见 https://github.com/Microsoft/TypeScript/issues/13626#issuecomment-471234355
+
+### export default is bad in Typescript
+
+```typescript
+export {default as X} from '...';
+```
+
+当别的库使用这个 `X` 会丢失类型，别的库识别到的是名为 default 的类型。应该是个 Bug。
+
+其他理由: https://basarat.gitbooks.io/typescript/docs/tips/defaultIsBad.html
