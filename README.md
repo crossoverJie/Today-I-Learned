@@ -4,6 +4,8 @@
 
 ## TOC
 
+- [反馈问题或建议](#反馈问题或建议)
+- [版权声明](#版权声明)
 - [分类](#分类)
     - [数据库](#数据库)
         - [Etcd](#etcd)
@@ -29,8 +31,24 @@
     - [Typescript](#typescript)
     - [Vim](#vim)
     - [Web](#web)
-- [反馈问题或建议](#反馈问题或建议)
-- [版权声明](#版权声明)
+
+## 反馈问题或建议
+
+本项目不接受 Pull Request，如果你有什么好的想法，或者改进的建议，请使用 [Issue][] 与我探讨。
+
+建议 Watch 或 Star 本项目。但不要 Fork，这没有意义。
+
+[Issue]: https://github.com/adoyle-h/Today-I-Learned/issues
+
+
+## 版权声明
+
+Copyright (c) 2016-2019 ADoyle. The project is licensed under the **BSD 3-clause License**.
+
+See the [LICENSE][] file for the specific language governing permissions and limitations under the License.
+
+[LICENSE]: ./LICENSE
+
 
 ## 分类
 
@@ -282,19 +300,3 @@
 - [URL QueryString 传数组参数](web/array-params-in-url.md)
 - [下划线在 HTTP Header 里是非法字符串](web/underscore-is-invalid-in-header.md)
 - [URI 转义](web/uri-encode.md)
-
-## 反馈问题或建议
-
-本项目不接受 Pull Request，如果你有什么好的想法，或者改进的建议，请使用 [Issue][] 与我探讨。
-
-[Issue]: https://github.com/adoyle-h/Today-I-Learned/issues
-
-
-## 版权声明
-
-Copyright (c) 2016-2019 ADoyle. The project is licensed under the **BSD 3-clause License**.
-
-See the [LICENSE][] file for the specific language governing permissions and limitations under the License.
-
-[LICENSE]: ./LICENSE
-

@@ -154,21 +154,20 @@ async function build() {
         {h1: '今天我学了什么 (Today I learned)'},
         {blockquote: pkg.description},
         {toc},
-        {h2: '分类'}
     ];
-
-    toc.push({name: '分类', level: 2});
-
-    debug('categories=%O', categories);
-    handleCategories(rootCategories, 3, structure);
 
     toc.push({name: '反馈问题或建议', level: 2});
     toc.push({name: '版权声明', level: 2});
+    toc.push({name: '分类', level: 2});
 
     structure.push(
         {md: absPath('_docs/issue.md')},
-        {md: absPath('_docs/license.md')}
+        {md: absPath('_docs/license.md')},
+        {h2: '分类'}
     );
+
+    debug('categories=%O', categories);
+    handleCategories(rootCategories, 3, structure);
 
     const content = await json2md.async(structure);
 
