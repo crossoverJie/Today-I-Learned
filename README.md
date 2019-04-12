@@ -57,6 +57,7 @@
 
 - [8 点栅格](design/8-point-grid.md)
 - [色彩空间](design/color-space.md)
+- [UI 的加载状态](design/loading-status-of-ui.md)
 - [OpenType](design/opentype.md)
 - [使用 sketchtool 操作 sketch 文档：diff 以及其他功能](design/sketchtool-for-diff.md)
 - [排版](design/topography.md)
@@ -94,9 +95,11 @@
 - [contentEditable](front-end/contentEditable.md)
 - [CORS](front-end/cors.md)
 - [css-modules vs css-in-js](front-end/css-modules-vs-css-in-js.md)
+- [开发一个油猴 (Tampermonkey) 脚本](front-end/develop-a-tampermonkey-script.md)
 - [前端类库打包的注意点](front-end/fe-library-bundle.md)
 - [XMLHttpRequest 的继承者：Fetch](front-end/fetch.md)
 - [浮动侧边栏](front-end/float-sidebar.md)
+- [Functional CSS](front-end/functional-css.md)
 - [307 Internal Redirect 与浏览器的 HSTS 功能](front-end/hsts-307.md)
 - [HTTP 缓存机制](front-end/http-cache.md)
 - [学习 Chrome DevTools](front-end/learning-chrome-dev-tools.md)
@@ -117,6 +120,7 @@
 
 #### React
 
+- [使用 jquery 改变 React 的 input DOM](front-end/react/change-react-input-dom-via-jquery.md)
 - [组件生命周期](front-end/react/component-lifecycle.md)
 - [Compound Components](front-end/react/compound-components.md)
 - [不要在 render 里直接定义 ref callback](front-end/react/dont-define-ref-callback-in-render.md)
@@ -129,6 +133,7 @@
 - [Git 学习资料](git/git-books.md)
 - [git ssh 代理](git/git-ssh-proxy.md)
 - [git credentials](git/gitcredentials.md)
+- [忽略 Git submodule](git/ignore-git-submodule.md)
 
 ### Javascript
 
@@ -173,6 +178,7 @@
 - [ip 与 ifconfig 命令](linux/ip-vs-ifconfig.md)
 - [sudo bash -c 'su - root'](linux/login-use-root.md)
 - [命令行中的乱码](linux/messy-codes-in-console.md)
+- [创建临时文件的命令](linux/mktemp.md)
 - [管道重定向](linux/pipe-redirect.md)
 - [慎用双引号与单引号](linux/quotes-in-bash.md)
 - [命令行中提示用户 Yes/No](linux/read-prompt.md)
@@ -260,6 +266,7 @@
 
 - [export default 的类型注明](typescript/type-annotations-for-export-default.md)
 - [Typescript 与 Rollup](typescript/typescript-and-rollup.md)
+- [typescript 的缺点](typescript/typescript-cons.md)
 
 ### Vim
 
@@ -273,6 +280,7 @@
 ### Web
 
 - [URL QueryString 传数组参数](web/array-params-in-url.md)
+- [下划线在 HTTP Header 里是非法字符串](web/underscore-is-invalid-in-header.md)
 - [URI 转义](web/uri-encode.md)
 
 ## 反馈问题或建议
