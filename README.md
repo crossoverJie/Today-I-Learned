@@ -100,7 +100,6 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Cache-Control](fp/cache-control.md)
 - [chrome 开发者工具观察响应 Failed to load response data](fp/chrome-dev-tool-failed-to-inspect-response.md)
 - [重定向 window.location 是异步的](fp/redirect-location-is-async.md)
-- [webpack](fp/webpack.md)
 - [什么是 Monad](fp/what-is-monad.md)
 
 ### 前端
@@ -132,7 +131,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Webkit 浏览器渲染效率](front-end/webkit-render-performance.md)
 - [webpack 配置为数组](front-end/webpack-config-is-an-array.md)
 - [webpack 配置](front-end/webpack-config.md)
-- [Webpack Dynamic Import 的坑](front-end/webpack-dynamic-import.md)
+- [Webpack Dynamic Import](front-end/webpack-dynamic-import.md)
 - [奇怪的 parse html](front-end/weird-parse-html.md)
 - [富文本编辑器选型](front-end/wysiwyg-editor.md)
 - [z-index](front-end/z-index.md)
