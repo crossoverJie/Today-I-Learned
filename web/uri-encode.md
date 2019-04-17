@@ -21,7 +21,7 @@ url 里出现的 `;/?:@&=+$,#[]!'()*` 字符串，客户端要不要转义？服
 1994 年提出的 [RFC1738][] 定义了 URI 最初的规范，1998 年提出的 [RFC2396][] 有较为完整的规范，2005 年提出的 [RFC3986][] 最终成为主流规范。
 其过程对保留字的定义等有所改变，所以存在历史的变（包）迁（袱）。
 
-详见：https://www.wikiwand.com/zh-tw/%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E6%A0%87%E5%BF%97%E7%AC%A6#/%E6%A0%87%E5%87%86%E6%94%B9%E8%89%AF
+详见[统一资源标志符 - 标准改良](https://www.wikiwand.com/zh-tw/%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E6%A0%87%E5%BF%97%E7%AC%A6#/%E6%A0%87%E5%87%86%E6%94%B9%E8%89%AF)
 
 很多语言的标准库是基于 RFC2396 实现的，留下来很重的包袱，相信很多程序员都踩过这坑。
 但也能理解，因为编程语言要向后兼容，语言标准库不可能为了 05 年提出来的规范做出不兼容修改。
@@ -44,9 +44,9 @@ function fixedEncodeURIComponent(str) {
 
 ### 区别
 
-| 标准    | 提出年号 | 保留字               | 非保留字但不用转义      |
-+:--------|:---------|:---------------------|-------------------------+
-| RFC2396 | 1998     | `;/?:@&=+$,`         | alphanum 和 `-_.!~*'()` |
+| 标准    | 提出年号 | 保留字（需要转义）   | 非保留字（不用转义）    |
+|:--------|:---------|:---------------------|-------------------------|
+| RFC2396 | 1998     | `;/?:@&=+$,`         | alphanum 和 `-_.~!*'()` |
 | RFC3986 | 2005     | `;/?:@&=+$,#[]!'()*` | alphanum 和 `-_.~`      |
 
 ### 何时转义
@@ -113,15 +113,14 @@ RFC3986 的描述
 
 ### 其他坑
 
-#### JAVA 标准库的空格和加号分不清
+#### 空格被转成加号
+
+因为早期 url component encode/decode 遵循 application/x-www-form-urlencoded 的转换规则。
 
 > The space character "   " is converted into a plus sign "+".
 
-见文档 [java.net.URLEncoder][]
+JAVA 标准库的 [java.net.URLEncoder][]，PHP 标准库的 [urlencode](PHP) 都这样。
 
-#### PHP 标准库的空格和加号分不清
-
-见[文档 - Return Values](PHP)。
 
 [PHP]: https://www.php.net/manual/en/function.urlencode.php
 [java.net.URLEncoder]: https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/net/URLEncoder.html
