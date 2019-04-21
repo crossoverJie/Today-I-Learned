@@ -230,6 +230,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [require 路径名大小写问题](nodejs/require-typo.md)
 - [流 (stream)](nodejs/stream.md)
 - [EventEmitter 需要注意的三个地方](nodejs/three-notes-of-eventemitter.md)
+- [Yarn 用法](nodejs/yarn-usage.md)
 
 ### 运维
 
@@ -299,5 +300,6 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 ### Web
 
 - [URL QueryString 传数组参数](web/array-params-in-url.md)
+- [国际化 SEO](web/international-SEO.md)
 - [下划线在 HTTP Header 里是非法字符串](web/underscore-is-invalid-in-header.md)
 - [URI 转义](web/uri-encode.md)
