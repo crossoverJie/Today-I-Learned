@@ -109,6 +109,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [圆角的玩法](front-end/border-radius-tricks.md)
 - [代码分离](front-end/code-split.md)
 - [颜色对比度](front-end/color-contrast.md)
+- [编译前端 JS 库](front-end/compile-js-library.md)
 - [contentEditable](front-end/contentEditable.md)
 - [CORS](front-end/cors.md)
 - [css-modules vs css-in-js](front-end/css-modules-vs-css-in-js.md)
