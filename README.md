@@ -2,35 +2,6 @@
 
 > 博观而约取，厚积而薄发。
 
-## TOC
-
-- [反馈问题或建议](#反馈问题或建议)
-- [版权声明](#版权声明)
-- [分类](#分类)
-    - [数据库](#数据库)
-        - [Etcd](#etcd)
-        - [Mongo](#mongo)
-        - [Mysql](#mysql)
-    - [设计](#设计)
-    - [Docker](#docker)
-    - [Elixir](#elixir)
-    - [函数式编程](#函数式编程)
-    - [前端](#前端)
-        - [React](#react)
-    - [Git](#git)
-    - [Javascript](#javascript)
-    - [Linux](#linux)
-    - [Mac](#mac)
-    - [Nodejs](#nodejs)
-    - [运维](#运维)
-    - [其他](#其他)
-    - [Racket](#racket)
-    - [Redis](#redis)
-    - [Ruby](#ruby)
-    - [思考](#思考)
-    - [Typescript](#typescript)
-    - [Vim](#vim)
-    - [Web](#web)
 
 ## 反馈问题或建议
 
@@ -50,28 +21,62 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 [LICENSE]: ./LICENSE
 
 
-## 分类
+## TOC
 
-### 数据库
+<!-- toc -->
+<details>
+  <summary>目录</summary>
+<!-- MarkdownTOC depth=2 GFM -->
+
+- [数据库](#数据库)
+    - [Etcd](#etcd)
+    - [Mongo](#mongo)
+    - [Mysql](#mysql)
+- [设计](#设计)
+- [Docker](#docker)
+- [Elixir](#elixir)
+- [函数式编程](#函数式编程)
+- [前端](#前端)
+    - [React](#react)
+- [Git](#git)
+- [Javascript](#javascript)
+- [Linux](#linux)
+- [Mac](#mac)
+- [Nodejs](#nodejs)
+- [运维](#运维)
+- [其他](#其他)
+- [Racket](#racket)
+- [Redis](#redis)
+- [Ruby](#ruby)
+- [思考](#思考)
+- [Typescript](#typescript)
+- [Vim](#vim)
+- [Web](#web)
+
+<!-- /MarkdownTOC -->
+</details>
+<!-- tocstop -->
+
+## 数据库
 
 - [flyway 用法](database/flyway-usage.md)
 
-#### Etcd
+### Etcd
 
 - [ETCD 报错 request ignored (cluster ID mismatch)](database/etcd/request-ignored-cluster-id-mismatch.md)
 
-#### Mongo
+### Mongo
 
 - [MongoDB 的丢数据问题](database/mongo/data-lost.md)
 
-#### Mysql
+### Mysql
 
 - [连接 MYSQL 显示中文](database/mysql/encoding-in-connection.md)
 - [mysqldump](database/mysql/mysqldump.md)
 - [Date/Datetime/Timestamp 比较](database/mysql/timestamp-vs-datetime.md)
 - [Transaction 与 autocommit](database/mysql/transaction-and-autocommit.md)
 
-### 设计
+## 设计
 
 - [8 点栅格](design/8-point-grid.md)
 - [色彩空间](design/color-space.md)
@@ -80,7 +85,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [使用 sketchtool 操作 sketch 文档：diff 以及其他功能](design/sketchtool-for-diff.md)
 - [排版](design/topography.md)
 
-### Docker
+## Docker
 
 - [docker-compose 启动容器顺序](docker/docker-compose-startup-order.md)
 - [进入 docker for mac 的虚拟机](docker/docker-for-mac-tty.md)
@@ -90,19 +95,19 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [在后台运行 docker 容器且不会自动退出](docker/run-docker-in-background.md)
 - [volume](docker/volume.md)
 
-### Elixir
+## Elixir
 
 - [tuple 与 list 的选择](elixir/choosing-between-tuple-and-list.md)
 - [尾递归优化](elixir/tail-call-optimization.md)
 
-### 函数式编程
+## 函数式编程
 
 - [Cache-Control](fp/cache-control.md)
 - [chrome 开发者工具观察响应 Failed to load response data](fp/chrome-dev-tool-failed-to-inspect-response.md)
 - [重定向 window.location 是异步的](fp/redirect-location-is-async.md)
 - [什么是 Monad](fp/what-is-monad.md)
 
-### 前端
+## 前端
 
 - [SSR (Server Side Render)](front-end/SSR.md)
 - [关于 webpack 2](front-end/all-about-webpack-2.md)
@@ -139,7 +144,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [富文本编辑器选型](front-end/wysiwyg-editor.md)
 - [z-index](front-end/z-index.md)
 
-#### React
+### React
 
 - [使用 jquery 改变 React 的 input DOM](front-end/react/change-react-input-dom-via-jquery.md)
 - [组件生命周期](front-end/react/component-lifecycle.md)
@@ -147,7 +152,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [不要在 render 里直接定义 ref callback](front-end/react/dont-define-ref-callback-in-render.md)
 - [ref callback 何时触发？](front-end/react/when-ref-callback-get-invoked.md)
 
-### Git
+## Git
 
 - [用 shell 脚本查询 git commit hash](git/a-shell-script-to-get-current-commit-hash.md)
 - [Git Diff](git/diff.md)
@@ -156,7 +161,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [git credentials](git/gitcredentials.md)
 - [忽略 Git submodule](git/ignore-git-submodule.md)
 
-### Javascript
+## Javascript
 
 - [babel 小技巧](javascript/babel-tricks.md)
 - [JavaScript 中的相等性判断](javascript/equality-comparisons.md)
@@ -170,7 +175,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [使用 Promise 的技巧](javascript/trick-of-promise.md)
 - [JS 编程技巧](javascript/tricks-of-js.md)
 
-### Linux
+## Linux
 
 - [XDG 基础目录标准](linux/XDG-base-directory-spec.md)
 - [ab 与 wrk 比较](linux/ab-vs-wrk.md)
@@ -213,12 +218,12 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [奇怪的 ESC](linux/weird-esc-key.md)
 - [监听 0.0.0.0 与 127.0.0.1 的区别](linux/whats-the-difference-between-ip-address-0-0-0-0-and-127-0-0-1.md)
 
-### Mac
+## Mac
 
 - [Mac 的 DNS 问题](mac/dns-troubles-in-mac.md)
 - [Mac 下按住键盘不能输出重复的字符](mac/hold-down-key-cannot-keep-print-character.md)
 
-### Nodejs
+## Nodejs
 
 - [命令行的工具和类库](nodejs/cli-libraries-and-tools.md)
 - [不要对函数参数重新赋值](nodejs/don-t-reassign-function-arguments.md)
@@ -235,11 +240,11 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [EventEmitter 需要注意的三个地方](nodejs/three-notes-of-eventemitter.md)
 - [Yarn 用法](nodejs/yarn-usage.md)
 
-### 运维
+## 运维
 
 - [运维小技巧](ops/ops-tricks.md)
 
-### 其他
+## 其他
 
 - [0.30000000000000004](others/0.30000000000000004.md)
 - [Today I learned (TIL) 资源列表](others/TIL.md)
@@ -265,33 +270,33 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [vim textwidth=78 的约定](others/textwidth-78-of-vim.md)
 - [zookeeper 健康检查](others/zookeeper-health-check.md)
 
-### Racket
+## Racket
 
 - [学习 Racket](racket/racket-learning.md)
 
-### Redis
+## Redis
 
 - [Redis Cluster](redis/cluster.md)
 - [拷贝一个 Sorted Set 到新的 key](redis/copy-a-sorted-set.md)
 
-### Ruby
+## Ruby
 
 - [使用 scientist 科学重构代码](ruby/using-scientist-for-refactoring.md)
 
-### 思考
+## 思考
 
 - [项目代码如何组织](thinking/how-to-make-code-organization.md)
 - [如何编程](thinking/how-to-programming.md)
 - [不完整的函数](thinking/non-total-function.md)
 - [提问的智慧](thinking/smartquestion.md)
 
-### Typescript
+## Typescript
 
 - [export default 的类型注明](typescript/type-annotations-for-export-default.md)
 - [Typescript 与 Rollup](typescript/typescript-and-rollup.md)
 - [typescript 的缺点](typescript/typescript-cons.md)
 
-### Vim
+## Vim
 
 - [学习 Neovim](vim/neovim-learning.md)
 - [在 vim 中执行 shell 命令，同时将结果输出到 buffer](vim/pipe-shell-output-to-buffer.md)
@@ -300,9 +305,12 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [学习 Vim](vim/vim-learning.md)
 - [VIM 搜索技巧](vim/vim-search-tips.md)
 
-### Web
+## Web
 
 - [URL QueryString 传数组参数](web/array-params-in-url.md)
 - [国际化 SEO](web/international-SEO.md)
 - [下划线在 HTTP Header 里是非法字符串](web/underscore-is-invalid-in-header.md)
 - [URI 转义](web/uri-encode.md)
+
+
+**[⬆ 返回目录](#toc)**
