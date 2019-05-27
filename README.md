@@ -25,34 +25,42 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 <!-- toc -->
 <details>
   <summary>目录</summary>
-  <p>
 
-- [数据库](#数据库)
-    - [Etcd](#etcd)
-    - [Mongo](#mongo)
-    - [Mysql](#mysql)
-- [设计](#设计)
-- [Docker](#docker)
-- [Elixir](#elixir)
-- [函数式编程](#函数式编程)
-- [前端](#前端)
-    - [React](#react)
-- [Git](#git)
-- [Javascript](#javascript)
-- [Linux](#linux)
-- [Mac](#mac)
-- [Nodejs](#nodejs)
-- [运维](#运维)
-- [其他](#其他)
-- [Racket](#racket)
-- [Redis](#redis)
-- [Ruby](#ruby)
-- [思考](#思考)
-- [Typescript](#typescript)
-- [Vim](#vim)
-- [Web](#web)
+  <ul>
+    <li>
+      <a href="#%E6%95%B0%E6%8D%AE%E5%BA%93">数据库</a>
+      <ul>
+        <li><a href="#etcd">Etcd</a></li>
+        <li><a href="#mongo">Mongo</a></li>
+        <li><a href="#mysql">Mysql</a></li>
+      </ul>
+    </li>
+    <li><a href="#%E8%AE%BE%E8%AE%A1">设计</a></li>
+    <li><a href="#docker">Docker</a></li>
+    <li><a href="#elixir">Elixir</a></li>
+    <li><a href="#%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B">函数式编程</a></li>
+    <li>
+      <a href="#%E5%89%8D%E7%AB%AF">前端</a>
+      <ul>
+        <li><a href="#react">React</a></li>
+      </ul>
+    </li>
+    <li><a href="#git">Git</a></li>
+    <li><a href="#javascript">Javascript</a></li>
+    <li><a href="#linux">Linux</a></li>
+    <li><a href="#mac">Mac</a></li>
+    <li><a href="#nodejs">Nodejs</a></li>
+    <li><a href="#%E8%BF%90%E7%BB%B4">运维</a></li>
+    <li><a href="#%E5%85%B6%E4%BB%96">其他</a></li>
+    <li><a href="#racket">Racket</a></li>
+    <li><a href="#redis">Redis</a></li>
+    <li><a href="#ruby">Ruby</a></li>
+    <li><a href="#%E6%80%9D%E8%80%83">思考</a></li>
+    <li><a href="#typescript">Typescript</a></li>
+    <li><a href="#vim">Vim</a></li>
+    <li><a href="#web">Web</a></li>
+  </ul>
 
-  </p>
 </details>
 <!-- tocstop -->
 
