@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+/* eslint-disable no-console */
+
 'use strict';
 
 const Promise = require('bluebird');
@@ -54,7 +56,7 @@ json2md.converters.toc = (contents) => {
 
     contents.forEach((c) => {
         const {name, level} = c;
-        let anchor = name.trim().toLowerCase().replace(/\s+/g, '-').replace(/\-+$/, '');
+        let anchor = name.trim().toLowerCase().replace(/\s+/g, '-').replace(/-+$/, '');
         const usedHeader = usedHeaders[anchor];
         if (usedHeader) {
             usedHeaders[anchor] = usedHeader + 1;
@@ -64,9 +66,20 @@ json2md.converters.toc = (contents) => {
         }
         const header = `${space.repeat(level - 2)}${ul} [${name}](#${anchor})`;
         headers.push(header);
-    })
+    });
 
-    const str = `## TOC\n\n${headers.join('\n')}`;
+    const str = `## TOC
+
+<!-- toc -->
+<details>
+  <summary>目录</summary>
+  <p>
+
+${headers.join('\n')}
+
+  </p>
+</details>
+<!-- tocstop -->`;
     return str;
 };
 
@@ -76,12 +89,12 @@ async function getTitle(path) {
     if (!matched) return '';
 
     let title = matched[1];
-    title = title.replace(/\[(.*?)\]/g, (m, p) => p);
+    title = title.replace(/\[(.*?)\]/g, (_m, p) => p);
 
     return title;
 }
 
-async function enterDir(dirName, parentPath, parent, level = 3) {
+async function enterDir(dirName, parentPath, _parent, level = 3) {
     const dirPath = absPath(parentPath, dirName);
     const filenames = await readdir(dirPath);
     const children = [];
@@ -116,7 +129,7 @@ function handleCategories(categories, levelStd, structure) {
     _.chain(categories)
         .each((cate) => {
             const {name, level, children = []} = cate;
-            let cateName = categoryNames[name] || toCamelCase(name);
+            const cateName = categoryNames[name] || toCamelCase(name);
 
             if (cate.level !== levelStd) {
                 return;
@@ -129,7 +142,7 @@ function handleCategories(categories, levelStd, structure) {
             structure.push(
                 {[`h${level}`]: cateName},
                 {ul: list}
-            )
+            );
 
             handleCategories(childCates, levelStd + 1, structure);
         })
@@ -140,34 +153,30 @@ async function build() {
     const filenames = await readdir(__dirname);
     let dirNames = filenames.filter((name) =>
         !name.startsWith('_') && !name.startsWith('.')
-        && (! ['node_modules'].includes(name)));
+        && (!['node_modules'].includes(name)));
 
     dirNames = await Promise.map(dirNames, ((dirName) => {
         return getStat(absPath(dirName))
-            .then((stats) => stats.isDirectory() ? dirName : null);
+            .then((stats) => (stats.isDirectory() ? dirName : null));
     })).filter((name) => name);
 
-    const rootCategories = await Promise.map(dirNames,
-        (filename, index) => enterDir(filename, __dirname, null, 3));
+    const rootCategories = await Promise.map(
+        dirNames,
+        (filename) => enterDir(filename, __dirname, null, 2)
+    );
 
     const structure = [
         {h1: '今天我学了什么 (Today I learned)'},
         {blockquote: pkg.description},
+        {md: absPath('_docs/issue.md')},
+        {md: absPath('_docs/license.md')},
         {toc},
     ];
 
-    toc.push({name: '反馈问题或建议', level: 2});
-    toc.push({name: '版权声明', level: 2});
-    toc.push({name: '分类', level: 2});
-
-    structure.push(
-        {md: absPath('_docs/issue.md')},
-        {md: absPath('_docs/license.md')},
-        {h2: '分类'}
-    );
-
     debug('categories=%O', categories);
-    handleCategories(rootCategories, 3, structure);
+    handleCategories(rootCategories, 2, structure);
+
+    structure.push({p: '**[⬆ 返回目录](#toc)**'});
 
     const content = await json2md.async(structure);
 
@@ -183,4 +192,4 @@ async function build() {
         console.error('[Build failed] Error stack: %s', err.stack);
         process.exit(1);
     }
-})()
+})();

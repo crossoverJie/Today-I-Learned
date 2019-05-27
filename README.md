@@ -2,7 +2,6 @@
 
 > 博观而约取，厚积而薄发。
 
-
 ## 反馈问题或建议
 
 本项目不接受 Pull Request，如果你有什么好的想法，或者改进的建议，请使用 [Issue][] 与我探讨。
@@ -26,7 +25,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 <!-- toc -->
 <details>
   <summary>目录</summary>
-<!-- MarkdownTOC depth=2 GFM -->
+  <p>
 
 - [数据库](#数据库)
     - [Etcd](#etcd)
@@ -53,7 +52,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Vim](#vim)
 - [Web](#web)
 
-<!-- /MarkdownTOC -->
+  </p>
 </details>
 <!-- tocstop -->
 
@@ -187,6 +186,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [学习 Bash](linux/bash-learning.md)
 - [Bash 小技巧](linux/bash-tricks.md)
 - [linux 命令被 hash 缓存](linux/command-be-hashed.md)
+- [compgen](linux/compgen.md)
 - [连接 tty](linux/connect-tty.md)
 - [判断文件编码](linux/detect-encoding-of-file.md)
 - [编辑二进制文件](linux/edit-binary-file.md)
