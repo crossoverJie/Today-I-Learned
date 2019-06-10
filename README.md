@@ -198,6 +198,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [连接 tty](linux/connect-tty.md)
 - [判断文件编码](linux/detect-encoding-of-file.md)
 - [编辑二进制文件](linux/edit-binary-file.md)
+- [终端开启真彩色 (true color)](linux/enable-true-color-in-terminal.md)
 - [用环境变量替换文本内容 envsubst](linux/envsubst.md)
 - [快速创建大文件](linux/fast-generate-large-file.md)
 - [快速删文件](linux/fast-remove-files.md)
@@ -230,6 +231,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 - [Mac 的 DNS 问题](mac/dns-troubles-in-mac.md)
 - [Mac 下按住键盘不能输出重复的字符](mac/hold-down-key-cannot-keep-print-character.md)
+- [Tab 键不能切换弹出框的选中焦点](mac/tab-not-always-work.md)
 
 ## Nodejs
 

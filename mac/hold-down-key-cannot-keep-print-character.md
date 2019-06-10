@@ -6,5 +6,9 @@
 
 答案：
 
+修改默认系统设置，执行 `defaults write -g ApplePressAndHoldEnabled -bool false`
+
+详见:
+
 - https://infinitediaries.net/os-x-choose-between-the-character-accents-popup-and-key-repeat-when-holding-down-a-key/
 - https://gist.github.com/lsd/1e1826907ab7e49c536a
