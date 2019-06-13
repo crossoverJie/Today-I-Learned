@@ -24,6 +24,8 @@
 - [分解字符串成数组](#分解字符串成数组)
 - [在字符串里用换行符](#在字符串里用换行符)
 - [`=~` 的正则表达式](#-的正则表达式)
+- [BASH 的 PS1/PS2/PS3/PS4](#bash-的-ps1ps2ps3ps4)
+- [BASH PS1 需要包裹在 \[ \] 里](#bash-ps1-需要包裹在---里)
 
 <!-- /MarkdownTOC -->
 
@@ -179,3 +181,23 @@ $- 是一串字符串，由 set option 的简写标记组成。
 所以要写成 `[[ '-' =~ [-._a-zA-Z0-9] ]]` 或 `[[ '-' =~ [._a-zA-Z0-9-] ]]` 才是 true。
 
 但写成 `[[ '-' =~ [._\-a-zA-Z0-9] ]]` 依然会失败，因为 bash 的正则解析貌似不支持这样写，暂时未找到解释。
+
+### BASH 的 PS1/PS2/PS3/PS4
+
+> Bash 有四个可以定制的提示符:
+>
+> PS1 是在每个命令前都显示的主要提示符，大部分用户都是定制这个值。
+> PS2 命令需要输入时的第二提示符(比如多行命令).
+> PS3 不常用，Bash　的内置 select 显示交互菜单时使用. 和其它提示符不一样，它不扩展 Bash escape sequences. 通常在使用包含 select 的脚本时会需要定制此提示符。
+> PS4 也不常用，在调试　bash 脚本时显示缩进级别。第一个字符的重复次数表示缩进级别。
+
+https://wiki.archlinux.org/index.php/Bash/Prompt_customization_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
+
+
+### BASH PS1 需要包裹在 \[ \] 里
+
+> Note: Wrapping the tput output in \[ \] is recommended by the Bash man page. This helps Bash ignore non-printable characters so that it correctly calculates the size of the prompt.
+
+https://wiki.archlinux.org/index.php/Bash/Prompt_customization_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
+
+如果没写 \[ \]，按 `ctrl-u` 清空当前行会显示多余的字符。
