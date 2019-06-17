@@ -26,6 +26,10 @@
 - [`=~` 的正则表达式](#-的正则表达式)
 - [BASH 的 PS1/PS2/PS3/PS4](#bash-的-ps1ps2ps3ps4)
 - [BASH PS1 需要包裹在 \[ \] 里](#bash-ps1-需要包裹在---里)
+- [目录是可执行的](#目录是可执行的)
+- [获得字符的转义码](#获得字符的转义码)
+- [使用 bind 改变键盘字符的触发效果](#使用-bind-改变键盘字符的触发效果)
+- [用 ANSI Escape Code 改变 Shell 文字样式](#用-ansi-escape-code-改变-shell-文字样式)
 
 <!-- /MarkdownTOC -->
 
@@ -201,3 +205,36 @@ https://wiki.archlinux.org/index.php/Bash/Prompt_customization_(%E7%AE%80%E4%BD%
 https://wiki.archlinux.org/index.php/Bash/Prompt_customization_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
 
 如果没写 \[ \]，按 `ctrl-u` 清空当前行会显示多余的字符。
+
+### 目录是可执行的
+
+> Execute allows you to enter it and access files (or other directories) inside.
+
+答案见 https://superuser.com/a/168583
+真是有趣。
+
+### 获得字符的转义码
+
+先按 `ctrl-v` 再按想转义的字符，就会输出到终端上，支持组合键。
+在 vim 中也有效。
+
+### 使用 bind 改变键盘字符的触发效果
+
+https://blog.libthomas.org/calendar/2015/01/19/22.html
+https://www.computerhope.com/unix/bash/bind.htm
+
+用 bind 感觉可以做很有趣的事。
+
+### 用 ANSI Escape Code 改变 Shell 文字样式
+
+改变 Shell 文字样式，本质上就是用 ANSI Escape Code 来改变终端模拟器的行为，可以做到很多事，比如改变文字颜色，文字闪烁，改变鼠标位置，清屏等等。比如执行 echo -e '\e[2J' 来清屏，或者 echo -e '\e[2J\e[u' 清屏并重置鼠标位置（跟 ctrl-l 同样效果）。这也跟 tput 命令是异曲同工的。
+
+- [Wikipedia - ANSI escape code](https://www.wikiwand.com/en/ANSI_escape_code)
+- [Stackoverflow - List of ANSI color escape sequences](https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences)
+- [FLOZz' MISC ? bash:tip_colors_and_formatting](https://misc.flogisoft.com/bash/tip_colors_and_formatting)
+- [ASCII Table - ANSI Escape sequences](http://ascii-table.com/ansi-escape-sequences.php)
+- [ansi codes](https://bluesock.org/~willkg/dev/ansi.html#sequences)
+- [vt100.net - ANSI Control Functions Summary](https://vt100.net/docs/vt510-rm/chapter4.html)
+- [JAFROG'S DEV BLOG - Colors In Terminal](http://jafrog.com/2013/11/23/colors-in-terminal.html)
+
+https://www.v2ex.com/t/573838
