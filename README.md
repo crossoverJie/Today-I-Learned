@@ -231,6 +231,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 - [Mac 的 DNS 问题](mac/dns-troubles-in-mac.md)
 - [Mac 下按住键盘不能输出重复的字符](mac/hold-down-key-cannot-keep-print-character.md)
+- [Homebrew](mac/homebrew.md)
 - [Tab 键不能切换弹出框的选中焦点](mac/tab-not-always-work.md)
 
 ## Nodejs
@@ -260,14 +261,12 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Today I learned (TIL) 资源列表](others/TIL.md)
 - [Alfred Workflow debug 技巧](others/alfred-workflow-debug.md)
 - [Github Markdown 中的锚点引用](others/anchor-in-github-markdown.md)
-- [备份 homebrew](others/backup-brew.md)
 - [Chrome 小技巧](others/chrome-tricks.md)
 - [Mac 文件系统的剪切快捷键](others/cut-in-mac-file-system.md)
 - [文件命名，下划线还是中划线？](others/file-naming-with-underscores-and-dashes.md)
 - [github 中 markdown 折叠文本](others/fold-text-in-github.md)
 - [从微信公众号提取原图](others/get-raw-image-from-weixin.md)
 - [通过 Hash 密码到 url 来验证密码](others/hashed-password-to-url.md)
-- [Homebrew 使用代理和镜像源加速下载](others/homebrew-proxy-and-mirror.md)
 - [如何阅读标准](others/how-to-read-spec.md)
 - [如何审核代码](others/how-to-review-code.md)
 - [如何在 github 项目里搜索代码](others/how-to-use-github-to-browse-codes.md)

@@ -30,6 +30,8 @@
 - [获得字符的转义码](#获得字符的转义码)
 - [使用 bind 改变键盘字符的触发效果](#使用-bind-改变键盘字符的触发效果)
 - [用 ANSI Escape Code 改变 Shell 文字样式](#用-ansi-escape-code-改变-shell-文字样式)
+- [判断当前程序是否由管道传参](#判断当前程序是否由管道传参)
+- [BSD 和 GNU 正则表达式的不同](#bsd-和-gnu-正则表达式的不同)
 
 <!-- /MarkdownTOC -->
 
@@ -238,3 +240,45 @@ https://www.computerhope.com/unix/bash/bind.htm
 - [JAFROG'S DEV BLOG - Colors In Terminal](http://jafrog.com/2013/11/23/colors-in-terminal.html)
 
 https://www.v2ex.com/t/573838
+
+
+### 判断当前程序是否由管道传参
+
+```sh
+is_piped() {
+  [[ -t 0 ]] && echo false || echo true
+}
+
+echo 1 | is_piped
+# => true
+is_piped
+# => false
+```
+
+然而这个判断还是有很大缺陷，如果调用者也处于管道里，`[[ -t 0 ]]` 会受影响。
+
+```sh
+f() {
+  is_piped
+}
+
+b() {
+  echo 1 | f
+}
+
+f
+# => false
+echo 1 | f
+# => true
+b
+# => true
+echo 1 | b
+# => true
+```
+
+### BSD 和 GNU 正则表达式的不同
+
+- Group Capturing 特性不同，GNU 下的 `\0` 在 BSD 里是 `&`，`\1`, `\2` 没有区别。
+- 正则符合 `\w` 在 BSD 里是 `[[:alnum:]]`，`\W` 在 BSD 里是 `[^[:alnum]]`。
+
+https://www.gnu.org/software/grep/manual/html_node/Character-Classes-and-Bracket-Expressions.html
