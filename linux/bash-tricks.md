@@ -32,6 +32,9 @@
 - [用 ANSI Escape Code 改变 Shell 文字样式](#用-ansi-escape-code-改变-shell-文字样式)
 - [判断当前程序是否由管道传参](#判断当前程序是否由管道传参)
 - [BSD 和 GNU 正则表达式的不同](#bsd-和-gnu-正则表达式的不同)
+- [bind 某些快捷键](#bind-某些快捷键)
+- [通过 shell 编程输出字符串到 readline 的缓存区里](#通过-shell-编程输出字符串到-readline-的缓存区里)
+- [${!var} 语法](#var-语法)
 
 <!-- /MarkdownTOC -->
 
@@ -282,3 +285,35 @@ echo 1 | b
 - 正则符合 `\w` 在 BSD 里是 `[[:alnum:]]`，`\W` 在 BSD 里是 `[^[:alnum]]`。
 
 https://www.gnu.org/software/grep/manual/html_node/Character-Classes-and-Bracket-Expressions.html
+
+
+### bind 某些快捷键
+
+`bind -p | grep "\\C-u"` 可以看到 `"\C-u": unix-line-discard`，我想把 Ctrl-U 的绑定取消掉。
+
+尝试了以下做法
+
+```
+bind -r '"\C-u"'
+bind -r '\C-u'
+bind -r '\C-u'
+bind -r "\\C-u"
+bind -r "\C-u"
+```
+
+结果这些都没有，绑定还是在。
+看了[这个答案](https://unix.stackexchange.com/questions/423375/how-do-i-share-the-mouse-paste-buffer-not-the-clipboard-between-bash-and-x11?rq=1)才发现，原来是 `stty` 搞的鬼
+
+只要把 `stty kill ''`，把 kill 关键字绑定到空字符串上就相当于重置为空了。
+可以通过 `stty -a` 看到 stty 已绑定的快捷键。
+
+### 通过 shell 编程输出字符串到 readline 的缓存区里
+
+利用 `bind -x keyseq:function-name` 和 READLINE_LINE。
+参照 [fzf 的做法](https://github.com/junegunn/fzf/blob/c1dbc800e587471a8c34a0e3a4a907aabc71cdd0/shell/key-bindings.bash#L104)。
+
+### ${!var} 语法
+
+这个叫 variable indirection。
+Bash Reference Manual 里只有一段很不起眼的描述，容易漏掉。
+参考答案: https://stackoverflow.com/a/8515492

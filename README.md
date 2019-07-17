@@ -192,7 +192,9 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [bash error exit](linux/bash-error-exit.md)
 - [bash 开启 vi 模式](linux/bash-in-vi-mode.md)
 - [学习 Bash](linux/bash-learning.md)
+- [Bash 的坑](linux/bash-pitfalls.md)
 - [Bash 小技巧](linux/bash-tricks.md)
+- [命令格式标准](linux/command-arguments-syntax-standard.md)
 - [linux 命令被 hash 缓存](linux/command-be-hashed.md)
 - [compgen](linux/compgen.md)
 - [连接 tty](linux/connect-tty.md)
@@ -204,6 +206,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [快速删文件](linux/fast-remove-files.md)
 - [文件描述符，open file table 与 inode](linux/fd-oft-inode.md)
 - [file 命令](linux/file-command.md)
+- [GPG 与 Keybase](linux/gpg-and-keybase.md)
 - [hash 命令](linux/hash-command.md)
 - [Here Strings and Here Documents](linux/here-strings-and-here-documents.md)
 - [Hostname in Linux](linux/hostname.md)
@@ -226,6 +229,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [/usr/bin/env](linux/usr-bin-env.md)
 - [奇怪的 ESC](linux/weird-esc-key.md)
 - [监听 0.0.0.0 与 127.0.0.1 的区别](linux/whats-the-difference-between-ip-address-0-0-0-0-and-127-0-0-1.md)
+- [Zsh 的坑](linux/zsh-pitfalls.md)
 
 ## Mac
 

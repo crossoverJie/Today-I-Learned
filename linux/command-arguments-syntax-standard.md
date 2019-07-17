@@ -1,0 +1,16 @@
+## 命令格式标准
+
+Q: linux 命令解析有标准吗？对于这种格式的命令 `command -g12`，参数是解析成 `g=12`，还是 `g=true`, `1=true`, `2=true`？
+
+-----
+
+在 Rust clap 里，`-g12` 被解释为 `g12=true`。
+
+在 nodejs 的 minimist 库，`-g12` 被解析成 `g=12`。
+
+
+
+查到 GNU 命令是遵循这个 [POSIX 规范](http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html)的，
+但是这个规范写得很不详细。
+
+所以我的结论是命令解析和书写都没有业界统一规范，是根据各个命令自己的 USAGE 决定怎么调用和怎么解析的。
