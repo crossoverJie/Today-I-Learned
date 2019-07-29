@@ -5,6 +5,7 @@
 <!-- MarkdownTOC GFM -->
 
 - [man bash](#man-bash)
+    - [查看 bash built-in 命令的帮助文档](#查看-bash-built-in-命令的帮助文档)
 - [help help](#help-help)
 - [kill %jobspec](#kill-jobspec)
 - [<Tab> 补全文件路径开启颜色](#tab-补全文件路径开启颜色)
@@ -42,8 +43,15 @@
 
 在 /usr/share/doc/bash/ 能找到 bash PDF 和 HTML 文档。
 
-~~查看 bash built-in 命令的文档，使用 `bashman () { man bash | less -p "^       $1 "; }`，~~
-~~调用： `bashman cd` 查看。~~
+查看所有 bash built-in 命令: `compgen -b | column`
+
+#### 查看 bash built-in 命令的帮助文档
+
+使用 `help` 内置命令，比如 `help cd`。
+
+或者，
+定义一个函数 `bashman () { man bash | less -p "^       $1 "; }`，
+调用：`bashman cd` 查看。
 
 ### help help
 
