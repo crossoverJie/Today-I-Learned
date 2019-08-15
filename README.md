@@ -46,7 +46,9 @@ See the [LICENSE][] file for the specific language governing permissions and lim
       </ul>
     </li>
     <li><a href="#git">Git</a></li>
+    <li><a href="#go">Go</a></li>
     <li><a href="#javascript">Javascript</a></li>
+    <li><a href="#k8s">K8s</a></li>
     <li><a href="#linux">Linux</a></li>
     <li><a href="#mac">Mac</a></li>
     <li><a href="#nodejs">Nodejs</a></li>
@@ -55,6 +57,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
     <li><a href="#racket">Racket</a></li>
     <li><a href="#redis">Redis</a></li>
     <li><a href="#ruby">Ruby</a></li>
+    <li><a href="#startup">Startup</a></li>
     <li><a href="#%E6%80%9D%E8%80%83">思考</a></li>
     <li><a href="#typescript">Typescript</a></li>
     <li><a href="#vim">Vim</a></li>
@@ -67,6 +70,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 ## 数据库
 
 - [flyway 用法](database/flyway-usage.md)
+- [物理删除与逻辑删除](database/soft-delete.md)
 
 ### Etcd
 
@@ -168,6 +172,10 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [git credentials](git/gitcredentials.md)
 - [忽略 Git submodule](git/ignore-git-submodule.md)
 
+## Go
+
+- [Golang 学习](go/golang-learning.md)
+
 ## Javascript
 
 - [babel 小技巧](javascript/babel-tricks.md)
@@ -181,6 +189,10 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Promise 的坑](javascript/trap-of-promise.md)
 - [使用 Promise 的技巧](javascript/trick-of-promise.md)
 - [JS 编程技巧](javascript/tricks-of-js.md)
+
+## K8s
+
+- [kubectl 学习](k8s/kubectl.md)
 
 ## Linux
 
@@ -283,6 +295,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Semver](others/semver.md)
 - [mac 里的 tmux 内无法用 sublime 打开文件](others/subl-in-tmux-on-mac.md)
 - [vim textwidth=78 的约定](others/textwidth-78-of-vim.md)
+- [UTF-8 vs UTF-16](others/utf-8-vs-utf-16.md)
 - [zookeeper 健康检查](others/zookeeper-health-check.md)
 
 ## Racket
@@ -298,12 +311,17 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 - [使用 scientist 科学重构代码](ruby/using-scientist-for-refactoring.md)
 
+## Startup
+
+- [商标注册](startup/trademark-registration.md)
+
 ## 思考
 
 - [项目代码如何组织](thinking/how-to-make-code-organization.md)
 - [如何编程](thinking/how-to-programming.md)
 - [不完整的函数](thinking/non-total-function.md)
 - [提问的智慧](thinking/smartquestion.md)
+- [讲故事](thinking/story-telling.md)
 
 ## Typescript
 
