@@ -192,6 +192,9 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 ## K8s
 
+- [Helm](k8s/helm.md)
+- [K8S CSI 开发](k8s/k8s-csi.md)
+- [K8S 学习](k8s/k8s-learning.md)
 - [kubectl 学习](k8s/kubectl.md)
 
 ## Linux
@@ -250,6 +253,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Mac 的 DNS 问题](mac/dns-troubles-in-mac.md)
 - [Mac 下按住键盘不能输出重复的字符](mac/hold-down-key-cannot-keep-print-character.md)
 - [Homebrew](mac/homebrew.md)
+- [用命令触发系统通知](mac/notification-with-command.md)
 - [Tab 键不能切换弹出框的选中焦点](mac/tab-not-always-work.md)
 
 ## Nodejs
@@ -271,6 +275,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 ## 运维
 
+- [Ansible](ops/ansible.md)
 - [运维小技巧](ops/ops-tricks.md)
 
 ## 其他
@@ -289,7 +294,9 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [如何审核代码](others/how-to-review-code.md)
 - [如何在 github 项目里搜索代码](others/how-to-use-github-to-browse-codes.md)
 - [Hyper.js 中文问题](others/hyper-js-chinese-problems.md)
+- [Language Server Protocol](others/language-server-protocol.md)
 - [箴言](others/maxim.md)
+- [终端邮件客户端 Mutt](others/mutt.md)
 - [在 Github Markdown 中如何填写图片的链接](others/relative-link-in-github-markdown.md)
 - [Markdown 里写反引号](others/reverse-quote-in-markdown.md)
 - [Semver](others/semver.md)
