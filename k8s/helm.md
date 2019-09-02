@@ -1,6 +1,10 @@
 ## Helm
 
-### Helm Chart
+### Chart
+
+[官方最佳实践](https://github.com/helm/helm/tree/master/docs/chart_best_practices)
+
+### Chart 依赖
 
 [requirements.yaml](https://github.com/helm/helm/blob/master/docs/helm/helm_dependency.md)
 
@@ -20,3 +24,10 @@ dependencies:
 ### helm upgrade
 
 - [helm upgrade --reset-values 与 --reuse-values 的区别](https://medium.com/@kcatstack/understand-helm-upgrade-flags-reset-values-reuse-values-6e58ac8f127e)
+
+
+### helm --set 包含逗号
+
+比如 `helm install --set ids=1,2` 会报错，因为 `,` 是作为 `--set` 的分隔符的，比如 `--set a=1,b=2` 这样。
+所以正确写法是 `helm install --set ids=1\,2`。
+参考 [issue](https://github.com/helm/helm/issues/2952#issuecomment-330699580)。

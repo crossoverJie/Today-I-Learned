@@ -1,5 +1,32 @@
 ## Ansible
 
+### TOC
+
+<!-- MarkdownTOC GFM -->
+
+- [Ansible vs 写脚本](#ansible-vs-写脚本)
+- [Ansible Ad-Hoc](#ansible-ad-hoc)
+- [Ansible Playbook](#ansible-playbook)
+    - [执行顺序](#执行顺序)
+- [Ansible Modules](#ansible-modules)
+- [ansible.cfg 加载顺序](#ansiblecfg-加载顺序)
+- [gather_fact 缓存问题](#gather_fact-缓存问题)
+- [立刻退出 play](#立刻退出-play)
+
+<!-- /MarkdownTOC -->
+
+### Ansible vs 写脚本
+
+Ansible 的优势
+
+- 步骤控制、重试、自检，步骤说明
+- 多机器执行命令
+- 模板渲染
+
+Ansible 的缺点，模块和参数比较多，学习成本相对较大。
+
+Ansible 可以直接操作 localhost，这样就可以代替写脚本。
+
 ### Ansible Ad-Hoc
 
 ### Ansible Playbook
@@ -31,3 +58,50 @@ https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html?#u
 ### Ansible Modules
 
 查看模块文档：`ansible-doc [-l|-F|-s] [options] [-t <plugin type> ] [plugin]`
+
+### ansible.cfg 加载顺序
+
+- ANSIBLE_CONFIG (environment variable if set)
+- ansible.cfg (in the current directory)
+- ~/.ansible.cfg (in the home directory)
+- /etc/ansible/ansible.cfg
+
+从上往下找到第一个匹配的文件，其他忽略。
+
+https://docs.ansible.com/ansible/latest/reference_appendices/config.html
+
+### gather_fact 缓存问题
+
+每个 play 默认是 `gather_facts: true` 的，如果要禁止抓取机器信息需要设置 `gather_facts: false`
+
+ansible.cfg 有几个选项会影响到 gather_facts 的实施。
+
+```
+[defaults]
+gathering = smart
+gather_subset = network,hardware
+fact_caching = jsonfile
+fact_caching_connection = /tmp
+fact_caching_timeout = 86400
+```
+
+gathering 如果是 `smart` 或者 `explicit`，除了第一次会抓取 fact 外，之后每次执行 ansible，且每个 play 之间都会利用 `fact_caching_connection` 指向目录下的缓存。如果 gathering 是 `implicit`，则每个 play 都会去抓取 fact。
+
+`gather_subset` 会影响抓取的内容，默认是 `all` 全部抓取，也可以指定抓取内容。
+
+`fact_caching` 的取值影响 `fact_caching_connection`。
+
+### 立刻退出 play
+
+无错误的退出用 `meta`，详见[文档](https://docs.ansible.com/ansible/latest/modules/meta_module.html)。
+
+```
+- meta: end_play
+```
+
+有错误的退出用 `fail`，[详见](https://docs.ansible.com/ansible/latest/modules/fail_module.html#fail-module)。
+
+```
+- fail:
+    msg: This failed!
+```

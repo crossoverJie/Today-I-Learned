@@ -98,11 +98,14 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 ## Docker
 
+- [device or resource busy](docker/device-or-resource-busy.md)
 - [docker-compose 启动容器顺序](docker/docker-compose-startup-order.md)
 - [进入 docker for mac 的虚拟机](docker/docker-for-mac-tty.md)
 - [学习 Docker](docker/docker-learning.md)
+- [Docker Tag/Id/Digest](docker/docker-tag-id-digests.md)
 - [docker 小技巧](docker/docker-tricks.md)
 - [修正 Docker for mac 时区问题](docker/fix-timezone-in-docker-for-mac.md)
+- [Docker for Mac 中磁盘文件占用过大](docker/large-disk-space-usage-in-docker-for-mac.md)
 - [在后台运行 docker 容器且不会自动退出](docker/run-docker-in-background.md)
 - [volume](docker/volume.md)
 
@@ -171,6 +174,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [git ssh 代理](git/git-ssh-proxy.md)
 - [git credentials](git/gitcredentials.md)
 - [忽略 Git submodule](git/ignore-git-submodule.md)
+- [--ours vs --theirs](git/ours-vs-theirs.md)
 
 ## Go
 
@@ -222,6 +226,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [文件描述符，open file table 与 inode](linux/fd-oft-inode.md)
 - [file 命令](linux/file-command.md)
 - [GPG 与 Keybase](linux/gpg-and-keybase.md)
+- [grep](linux/grep.md)
 - [hash 命令](linux/hash-command.md)
 - [Here Strings and Here Documents](linux/here-strings-and-here-documents.md)
 - [Hostname in Linux](linux/hostname.md)
@@ -237,6 +242,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [管道重定向](linux/pipe-redirect.md)
 - [慎用双引号与单引号](linux/quotes-in-bash.md)
 - [命令行中提示用户 Yes/No](linux/read-prompt.md)
+- [rsync 与 scp](linux/rsync-and-scp.md)
 - [在 alpine 中找不到 setup-apkcache 等 setup-* 命令](linux/setup-scripts-in-alpine.md)
 - [shebang](linux/shebang.md)
 - [拆分与合并文件](linux/split-and-merge-file.md)
@@ -251,6 +257,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 ## Mac
 
 - [Mac 的 DNS 问题](mac/dns-troubles-in-mac.md)
+- [多网卡在 Mac 系统的问题](mac/double-network-card-problems-in-mac.md)
 - [Mac 下按住键盘不能输出重复的字符](mac/hold-down-key-cannot-keep-print-character.md)
 - [Homebrew](mac/homebrew.md)
 - [用命令触发系统通知](mac/notification-with-command.md)
@@ -276,6 +283,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 ## 运维
 
 - [Ansible](ops/ansible.md)
+- [以太网](ops/ethernet.md)
 - [运维小技巧](ops/ops-tricks.md)
 
 ## 其他
@@ -294,6 +302,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [如何审核代码](others/how-to-review-code.md)
 - [如何在 github 项目里搜索代码](others/how-to-use-github-to-browse-codes.md)
 - [Hyper.js 中文问题](others/hyper-js-chinese-problems.md)
+- [无法在 Tmux 显示图片](others/imgcat-not-work-in-tmux.md)
 - [Language Server Protocol](others/language-server-protocol.md)
 - [箴言](others/maxim.md)
 - [终端邮件客户端 Mutt](others/mutt.md)
