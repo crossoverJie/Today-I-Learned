@@ -17,7 +17,13 @@ Error response from daemon: driver "overlay" failed to remove root filesystem fo
 
 这个方法不能解决问题的话，重启机器一定可以解决问题。
 
-参考文章
+### 使用 docker 17.12.1 以上版本
+
+官方 Contributor 说已在 17.12.1 版本中修复，可以尝试升级来解决该问题。
+
+https://github.com/moby/moby/issues/27381#issuecomment-372394900
+
+### 参考文章
 
 - http://blog.kissingwolf.com/2017/09/09/Docker-%E6%95%85%E9%9A%9C%EF%BC%88device-or-resource-busy%EF%BC%89/
 - http://niusmallnan.com/2016/12/27/docker-device-resource-busy/

@@ -74,6 +74,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 ### Etcd
 
+- [etcdctl](database/etcd/etcdctl.md)
 - [ETCD 报错 request ignored (cluster ID mismatch)](database/etcd/request-ignored-cluster-id-mismatch.md)
 
 ### Mongo
@@ -145,6 +146,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [redux 入门](front-end/redux-ABC.md)
 - [Rollup Dynamic Import](front-end/rollup-dynamic-import.md)
 - [script 和 link 标签的事件属性](front-end/script-link-event.md)
+- [弹性滚动](front-end/scroll-bouncing.md)
 - [Mac 浏览器中显示滚动条](front-end/show-scroball-in-mac.md)
 - [状态机与状态图](front-end/state-machine-and-statecharts.md)
 - [媒体查询的断点设置](front-end/the-breakpoint-in-media-query.md)
@@ -225,6 +227,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [快速删文件](linux/fast-remove-files.md)
 - [文件描述符，open file table 与 inode](linux/fd-oft-inode.md)
 - [file 命令](linux/file-command.md)
+- [find -print0 的坑](linux/find-print0-pitfall.md)
 - [GPG 与 Keybase](linux/gpg-and-keybase.md)
 - [grep](linux/grep.md)
 - [hash 命令](linux/hash-command.md)
@@ -233,11 +236,13 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [查看进程的环境变量](linux/inspect-process-environment.md)
 - [调用原生 shell 命令](linux/invoke-origin-shell-command-with-backslash.md)
 - [IO、select、epoll](linux/io-select-epoll.md)
-- [ip 与 ifconfig 命令](linux/ip-vs-ifconfig.md)
+- [iproute2 与 ifconfig 命令](linux/iproute2-vs-ifconfig.md)
 - [学习 iptables](linux/iptables.md)
 - [sudo bash -c 'su - root'](linux/login-use-root.md)
+- [lsof 与 fuser](linux/lsof-and-fuser.md)
 - [命令行中的乱码](linux/messy-codes-in-console.md)
 - [创建临时文件的命令](linux/mktemp.md)
+- [netstat 与 ss](linux/netstat-and-ss.md)
 - [NTP 时间同步](linux/ntp.md)
 - [管道重定向](linux/pipe-redirect.md)
 - [慎用双引号与单引号](linux/quotes-in-bash.md)
@@ -246,7 +251,9 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [在 alpine 中找不到 setup-apkcache 等 setup-* 命令](linux/setup-scripts-in-alpine.md)
 - [shebang](linux/shebang.md)
 - [拆分与合并文件](linux/split-and-merge-file.md)
+- [SSH](linux/ssh.md)
 - [sudo, gksudo, kdesudo](linux/sudo-and-gui-sudo.md)
+- [systemd](linux/systemd.md)
 - [tailf](linux/tailf.md)
 - [unlink 是删除任何文件](linux/unlink.md)
 - [/usr/bin/env](linux/usr-bin-env.md)
@@ -303,13 +310,16 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [如何在 github 项目里搜索代码](others/how-to-use-github-to-browse-codes.md)
 - [Hyper.js 中文问题](others/hyper-js-chinese-problems.md)
 - [无法在 Tmux 显示图片](others/imgcat-not-work-in-tmux.md)
+- [Jinja2](others/jinja2.md)
 - [Language Server Protocol](others/language-server-protocol.md)
 - [箴言](others/maxim.md)
 - [终端邮件客户端 Mutt](others/mutt.md)
+- [原码, 反码, 补码](others/one_complement-and-two_complement.md)
 - [在 Github Markdown 中如何填写图片的链接](others/relative-link-in-github-markdown.md)
 - [Markdown 里写反引号](others/reverse-quote-in-markdown.md)
 - [Semver](others/semver.md)
 - [mac 里的 tmux 内无法用 sublime 打开文件](others/subl-in-tmux-on-mac.md)
+- [sudo and su](others/sudo-and-su.md)
 - [vim textwidth=78 的约定](others/textwidth-78-of-vim.md)
 - [UTF-8 vs UTF-16](others/utf-8-vs-utf-16.md)
 - [zookeeper 健康检查](others/zookeeper-health-check.md)
@@ -352,12 +362,14 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [vim 插件教程](vim/plugins-tutorial.md)
 - [在 vim 中运行终端，以及如何退出终端模式](vim/run-terminal-in-vim.md)
 - [学习 Vim](vim/vim-learning.md)
-- [VIM 搜索技巧](vim/vim-search-tips.md)
+- [VIM 搜索和替换技巧](vim/vim-search-and-replace-tips.md)
 
 ## Web
 
 - [URL QueryString 传数组参数](web/array-params-in-url.md)
+- [DNS](web/dns.md)
 - [国际化 SEO](web/international-SEO.md)
+- [socket](web/socket.md)
 - [下划线在 HTTP Header 里是非法字符串](web/underscore-is-invalid-in-header.md)
 - [URI 转义](web/uri-encode.md)
 
