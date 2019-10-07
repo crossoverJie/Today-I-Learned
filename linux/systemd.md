@@ -17,6 +17,15 @@ systemctl 命令操作 systemd 来管理服务，取代了 systemV 的service、
 
 懒得列举，具体查 man 手册。
 
+### systemd unit 配置加载路径
+
+优先级从低到高
+
+- /usr/lib/systemd/system/ 软件安装包设置的 unit 配置
+- /etc/systemd/system/     系统管理员设置的 unit 配置
+
+可以通过 `systemctl show --property=UnitPath` 看到每个 unit 的配置路径
+
 ### journalctl
 
 > journalctl 用来查询 systemd-journald 服务收集到的日志。systemd-journald 服务是 systemd init 系统提供的收集系统日志的服务。

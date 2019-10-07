@@ -48,12 +48,13 @@ See the [LICENSE][] file for the specific language governing permissions and lim
     <li><a href="#git">Git</a></li>
     <li><a href="#go">Go</a></li>
     <li><a href="#javascript">Javascript</a></li>
-    <li><a href="#k8s">K8s</a></li>
+    <li><a href="#k8s">K8S</a></li>
     <li><a href="#linux">Linux</a></li>
     <li><a href="#mac">Mac</a></li>
     <li><a href="#nodejs">Nodejs</a></li>
     <li><a href="#%E8%BF%90%E7%BB%B4">运维</a></li>
     <li><a href="#%E5%85%B6%E4%BB%96">其他</a></li>
+    <li><a href="#%E5%93%B2%E5%AD%A6">哲学</a></li>
     <li><a href="#racket">Racket</a></li>
     <li><a href="#redis">Redis</a></li>
     <li><a href="#ruby">Ruby</a></li>
@@ -174,6 +175,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Git Diff](git/diff.md)
 - [Git 学习资料](git/git-books.md)
 - [git ssh 代理](git/git-ssh-proxy.md)
+- [git 小技巧](git/git-tricks.md)
 - [git credentials](git/gitcredentials.md)
 - [忽略 Git submodule](git/ignore-git-submodule.md)
 - [--ours vs --theirs](git/ours-vs-theirs.md)
@@ -196,7 +198,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [使用 Promise 的技巧](javascript/trick-of-promise.md)
 - [JS 编程技巧](javascript/tricks-of-js.md)
 
-## K8s
+## K8S
 
 - [Helm](k8s/helm.md)
 - [K8S CSI 开发](k8s/k8s-csi.md)
@@ -211,6 +213,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Alfred 找不到文件](linux/alfred-cannot-find-files.md)
 - [ansible 部署到 centos7 时，不能找到 service](linux/ansible-deploy-fault-with-centos7-and-service.md)
 - [bash error exit](linux/bash-error-exit.md)
+- [bash history](linux/bash-history.md)
 - [bash 开启 vi 模式](linux/bash-in-vi-mode.md)
 - [学习 Bash](linux/bash-learning.md)
 - [Bash 的坑](linux/bash-pitfalls.md)
@@ -238,7 +241,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [IO、select、epoll](linux/io-select-epoll.md)
 - [iproute2 与 ifconfig 命令](linux/iproute2-vs-ifconfig.md)
 - [学习 iptables](linux/iptables.md)
-- [sudo bash -c 'su - root'](linux/login-use-root.md)
+- [切换到 root 用户](linux/login-use-root.md)
 - [lsof 与 fuser](linux/lsof-and-fuser.md)
 - [命令行中的乱码](linux/messy-codes-in-console.md)
 - [创建临时文件的命令](linux/mktemp.md)
@@ -323,6 +326,10 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [vim textwidth=78 的约定](others/textwidth-78-of-vim.md)
 - [UTF-8 vs UTF-16](others/utf-8-vs-utf-16.md)
 - [zookeeper 健康检查](others/zookeeper-health-check.md)
+
+## 哲学
+
+- [Toulmin Model](philosophy/toulmin-model.md)
 
 ## Racket
 
