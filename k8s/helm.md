@@ -31,3 +31,9 @@ dependencies:
 比如 `helm install --set ids=1,2` 会报错，因为 `,` 是作为 `--set` 的分隔符的，比如 `--set a=1,b=2` 这样。
 所以正确写法是 `helm install --set ids=1\,2`。
 参考 [issue](https://github.com/helm/helm/issues/2952#issuecomment-330699580)。
+
+### helm 调试
+
+`helm <command> --debug --dry-run` 不真的执行，只是输出命令结果。
+
+`helm template` 渲染 template。

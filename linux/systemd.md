@@ -26,6 +26,10 @@ systemctl 命令操作 systemd 来管理服务，取代了 systemV 的service、
 
 可以通过 `systemctl show --property=UnitPath` 看到每个 unit 的配置路径
 
+### 开机自启动服务
+
+`systemctl start` 不会自启动服务，需要通过 `systemctl enable` 设置。
+
 ### journalctl
 
 > journalctl 用来查询 systemd-journald 服务收集到的日志。systemd-journald 服务是 systemd init 系统提供的收集系统日志的服务。
