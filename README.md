@@ -248,6 +248,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [netstat 与 ss](linux/netstat-and-ss.md)
 - [NTP 时间同步](linux/ntp.md)
 - [管道重定向](linux/pipe-redirect.md)
+- [进程内存](linux/process-memory.md)
 - [慎用双引号与单引号](linux/quotes-in-bash.md)
 - [命令行中提示用户 Yes/No](linux/read-prompt.md)
 - [rsync 与 scp](linux/rsync-and-scp.md)
@@ -255,6 +256,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [shebang](linux/shebang.md)
 - [拆分与合并文件](linux/split-and-merge-file.md)
 - [SSH](linux/ssh.md)
+- [strace](linux/strace.md)
 - [sudo, gksudo, kdesudo](linux/sudo-and-gui-sudo.md)
 - [systemd](linux/systemd.md)
 - [tailf](linux/tailf.md)
@@ -271,6 +273,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Mac 下按住键盘不能输出重复的字符](mac/hold-down-key-cannot-keep-print-character.md)
 - [Homebrew](mac/homebrew.md)
 - [用命令触发系统通知](mac/notification-with-command.md)
+- [Finder 显示隐藏文件](mac/show-hidden-files-in-finder.md)
 - [Tab 键不能切换弹出框的选中焦点](mac/tab-not-always-work.md)
 
 ## Nodejs
@@ -317,6 +320,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Language Server Protocol](others/language-server-protocol.md)
 - [箴言](others/maxim.md)
 - [终端邮件客户端 Mutt](others/mutt.md)
+- [NFS](others/nfs.md)
 - [原码, 反码, 补码](others/one_complement-and-two_complement.md)
 - [在 Github Markdown 中如何填写图片的链接](others/relative-link-in-github-markdown.md)
 - [Markdown 里写反引号](others/reverse-quote-in-markdown.md)
