@@ -272,7 +272,9 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [多网卡在 Mac 系统的问题](mac/double-network-card-problems-in-mac.md)
 - [Mac 下按住键盘不能输出重复的字符](mac/hold-down-key-cannot-keep-print-character.md)
 - [Homebrew](mac/homebrew.md)
+- [Mac 快捷键](mac/mac-shortcuts.md)
 - [用命令触发系统通知](mac/notification-with-command.md)
+- [Mac 自启动配置 plist](mac/plist.md)
 - [Finder 显示隐藏文件](mac/show-hidden-files-in-finder.md)
 - [Tab 键不能切换弹出框的选中焦点](mac/tab-not-always-work.md)
 
