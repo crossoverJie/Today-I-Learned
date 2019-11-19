@@ -218,6 +218,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [学习 Bash](linux/bash-learning.md)
 - [Bash 的坑](linux/bash-pitfalls.md)
 - [Bash 小技巧](linux/bash-tricks.md)
+- [更改默认 shell](linux/change-default-shell.md)
 - [命令格式标准](linux/command-arguments-syntax-standard.md)
 - [linux 命令被 hash 缓存](linux/command-be-hashed.md)
 - [compgen](linux/compgen.md)
