@@ -45,3 +45,7 @@ Mac 系统通过 `brew install iproute2mac` 来安装，[源码](https://github.
 ### 重启机器，路由失效
 
 Linux 系统，`ip` 以及 `route` 命令添加的路由，机器重启或者网卡重启后路由就会失效。需要去改 `/etc/sysconfig/network-scripts/` 目录下对应的网卡信息来固化。
+
+### ifcfg
+
+`ifdown` `ifup` 关闭或启动 ifcfg-ethx（这里的 x 代表数字）。

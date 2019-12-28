@@ -7,6 +7,7 @@
 - [man bash](#man-bash)
     - [查看 bash built-in 命令的帮助文档](#查看-bash-built-in-命令的帮助文档)
 - [help help](#help-help)
+- [光标移动快捷键](#光标移动快捷键)
 - [kill %jobspec](#kill-jobspec)
 - [<Tab> 补全文件路径开启颜色](#tab-补全文件路径开启颜色)
 - [bash-completion](#bash-completion)
@@ -36,6 +37,7 @@
 - [bind 某些快捷键](#bind-某些快捷键)
 - [通过 shell 编程输出字符串到 readline 的缓存区里](#通过-shell-编程输出字符串到-readline-的缓存区里)
 - [${!var} 语法](#var-语法)
+- [查看一个变量是否是 export 的](#查看一个变量是否是-export-的)
 
 <!-- /MarkdownTOC -->
 
@@ -56,6 +58,10 @@
 ### help help
 
 显示内建命令的相关信息
+
+### 光标移动快捷键
+
+![此处有图](https://cdn.adoyle.top/share/moving_cli.png)
 
 ### kill %jobspec
 
@@ -325,3 +331,7 @@ bind -r "\C-u"
 这个叫 variable indirection。
 Bash Reference Manual 里只有一段很不起眼的描述，容易漏掉。
 参考答案: https://stackoverflow.com/a/8515492
+
+### 查看一个变量是否是 export 的
+
+`export -p | grep $var_name`。如果输出结果有 `-x`，代表是 export 的，如果没有，则不是。

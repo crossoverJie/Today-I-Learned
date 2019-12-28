@@ -1,5 +1,10 @@
 ## Helm
 
+**Helm 团队非常不专业，弃坑吧。**
+比如很多问题修复只在 v3 修复，不在 v2 修复。
+比如对于 CRD 的管理很难用。
+比如 v2 出紧急 bug，修复了缺不及时发布。
+
 ### Chart
 
 [官方最佳实践](https://github.com/helm/helm/tree/master/docs/chart_best_practices)
@@ -37,3 +42,32 @@ dependencies:
 `helm <command> --debug --dry-run` 不真的执行，只是输出命令结果。
 
 `helm template` 渲染 template。
+
+### CRD 管理
+
+CRD 应该怎么管理？helm 在 v3 也没定好完整方案
+
+- https://github.com/helm/helm/issues/5871
+- https://joejulian.name/post/helm-v2-crd-management/
+
+
+helm upgrade 升级时 helm 报错 crd 已存在，但 crd 没包含上一次更新的版本里，造成了冲突，具体报错如：
+kind CustomResourceDefinition with the name "xxx" already exists in the cluster and wasn't defined in the previous release.
+要处理这个问题也是得删 CRD，没找到绕过方案。
+
+helm v2 针对 CRD 的管理给了两种方案，方案一是 CRD 独立出一个 Chart（目前用这种），方案二是用 crd-install hook
+参考 https://v2.helm.sh/docs/chart_best_practices/#custom-resource-definitions
+
+对于方案二，用 crd-install hook 意味着这个 CRD 不受 helm 版本管理，只会在 helm install 安装一次 crd，helm upgrade 不会触发 crd-install。意味着 CRD 有更新的话就只能手动去 kubectl apply 了。
+而且 crd-install hook 在 helm upgrade 不会被触发，这是个已知的问题。https://github.com/helm/helm/issues/4697
+所以只能用方案一。
+
+顺便一提，helm 3 里也有两个方案，方案一是 CRD 独立出一个 Chart，方案二是抛弃了 crd-install hook，用 crds 目录来管理。
+https://v3.helm.sh/docs/topics/chart_best_practices/custom_resource_definitions/
+
+
+### 控制 container 启动顺序
+
+只有在 Init 容器可以指定数组用来控制启动顺序。
+
+https://kubernetes.io/zh/docs/concepts/workloads/pods/init-containers/
