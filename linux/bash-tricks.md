@@ -7,7 +7,10 @@
 - [man bash](#man-bash)
     - [查看 bash built-in 命令的帮助文档](#查看-bash-built-in-命令的帮助文档)
 - [help help](#help-help)
-- [光标移动快捷键](#光标移动快捷键)
+- [终端快捷键](#终端快捷键)
+    - [光标移动快捷键](#光标移动快捷键)
+    - [大小写转换](#大小写转换)
+    - [其他快捷键](#其他快捷键)
 - [kill %jobspec](#kill-jobspec)
 - [<Tab> 补全文件路径开启颜色](#tab-补全文件路径开启颜色)
 - [bash-completion](#bash-completion)
@@ -59,9 +62,25 @@
 
 显示内建命令的相关信息
 
-### 光标移动快捷键
+### 终端快捷键
 
-![此处有图](https://cdn.adoyle.top/share/moving_cli.png)
+实质是 Readline 的功能。[Readline Cheat Sheet](https://readline.kablamo.org/emacs.html)
+
+#### 光标移动快捷键
+
+![光标移动快捷键](https://cdn.adoyle.top/share/moving_cli.png)
+
+#### 大小写转换
+
+- `alt+u` 转大写。
+- `alt+l` 转小写。
+- `alt+c` 转首字母大写。
+
+参考 https://askubuntu.com/a/903481
+
+#### 其他快捷键
+
+- `ctrl+_` 撤销上一步。
 
 ### kill %jobspec
 

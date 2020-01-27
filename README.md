@@ -136,6 +136,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [contentEditable](front-end/contentEditable.md)
 - [CORS](front-end/cors.md)
 - [css-modules vs css-in-js](front-end/css-modules-vs-css-in-js.md)
+- [CSS Selector list invalidation](front-end/css-selector-list-invalidation.md)
 - [开发一个油猴 (Tampermonkey) 脚本](front-end/develop-a-tampermonkey-script.md)
 - [前端类库打包的注意点](front-end/fe-library-bundle.md)
 - [XMLHttpRequest 的继承者：Fetch](front-end/fetch.md)
@@ -225,6 +226,8 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [compgen](linux/compgen.md)
 - [连接 tty](linux/connect-tty.md)
 - [判断文件编码](linux/detect-encoding-of-file.md)
+- [diff 与 patch](linux/diff-and-patch.md)
+- [du](linux/du.md)
 - [编辑二进制文件](linux/edit-binary-file.md)
 - [终端开启真彩色 (true color)](linux/enable-true-color-in-terminal.md)
 - [用环境变量替换文本内容 envsubst](linux/envsubst.md)
@@ -248,6 +251,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [lsof 与 fuser](linux/lsof-and-fuser.md)
 - [命令行中的乱码](linux/messy-codes-in-console.md)
 - [创建临时文件的命令](linux/mktemp.md)
+- [mount](linux/mount.md)
 - [netstat 与 ss](linux/netstat-and-ss.md)
 - [NTP 时间同步](linux/ntp.md)
 - [管道重定向](linux/pipe-redirect.md)
@@ -266,6 +270,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [unlink 是删除任何文件](linux/unlink.md)
 - [/usr/bin/env](linux/usr-bin-env.md)
 - [奇怪的 ESC](linux/weird-esc-key.md)
+- [Welcome Message Banner](linux/welcome-message-banner.md)
 - [监听 0.0.0.0 与 127.0.0.1 的区别](linux/whats-the-difference-between-ip-address-0-0-0-0-and-127-0-0-1.md)
 - [Zsh 的坑](linux/zsh-pitfalls.md)
 
@@ -289,9 +294,11 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Error.captureStackTrace 的 stack 缺少 message 问题](nodejs/error-captureStackTrace.md)
 - [node 中发 ICMP 包](nodejs/icmp-in-node.md)
 - [npm publish 不会包含 .gitignore 文件](nodejs/missing-gitignore-when-node-publish.md)
+- [配置 node 开发环境](nodejs/node-dev.md)
 - [npm 命令](nodejs/npm-commands.md)
 - [npm run scripts](nodejs/npm-run-scripts.md)
 - [nvm 不是一个可执行文件，而是一个函数](nodejs/nvm-is-not-a-executable-but-a-function.md)
+- [npm 发包](nodejs/publish.md)
 - [调整 rejectUnauthorized 选项来容许 https 证书无效](nodejs/rejectUnauthorized-of-https.md)
 - [require 路径名大小写问题](nodejs/require-typo.md)
 - [流 (stream)](nodejs/stream.md)
@@ -302,7 +309,9 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 - [Ansible](ops/ansible.md)
 - [以太网](ops/ethernet.md)
+- [IPMI 与 BMC](ops/ipmi-and-bmc.md)
 - [运维小技巧](ops/ops-tricks.md)
+- [SAN、NAS、DAS](ops/san-nas-das.md)
 
 ## 其他
 
