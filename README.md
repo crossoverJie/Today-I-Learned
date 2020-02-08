@@ -106,6 +106,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [学习 Docker](docker/docker-learning.md)
 - [Docker Tag/Id/Digest](docker/docker-tag-id-digests.md)
 - [docker 小技巧](docker/docker-tricks.md)
+- [修正 alpine 镜像的时区问题](docker/fix-timezone-in-alpine-image.md)
 - [修正 Docker for mac 时区问题](docker/fix-timezone-in-docker-for-mac.md)
 - [Docker for Mac 中磁盘文件占用过大](docker/large-disk-space-usage-in-docker-for-mac.md)
 - [在后台运行 docker 容器且不会自动退出](docker/run-docker-in-background.md)
