@@ -180,6 +180,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [git ssh 代理](git/git-ssh-proxy.md)
 - [git 小技巧](git/git-tricks.md)
 - [git credentials](git/gitcredentials.md)
+- [gitignore 与 gitkeep](git/gitignore-with-gitkeep.md)
 - [忽略 Git submodule](git/ignore-git-submodule.md)
 - [--ours vs --theirs](git/ours-vs-theirs.md)
 
