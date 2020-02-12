@@ -96,6 +96,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [UI 的加载状态](design/loading-status-of-ui.md)
 - [OpenType](design/opentype.md)
 - [使用 sketchtool 操作 sketch 文档：diff 以及其他功能](design/sketchtool-for-diff.md)
+- [Sketch 的文本样式与颜色](design/text-style-with-colors-in-sketch.md)
 - [排版](design/topography.md)
 
 ## Docker

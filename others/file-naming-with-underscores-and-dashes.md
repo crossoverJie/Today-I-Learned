@@ -2,7 +2,7 @@
 
 > 当文件名包含多个单词，应该用什么作分隔符？
 
-首先肯定不能使用空格。然后一般在 `-` 和 `_` 中做选择。
+首先肯定不能使用空格。然后一般在中划线（或称连字符） `-` 和下划线 `_` 中做选择。
 
 考虑的因素主要在于使用环境：
 
@@ -34,11 +34,23 @@
 
 此条源自[陈硕的知乎回答](https://www.zhihu.com/question/50471847/answer/137202976)。
 
+### 英文文法
+
+如果既不需要关心搜索引擎，也不需要关心编程语言环境的问题。那么就考虑英文文法。
+连字符在英文里是有意义的，比如复合词，例如
+
+- upper-case letter
+- non-English-speaking peoples
+- the post–World War II years
+- a hospital–nursing home connection
+- a nursing home–home care policy
+- a quasi-public–quasi-judicial body
+
+为了保留连字符在复合词的作用，那么文件命名时，就应该使用下划线来代替空格。
+
 ### 结论
 
-所以选择中划线还是下划线没有固定答案，
-并不是根据语义来判断好坏;
-而是要看具体场景做出选择。
+不同场景结论会不一样，根据以上三个判断来决定用 `-` 还是 `_`。
 
 ### 注意点
 
