@@ -5,6 +5,7 @@
 1. 安装 [gvm](https://github.com/moovweb/gvm)
 1. `gvm listall` 查看可用版本
 1. `gvm install $version -B` 安装二进制版本，这样比较快
+1. `gvm use $version --default`
 1. 设定 GOPATH
 1. 配置代理，https://goproxy.io/ 或者 https://goproxy.cn/
 1. 重启 shell

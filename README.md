@@ -299,6 +299,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Mac 自启动配置 plist](mac/plist.md)
 - [Finder 显示隐藏文件](mac/show-hidden-files-in-finder.md)
 - [Tab 键不能切换弹出框的选中焦点](mac/tab-not-always-work.md)
+- [xcode 重新安装](mac/xcode.md)
 
 ## Nodejs
 
@@ -356,6 +357,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [终端邮件客户端 Mutt](others/mutt.md)
 - [NFS](others/nfs.md)
 - [原码, 反码, 补码](others/one_complement-and-two_complement.md)
+- [Protocol Buffers](others/protocal-buffers.md)
 - [在 Github Markdown 中如何填写图片的链接](others/relative-link-in-github-markdown.md)
 - [Markdown 里写反引号](others/reverse-quote-in-markdown.md)
 - [Semver](others/semver.md)
