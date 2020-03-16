@@ -7,12 +7,17 @@
 - [Ansible vs 写脚本](#ansible-vs-写脚本)
 - [Ansible Ad-Hoc](#ansible-ad-hoc)
 - [Ansible Playbook](#ansible-playbook)
+    - [目录结构](#目录结构)
     - [变量优先级顺序](#变量优先级顺序)
-    - [执行顺序](#执行顺序)
+    - [变量应该放什么位置](#变量应该放什么位置)
+    - [调试变量](#调试变量)
+    - [group_vars 目录结构](#group_vars-目录结构)
+    - [Ansible 执行顺序](#ansible-执行顺序)
 - [Ansible Modules](#ansible-modules)
 - [ansible.cfg 加载顺序](#ansiblecfg-加载顺序)
 - [gather_fact 缓存问题](#gather_fact-缓存问题)
 - [立刻退出 play](#立刻退出-play)
+- [禁止使用 include](#禁止使用-include)
 - [其他相关资料](#其他相关资料)
 
 <!-- /MarkdownTOC -->
@@ -34,6 +39,10 @@ Ansible 可以直接操作 localhost，这样就可以代替写脚本。
 ### Ansible Playbook
 
 https://galaxy.ansible.com
+
+#### 目录结构
+
+https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html#directory-layout
 
 #### 变量优先级顺序
 
@@ -64,7 +73,42 @@ https://galaxy.ansible.com
 
 [文档](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html?highlight=host_vars#variable-precedence-where-should-i-put-a-variable)
 
-#### 执行顺序
+#### 变量应该放什么位置
+
+> Basically, anything that goes into “role defaults” (the defaults folder inside the role) is the most malleable and easily overridden. Anything in the vars directory of the role overrides previous versions of that variable in namespace. The idea here to follow is that the more explicit you get in scope, the more precedence it takes with command line -e extra vars always winning. Host and/or inventory variables can win over role defaults, but not explicit includes like the vars directory or an include_vars task.
+
+#### 调试变量
+
+写一个 task，使用 `debug` 模块打印 `{{hostvars[inventory_hostname]}}` 里的内容。例如，
+
+```yaml
+- name: Display all variables/facts known for a host
+  debug:
+    var: hostvars[inventory_hostname]
+```
+
+#### group_vars 目录结构
+
+```
+inventory/sample/group_vars/
+├── all/
+│   ├── all.yml
+│   ├── docker.yml
+│   └── openstack.yml
+├── etcd.yml
+└── k8s-cluster/
+    ├── k8s-cluster.yml
+    ├── k8s-net-flannel.yml
+    └── k8s-net-weave.yml
+```
+
+- inventory/sample/group_vars/all/ 下的所有 yml 配置会合并，作用范围是 all group。
+- inventory/sample/group_vars/k8s-cluster/ 下的所有 yml 配置会合并，作用范围是 k8s-cluster group。
+- inventory/sample/group_vars/etcd.yml 配置作用范围是 etcd group。
+
+参考 https://groups.google.com/forum/#!topic/ansible-project/c6t5lVCN0bw
+
+#### Ansible 执行顺序
 
 > This designates the following behaviors, for each role ‘x’:
 >
@@ -75,14 +119,14 @@ https://galaxy.ansible.com
 > If roles/x/meta/main.yml exists, any role dependencies listed therein will be added to the list of roles (1.3 and later).
 > Any copy, script, template or include tasks (in the role) can reference files in roles/x/{files,templates,tasks}/ (dir depends on task) without having to path them relatively or absolutely.
 > When used in this manner, the order of execution for your playbook is as follows:
->
-> Any pre_tasks defined in the play.
-> Any handlers triggered so far will be run.
-> Each role listed in roles will execute in turn. Any role dependencies defined in the roles meta/main.yml will be run first, subject to tag filtering and conditionals.
-> Any tasks defined in the play.
-> Any handlers triggered so far will be run.
-> Any post_tasks defined in the play.
-> Any handlers triggered so far will be run.
+
+- Any `pre_tasks` defined in the play.
+- Any handlers triggered so far will be run.
+- Each role listed in `roles` will execute in turn. Any role dependencies defined in the roles `meta/main.yml` will be run first, subject to tag filtering and conditionals.
+- Any `tasks` defined in the play.
+- Any handlers triggered so far will be run.
+- Any `post_tasks` defined in the play.
+- Any handlers triggered so far will be run.
 
 [文档](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html?#using-roles)
 
@@ -136,6 +180,12 @@ gathering 如果是 `smart` 或者 `explicit`，除了第一次会抓取 fact �
 - fail:
     msg: This failed!
 ```
+
+### 禁止使用 include
+
+`include` 的缺点是它的行为可能想象的不一致，造成大问题。且未来会 Ansible 被弃用。
+
+可以用 `include_tasks`, `include_role`, `import_playbook`, `import_tasks` 代替。
 
 ### 其他相关资料
 

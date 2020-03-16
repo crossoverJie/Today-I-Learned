@@ -10,12 +10,10 @@
 - [Cheatsheets](#cheatsheets)
 - [调试](#调试)
 - [技巧](#技巧)
-    - [搜索时使用正则匹配单词边界。](#搜索时使用正则匹配单词边界)
     - [改变字符大小写](#改变字符大小写)
     - [swap 文件](#swap-文件)
     - [`[]`,`{}`,`""`,`''` 快速操作](#-快速操作)
 - [等号，缩进对齐](#等号缩进对齐)
-    - [:g 和 :v 和 :p 命令](#g-和-v-和-p-命令)
 - [单词边界](#单词边界)
 - [在 vim 里直接打开连接](#在-vim-里直接打开连接)
 - [CTRL-X mode](#ctrl-x-mode)
@@ -25,7 +23,7 @@
 - [用管道读取内容](#用管道读取内容)
 - [diff 多个文件](#diff-多个文件)
 - [在每行末尾添加文字](#在每行末尾添加文字)
-- [%s 替换时增加换行符](#s-替换时增加换行符)
+- [输入换行符 ^M](#输入换行符-m)
 
 <!-- /MarkdownTOC -->
 
@@ -68,15 +66,6 @@ https://vim.rtorr.com/lang/zh_tw/
 
 ### 技巧
 
-#### 搜索时使用正则匹配单词边界。
-
-比如 `/the\b` 会匹配到 `the`，也会匹配到 `then`。
-应该使用 `/the\>` 来匹配。因为 `\b` 在 vim 的正则里是无效的，使用 `\<` 和 `\>` 代替。
-
-默认的 `*` 和 `#` 是匹配边界的，`g*` 和 `g#` 不匹配边界。
-
-[参考](http://stackoverflow.com/questions/8404349/in-vim-how-do-you-search-for-a-word-boundary-character-like-the-b-in-regexp)
-
 #### 改变字符大小写
 
 使用 `~` 或者 `vu`、`vU`
@@ -99,20 +88,6 @@ vim documentation 有两个章节：[object-motions][] 和 [object-select][]。�
 [object-select]: http://vimdoc.sourceforge.net/htmldoc/motion.html#object-select
 
 ### 等号，缩进对齐
-
-#### :g 和 :v 和 :p 命令
-
-`:[range]g[lobal]/{pattern}/[cmd]` 正则匹配到的行执行命令
-
-`:[range]v[global]/{pattern}/[cmd]` Same as :g!
-
-`:[range]p[rint] {count} [flags]` 输出行到 Ex 栏
-
-使用方法
-
-- 删除空白行 `:g/^$/d`
-- 删除以#号开头的行 `:g/^#/d`
-- 查询输出当前文件内所有匹配正则的行 `:g/regex/`
 
 ### 单词边界
 
@@ -188,6 +163,6 @@ vim documentation 有两个章节：[object-motions][] 和 [object-select][]。�
 
 `:'<,'>norm A<文字>`。`<文字>` 为要添加的文字内容。
 
-### %s 替换时增加换行符
+### 输入换行符 ^M
 
-比如把所有 `,` 替换成换行符：`:%s/,/\r/g`
+按下组合键 `Ctrl-V` 和 `Ctrl-M`。

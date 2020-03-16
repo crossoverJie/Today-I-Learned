@@ -55,6 +55,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
     <li><a href="#%E8%BF%90%E7%BB%B4">运维</a></li>
     <li><a href="#%E5%85%B6%E4%BB%96">其他</a></li>
     <li><a href="#%E5%93%B2%E5%AD%A6">哲学</a></li>
+    <li><a href="#python">Python</a></li>
     <li><a href="#racket">Racket</a></li>
     <li><a href="#redis">Redis</a></li>
     <li><a href="#ruby">Ruby</a></li>
@@ -209,6 +210,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [K8S CSI 开发](k8s/k8s-csi.md)
 - [K8S 学习](k8s/k8s-learning.md)
 - [kubectl 学习](k8s/kubectl.md)
+- [Kubespray](k8s/kubespray.md)
 
 ## Linux
 
@@ -348,11 +350,16 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [vim textwidth=78 的约定](others/textwidth-78-of-vim.md)
 - [KB 与 KiB 的不同](others/the-difference-between-kb-and-kib.md)
 - [UTF-8 vs UTF-16](others/utf-8-vs-utf-16.md)
+- [vagrant-vbguest](others/vagrant-vbguest.md)
 - [zookeeper 健康检查](others/zookeeper-health-check.md)
 
 ## 哲学
 
 - [Toulmin Model](philosophy/toulmin-model.md)
+
+## Python
+
+- [python 环境配置](python/environment.md)
 
 ## Racket
 
