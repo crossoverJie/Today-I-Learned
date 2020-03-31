@@ -24,6 +24,7 @@ const categoryNames = {
     others: '其他',
     ops: '运维',
     database: '数据库',
+    lsp: 'Language Server Protocol (LSP)',
 };
 
 const absPath = (...paths) => Path.resolve(__dirname, ...paths);
@@ -228,6 +229,7 @@ async function build() {
     const structure = [
         {h1: '今天我学了什么 (Today I learned)'},
         {blockquote: pkg.description},
+        {md: absPath('_docs/intro.md')},
         {md: absPath('_docs/issue.md')},
         {md: absPath('_docs/license.md')},
         {toc: {contents: toc, type: 'html'}},

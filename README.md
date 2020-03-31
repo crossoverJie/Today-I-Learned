@@ -2,6 +2,9 @@
 
 > 博观而约取，厚积而薄发。
 
+碎片化知识笔记。文章内容可能会更新补充。文件路径不会变，以保证永久链接。
+
+
 ## 反馈问题或建议
 
 本项目不接受 Pull Request，如果你有什么好的想法，或者改进的建议，请使用 [Issue][] 与我探讨。
@@ -50,6 +53,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
     <li><a href="#javascript">Javascript</a></li>
     <li><a href="#k8s">K8S</a></li>
     <li><a href="#linux">Linux</a></li>
+    <li><a href="#language%20server%20protocol%20(lsp)">Language Server Protocol (LSP)</a></li>
     <li><a href="#mac">Mac</a></li>
     <li><a href="#nodejs">Nodejs</a></li>
     <li><a href="#%E8%BF%90%E7%BB%B4">运维</a></li>
@@ -270,6 +274,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [SSH](linux/ssh.md)
 - [strace](linux/strace.md)
 - [sudo, gksudo, kdesudo](linux/sudo-and-gui-sudo.md)
+- [Linux 系统调用](linux/system-call.md)
 - [systemd](linux/systemd.md)
 - [tailf](linux/tailf.md)
 - [unlink 是删除任何文件](linux/unlink.md)
@@ -278,6 +283,10 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Welcome Message Banner](linux/welcome-message-banner.md)
 - [监听 0.0.0.0 与 127.0.0.1 的区别](linux/whats-the-difference-between-ip-address-0-0-0-0-and-127-0-0-1.md)
 - [Zsh 的坑](linux/zsh-pitfalls.md)
+
+## Language Server Protocol (LSP)
+
+- [YAML Language Server](lsp/yaml-language-server.md)
 
 ## Mac
 
@@ -312,11 +321,16 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 ## 运维
 
+- [Ansible Role](ops/ansible-role.md)
+- [Ansible 技巧](ops/ansible-tricks.md)
 - [Ansible](ops/ansible.md)
 - [以太网](ops/ethernet.md)
 - [IPMI 与 BMC](ops/ipmi-and-bmc.md)
 - [运维小技巧](ops/ops-tricks.md)
+- [RPM 创建仓库](ops/rpm-create-repo.md)
+- [RPM 制作和安装离线包](ops/rpm-offline-package-and-install.md)
 - [SAN、NAS、DAS](ops/san-nas-das.md)
+- [YUM](ops/yun.md)
 
 ## 其他
 
@@ -351,6 +365,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [KB 与 KiB 的不同](others/the-difference-between-kb-and-kib.md)
 - [UTF-8 vs UTF-16](others/utf-8-vs-utf-16.md)
 - [vagrant-vbguest](others/vagrant-vbguest.md)
+- [水快速加热](others/water-heating-in-seconds.md)
 - [zookeeper 健康检查](others/zookeeper-health-check.md)
 
 ## 哲学
