@@ -43,6 +43,8 @@ dependencies:
 
 `helm template` 渲染 template。
 
+helm 3: `helm template <chart_name> -s templates/deployment.yaml -f ./values.yaml`
+
 ### CRD 管理
 
 CRD 应该怎么管理？helm 在 v3 也没定好完整方案

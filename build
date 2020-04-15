@@ -11,21 +11,9 @@ const json2md = require('json2md');
 const pkg = require('./package.json');
 const util = require('util');
 const _ = require('lodash');
+const {categoryNameMap} = require('./build.config.js');
 
 const debug = require('debug')('build');
-
-const categoryNames = {
-    k8s: 'K8S',
-    philosophy: '哲学',
-    thinking: '思考',
-    'front-end': '前端',
-    design: '设计',
-    fp: '函数式编程',
-    others: '其他',
-    ops: '运维',
-    database: '数据库',
-    lsp: 'Language Server Protocol (LSP)',
-};
 
 const absPath = (...paths) => Path.resolve(__dirname, ...paths);
 const relativePath = (path) => Path.relative(__dirname, path);
@@ -190,7 +178,7 @@ function handleCategories(categories, levelStd, structure) {
     _.chain(categories)
         .each((cate) => {
             const {name, level, children = []} = cate;
-            const cateName = categoryNames[name] || toCamelCase(name);
+            const cateName = categoryNameMap[name] || toCamelCase(name);
 
             if (cate.level !== levelStd) {
                 return;
@@ -244,7 +232,7 @@ async function build() {
 
     const file = absPath('README.md');
     await writeFile(file, content);
-    console.log('writeFile: %s', file);
+    console.log('File Updated: %s', file);
 }
 
 (async () => {

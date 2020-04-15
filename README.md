@@ -55,6 +55,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
     <li><a href="#linux">Linux</a></li>
     <li><a href="#language%20server%20protocol%20(lsp)">Language Server Protocol (LSP)</a></li>
     <li><a href="#mac">Mac</a></li>
+    <li><a href="#%E7%BD%91%E7%BB%9C">网络</a></li>
     <li><a href="#nodejs">Nodejs</a></li>
     <li><a href="#%E8%BF%90%E7%BB%B4">运维</a></li>
     <li><a href="#%E5%85%B6%E4%BB%96">其他</a></li>
@@ -112,6 +113,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [学习 Docker](docker/docker-learning.md)
 - [Docker Tag/Id/Digest](docker/docker-tag-id-digests.md)
 - [docker 小技巧](docker/docker-tricks.md)
+- [Dockerfile](docker/dockerfile.md)
 - [修正 alpine 镜像的时区问题](docker/fix-timezone-in-alpine-image.md)
 - [修正 Docker for mac 时区问题](docker/fix-timezone-in-docker-for-mac.md)
 - [Docker for Mac 中磁盘文件占用过大](docker/large-disk-space-usage-in-docker-for-mac.md)
@@ -215,6 +217,8 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [K8S 学习](k8s/k8s-learning.md)
 - [kubectl 学习](k8s/kubectl.md)
 - [Kubespray](k8s/kubespray.md)
+- [kustomize](k8s/kustomize.md)
+- [configmap 和 secret 的滚动更新](k8s/rolling-update-of-configmap-and-secret.md)
 
 ## Linux
 
@@ -244,6 +248,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [快速删文件](linux/fast-remove-files.md)
 - [文件描述符，open file table 与 inode](linux/fd-oft-inode.md)
 - [file 命令](linux/file-command.md)
+- [Linux 文件系统](linux/file-system.md)
 - [find -print0 的坑](linux/find-print0-pitfall.md)
 - [GPG 与 Keybase](linux/gpg-and-keybase.md)
 - [gpg 与 gpg-agent](linux/gpg.md)
@@ -256,7 +261,6 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [IO、select、epoll](linux/io-select-epoll.md)
 - [iproute2 与 ifconfig 命令](linux/iproute2-vs-ifconfig.md)
 - [学习 iptables](linux/iptables.md)
-- [切换到 root 用户](linux/login-use-root.md)
 - [lsof 与 fuser](linux/lsof-and-fuser.md)
 - [命令行中的乱码](linux/messy-codes-in-console.md)
 - [创建临时文件的命令](linux/mktemp.md)
@@ -273,7 +277,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [拆分与合并文件](linux/split-and-merge-file.md)
 - [SSH](linux/ssh.md)
 - [strace](linux/strace.md)
-- [sudo, gksudo, kdesudo](linux/sudo-and-gui-sudo.md)
+- [sudo and su](linux/sudo-and-su.md)
 - [Linux 系统调用](linux/system-call.md)
 - [systemd](linux/systemd.md)
 - [tailf](linux/tailf.md)
@@ -300,6 +304,10 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Finder 显示隐藏文件](mac/show-hidden-files-in-finder.md)
 - [Tab 键不能切换弹出框的选中焦点](mac/tab-not-always-work.md)
 - [xcode 重新安装](mac/xcode.md)
+
+## 网络
+
+- [DNS SRV](network/dns_srv.md)
 
 ## Nodejs
 
@@ -362,7 +370,6 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Markdown 里写反引号](others/reverse-quote-in-markdown.md)
 - [Semver](others/semver.md)
 - [mac 里的 tmux 内无法用 sublime 打开文件](others/subl-in-tmux-on-mac.md)
-- [sudo and su](others/sudo-and-su.md)
 - [vim textwidth=78 的约定](others/textwidth-78-of-vim.md)
 - [KB 与 KiB 的不同](others/the-difference-between-kb-and-kib.md)
 - [UTF-8 vs UTF-16](others/utf-8-vs-utf-16.md)

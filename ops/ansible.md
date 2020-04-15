@@ -45,6 +45,8 @@ Ansible 可以直接操作 localhost，这样就可以代替写脚本。
 
 ### Ansible Ad-Hoc
 
+https://docs.ansible.com/ansible/latest/user_guide/intro_adhoc.html
+
 ### Ansible Playbook
 
 https://galaxy.ansible.com

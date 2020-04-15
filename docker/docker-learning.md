@@ -20,15 +20,7 @@
 这里必须用 https，虽然可能提示证书不对。使用 http 会无效。
 
 
-### 制作镜像
-
-必读:
-
-- [Best practices for writing Dockerfiles](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/)
-
-参考:
-
-- [phusion/baseimage-docker](https://github.com/phusion/baseimage-docker)
+### [制作镜像](./dockerfile.md)
 
 #### alpine apk update 总是失败
 
