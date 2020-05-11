@@ -107,6 +107,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 ## Docker
 
+- [Alpine 镜像](docker/alpine.md)
 - [device or resource busy](docker/device-or-resource-busy.md)
 - [docker-compose 启动容器顺序](docker/docker-compose-startup-order.md)
 - [进入 docker for mac 的虚拟机](docker/docker-for-mac-tty.md)
@@ -274,6 +275,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [rsync 与 scp](linux/rsync-and-scp.md)
 - [在 alpine 中找不到 setup-apkcache 等 setup-* 命令](linux/setup-scripts-in-alpine.md)
 - [shebang](linux/shebang.md)
+- [共享内存](linux/shm.md)
 - [拆分与合并文件](linux/split-and-merge-file.md)
 - [SSH](linux/ssh.md)
 - [strace](linux/strace.md)
@@ -281,6 +283,8 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Linux 系统调用](linux/system-call.md)
 - [systemd](linux/systemd.md)
 - [tailf](linux/tailf.md)
+- [基于内存的虚拟文件系统](linux/temporary-fs-in-memory.md)
+- [UNIX Domain Socket](linux/unix-domain-socket.md)
 - [unlink 是删除任何文件](linux/unlink.md)
 - [/usr/bin/env](linux/usr-bin-env.md)
 - [奇怪的 ESC](linux/weird-esc-key.md)
@@ -308,6 +312,8 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 ## 网络
 
 - [DNS SRV](network/dns_srv.md)
+- [HTTP Request/Response 网络包](network/http-request-and-response-package.md)
+- [TCP Buffer 大小](network/tcp-buffer-size.md)
 
 ## Nodejs
 
@@ -384,6 +390,9 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 ## Python
 
 - [python 环境配置](python/environment.md)
+- [pycache](python/pycache.md)
+- [Python Dockerfile](python/python-dockerfile.md)
+- [Python Virtualenv](python/virtualenv.md)
 
 ## Racket
 

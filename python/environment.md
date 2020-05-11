@@ -15,17 +15,16 @@ pip 路径注意：
 - pip install
 - pip install --user
 
-### Python 多版本安装和管理
+### 版本管理器 pyenv
 
 一般来说 [pyenv][] 的用户是 python 开发者。一般用户只要用系统包管理器装 python2 和 python3 就够了，因为 python 版本比较稳定，没必要用 pyenv。
 
+- 执行 `pyenv install 3.8.2` 安装指定版本。
+- 执行 `pyenv shell 3.8.2` 把当前 shell 切换到指定版本。
+
 ### 虚拟环境
 
-https://zhuanlan.zhihu.com/p/81568689
-
-如果你使用 Python 2，那就只能选择 [virtualenv][]，你需要额外安装它。
-
-[venv][] 是 [virtualenv][] 的子集，从 Python 3.3 起，被集成到 Python 标准库中。意味着 Python 3.2 以下的都用不来 venv。且 venv 有缺点，详见 [virtualenv][] 文档。总结，直接用 virtualenv。
+详见 [./virtualenv.md](./virtualenv.md)。
 
 ### pipx
 
@@ -44,6 +43,15 @@ https://zhuanlan.zhihu.com/p/81568689
 
 - https://stackoverflow.com/a/42989020/4622308
 - https://stackoverflow.com/a/54065289/4622308
+
+
+#### 生成依赖清单
+
+`pip freeze > requirements.txt`
+
+### 包管理器 Pipenv
+
+[Pipenv](https://pipenv-fork.readthedocs.io/en/latest/)
 
 ### 参考文章
 
