@@ -7,6 +7,12 @@ https://github.com/kubernetes-sigs/kustomize
 [kustomization.yaml 模板](https://kubectl.docs.kubernetes.io/pages/examples/kustomize.html)
 - [Kustomization.yaml Reference](https://kubectl.docs.kubernetes.io/pages/reference/kustomize.html)
 
+### Overlay
+
+kustomize 的原理是用渲染出不同的层，然后叠加合并所有层得到最终的 K8S YAML。
+
+所以 kustomize newTag 的作用范围只能在当前层，无法影响上一层。参考这个 [Issue](https://github.com/kubernetes-sigs/kustomize/issues/915)。这就导致开发者要写很多不必要的内容。
+
 ### 目录结构
 
 #### 单项目，多环境
