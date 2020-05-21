@@ -110,6 +110,13 @@ http://man7.org/linux/man-pages/man5/yum.conf.5.html#[repository]_OPTIONS
 
 另外也有 `--disablerepo=` 来排除指定的仓库。
 
+**注意 --disablerepo --enablerepo 顺序**
+
+- yum repolist --disablerepo=* --enablerepo=repo
+- yum repolist --enablerepo=repo --disablerepo=*
+
+这两个命令结果是不一样的，disablerepo=* 在后，会禁用所有 repo。
+
 ### yum 缓存
 
 `cat /etc/yum.conf  | grep cache` 一般会看到如下结果，

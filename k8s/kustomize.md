@@ -188,3 +188,32 @@ resources:
 ```
 
 以前支持，现在不支持了。https://github.com/kubernetes-sigs/kustomize/issues/119#issuecomment-400849155
+
+
+### 删除某个资源
+
+overlay 通常是叠加，但也可以用来删除资源。
+编辑 kustomization.yaml 文件，
+
+```yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+patchesStrategicMerge:
+  - |-
+    apiVersion: batch/v1
+    kind: Job
+    metadata:
+      name: xxx
+    $patch: delete
+
+  - |-
+    apiVersion: v1
+    kind: Secret
+    metadata:
+      name: xxx
+    $patch: delete
+```
+
+https://github.com/kubernetes-sigs/kustomize/issues/1384
+https://github.com/kubernetes-sigs/kustomize/issues/106

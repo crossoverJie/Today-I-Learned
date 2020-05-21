@@ -217,6 +217,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Helm](k8s/helm.md)
 - [K8S CSI 开发](k8s/k8s-csi.md)
 - [K8S Dashboard](k8s/k8s-dashboard.md)
+- [K8S 部署踩坑记](k8s/k8s-deployment.md)
 - [K8S 学习](k8s/k8s-learning.md)
 - [K8S 资源规划](k8s/k8s-resources-management.md)
 - [K8S Resource Spec](k8s/k8s_resource_spec.md)
@@ -343,14 +344,16 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 - [Ansible Role](ops/ansible-role.md)
 - [Ansible 技巧](ops/ansible-tricks.md)
+- [Ansible 变量](ops/ansible-vars.md)
 - [Ansible](ops/ansible.md)
+- [DNF](ops/dnf.md)
 - [以太网](ops/ethernet.md)
 - [IPMI 与 BMC](ops/ipmi-and-bmc.md)
 - [运维小技巧](ops/ops-tricks.md)
 - [RPM 创建仓库](ops/rpm-create-repo.md)
 - [RPM 制作和安装离线包](ops/rpm-offline-package-and-install.md)
 - [SAN、NAS、DAS](ops/san-nas-das.md)
-- [YUM](ops/yun.md)
+- [YUM](ops/yum.md)
 
 ## 其他
 

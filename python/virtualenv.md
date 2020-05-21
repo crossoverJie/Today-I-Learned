@@ -21,7 +21,9 @@ https://github.com/pypa/virtualenv/pull/1045
 
 如果目标部署机器上没有对应的动态链接库，首先要把动态链接库拷贝到部署机任意位置（通常是 `/usr/local/lib/`）。然后在 LD_LIBRARY_PATH 加入目录路径即可。例如 `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib`。
 
-### virtualenv 没有打包 /usr/local/lib/python3.5
+### virtualenv 没有打包 /usr/local/lib/python3.5/
+
+`--system-site-packages --copies` 即使加上这两个参数，也没有完全复制。
 
 这里 python3.5 只是个例子，跟 python 具体版本没关系。
 
@@ -130,3 +132,52 @@ main() {
   # tar -xzf "$venv_file" -C "$output"
 }
 ```
+
+#### 使用包需要重新路径
+
+```python
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+set -o errtrace
+(shopt -p inherit_errexit &>/dev/null) && shopt -s inherit_errexit
+
+if (( $# < 1 )) || [[ ${1:-} == '-h' ]] || [[ ${1:-} == '--help' ]]; then
+  cat <<EOF
+USAGE: $0 <venv-path> [<replace>=<venv-path>] [<match>=/app/venv]
+
+ARGS:
+<venv-path>     Relative or absolute path. Example: './python/venv'.
+<replace>       Absolute path. Example: '/opt/xxx/venv'.
+<match>         Absolute path. Default to '/app/venv'.
+EOF
+  exit 0
+fi
+
+replace_file() {
+  local file
+  while read -r file; do
+    echo "To modify file: $file"
+    sed -i'' "s#$match#$replace#g" "$file"
+  done
+}
+
+main() {
+  local venv_dir
+  venv_dir=$(realpath "$1")
+  local replace=${2:-${venv_dir}}
+  local match=${3:-/app/venv}
+
+  echo "venv_dir: $venv_dir"
+  echo "match: $match"
+  echo "replace: $replace"
+
+  grep -l -r "$match" "$venv_dir" | grep -v '__pycache__' | grep -v '.pyc' | replace_file
+}
+
+main "$@"
+```
+
+注意不要把 .pyc 文件修改了，会导致某些包失效。

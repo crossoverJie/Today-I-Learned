@@ -29,6 +29,10 @@ yum 将会下载所有的依赖包。
 
 `yum install --downloadonly --downloaddir=<path-to-cache-directory> <package-name>`
 
+如果它显示 `Package <package-name> already installed and latest version Nothing to do`，则换用 reinstall，
+
+`yum reinstall --downloadonly --downloaddir=<path-to-cache-directory> <package-name>`
+
 #### yumdownloader
 
 `yum install yum-utils` 安装 `yumdownloader`。
