@@ -23,6 +23,7 @@ https://github.com/kubernetes-sigs/kubespray
 - [部署结果](#部署结果)
     - [K8S 组件](#k8s-组件)
     - [镜像](#镜像)
+- [nodelocaldns](#nodelocaldns)
 
 <!-- /MarkdownTOC -->
 
@@ -305,3 +306,9 @@ gcr.azk8s.cn/google-containers/pause                                   3.1      
 gcr.azk8s.cn/google_containers/pause-amd64                             3.1                 da86e6ba6ca1        2 years ago         742kB
 quay.azk8s.cn/coreos/flannel-cni                                       v0.3.0              221392217215        2 years ago         49.8MB
 ```
+
+### nodelocaldns
+
+kubespray 默认给 nodelocaldns 设置的 ip 是 `169.254.25.10`。这可能有坑。
+因为 `169.254.0.0/16` 一般是设备从 DHCP 分配 IP 失败或者没有 DHCP 服务器时，就会随机在这个 B 类地址段获取一个地址。
+详见 [RFC3927](https://tools.ietf.org/html/rfc3927)。

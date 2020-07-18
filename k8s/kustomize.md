@@ -217,3 +217,9 @@ patchesStrategicMerge:
 
 https://github.com/kubernetes-sigs/kustomize/issues/1384
 https://github.com/kubernetes-sigs/kustomize/issues/106
+
+### 组件组合
+
+[issues/1251](https://github.com/kubernetes-sigs/kustomize/issues/1251) 讨论如何实现组件在 overlay 的组合。
+
+现在已实现 [kind: Component](https://github.com/arrikto/kubernetes-enhancements/pull/1)。
