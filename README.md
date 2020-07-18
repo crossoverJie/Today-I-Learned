@@ -224,6 +224,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [kubectl 学习](k8s/kubectl.md)
 - [Kubespray](k8s/kubespray.md)
 - [kustomize](k8s/kustomize.md)
+- [重启 Pod 中的容器](k8s/restart-container-in-pod.md)
 - [configmap 和 secret 的滚动更新](k8s/rolling-update-of-configmap-and-secret.md)
 
 ## Linux
@@ -239,11 +240,13 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [学习 Bash](linux/bash-learning.md)
 - [Bash 的坑](linux/bash-pitfalls.md)
 - [Bash 小技巧](linux/bash-tricks.md)
+- [CFS (Completely Fair Scheduler)](linux/cfs.md)
 - [更改默认 shell](linux/change-default-shell.md)
 - [命令格式标准](linux/command-arguments-syntax-standard.md)
 - [linux 命令被 hash 缓存](linux/command-be-hashed.md)
 - [compgen](linux/compgen.md)
 - [连接 tty](linux/connect-tty.md)
+- [CPU](linux/cpu.md)
 - [判断文件编码](linux/detect-encoding-of-file.md)
 - [diff 与 patch](linux/diff-and-patch.md)
 - [du](linux/du.md)
@@ -320,6 +323,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [DNS SRV](network/dns_srv.md)
 - [HTTP Request/Response 网络包](network/http-request-and-response-package.md)
 - [TCP Buffer 大小](network/tcp-buffer-size.md)
+- [vxlan](network/vxlan.md)
 
 ## Nodejs
 
@@ -363,6 +367,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Github Markdown 中的锚点引用](others/anchor-in-github-markdown.md)
 - [Chrome 小技巧](others/chrome-tricks.md)
 - [Mac 文件系统的剪切快捷键](others/cut-in-mac-file-system.md)
+- [YAML 中的 Date 类型陷阱](others/date-trap-in-yaml.md)
 - [文件命名，下划线还是中划线？](others/file-naming-with-underscores-and-dashes.md)
 - [github 中 markdown 折叠文本](others/fold-text-in-github.md)
 - [从微信公众号提取原图](others/get-raw-image-from-weixin.md)
@@ -449,6 +454,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [URL QueryString 传数组参数](web/array-params-in-url.md)
 - [DNS](web/dns.md)
 - [国际化 SEO](web/international-SEO.md)
+- [看懂 V8 项目代码](web/read-v8-project.md)
 - [socket](web/socket.md)
 - [下划线在 HTTP Header 里是非法字符串](web/underscore-is-invalid-in-header.md)
 - [URI 转义](web/uri-encode.md)
