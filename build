@@ -148,27 +148,28 @@ async function enterDir(dirName, parentPath, _parent, level = 3) {
     const filenames = await readdir(dirPath);
     const children = [];
     const cate = categories[dirPath] = categories[dirPath] || {
-        name: dirName, level, children, isDir: true,
+        name: dirName, level, children, isDir: true, intro: undefined,
     };
 
-    await Promise.map(filenames, (filename, index) => {
+    await Promise.map(filenames, async (filename, index) => {
         const curPath = absPath(dirPath, filename);
-        return getStat(curPath)
-            .then((stats) => {
-                if (stats.isFile()) {
-                    return getTitle(curPath).then((title) => {
-                        const relPath = relativePath(curPath);
-                        children[index] = `[${title}](${relPath})`;
-                    });
-                } else if (stats.isDirectory()) {
-                    return enterDir(filename, dirPath, cate, level + 1)
-                        .then((cate) => {
-                            children[index] = cate;
-                        });
-                } else {
-                    // ignore
-                }
+        const stats = await getStat(curPath)
+        if (stats.isFile()) {
+            if (filename.toLowerCase() === 'readme.md') {
+                cate.intro = await readFile(curPath, {encoding: 'utf8'});
+                return;
+            }
+
+            return getTitle(curPath).then((title) => {
+                const relPath = relativePath(curPath);
+                children[index] = `[${title}](${relPath})`;
             });
+        } else if (stats.isDirectory()) {
+            const subCate = await enterDir(filename, dirPath, cate, level + 1);
+            children[index] = subCate;
+        } else {
+            // ignore
+        }
     });
 
     return cate;
@@ -177,21 +178,22 @@ async function enterDir(dirName, parentPath, _parent, level = 3) {
 function handleCategories(categories, levelStd, structure) {
     _.chain(categories)
         .each((cate) => {
-            const {name, level, children = []} = cate;
+            const {name, level, intro} = cate;
+            let {children = []} = cate;
             const cateName = categoryNameMap[name] || toCamelCase(name);
 
             if (cate.level !== levelStd) {
                 return;
             }
 
+            children = children.filter((c) => !!c);
             const list = children.filter((c) => !c.isDir);
             const childCates = children.filter((c) => c.isDir);
 
             toc.push({name: cateName, level});
-            structure.push(
-                {[`h${level}`]: cateName},
-                {ul: list}
-            );
+            structure.push({[`h${level}`]: cateName});
+            if (intro) structure.push(intro.trim() + '\n');
+            structure.push({ul: list});
 
             handleCategories(childCates, levelStd + 1, structure);
         })
