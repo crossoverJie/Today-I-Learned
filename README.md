@@ -30,6 +30,8 @@ See the [LICENSE][] file for the specific language governing permissions and lim
   <summary>目录</summary>
 
   <ul>
+    <li><a href="#%E7%AE%97%E6%B3%95">算法</a></li>
+    <li><a href="#%E8%AE%A1%E7%AE%97%E6%9C%BA">计算机</a></li>
     <li>
       <a href="#%E6%95%B0%E6%8D%AE%E5%BA%93">数据库</a>
       <ul>
@@ -52,9 +54,11 @@ See the [LICENSE][] file for the specific language governing permissions and lim
     <li><a href="#go">Go</a></li>
     <li><a href="#javascript">Javascript</a></li>
     <li><a href="#k8s">K8S</a></li>
+    <li><a href="#%E8%AF%AD%E8%A8%80%E8%AE%BE%E8%AE%A1">语言设计</a></li>
     <li><a href="#linux">Linux</a></li>
     <li><a href="#language%20server%20protocol%20(lsp)">Language Server Protocol (LSP)</a></li>
     <li><a href="#mac">Mac</a></li>
+    <li><a href="#%E6%95%B0%E5%AD%A6">数学</a></li>
     <li><a href="#%E7%BD%91%E7%BB%9C">网络</a></li>
     <li><a href="#nodejs">Nodejs</a></li>
     <li><a href="#%E8%BF%90%E7%BB%B4">运维</a></li>
@@ -73,6 +77,23 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 </details>
 <!-- tocstop -->
+
+## 算法
+
+- [Raft 算法](algorithm/raft.md)
+
+## 计算机
+
+记录与计算机硬件相关的知识。
+
+- [RDMA](computer/RDMA.md)
+- [单指令流多数据流 (SIMD)](computer/SIMD.md)
+- [TLB](computer/TLB.md)
+- [CPU 伪共享 (CPU Cache Line False Sharing)](computer/cpu-cache-line-false-sharing.md)
+- [CPU 缓存](computer/cpu-cache.md)
+- [CPU](computer/cpu.md)
+- [内存屏障](computer/memory-barrier.md)
+- [随机存取存储器 (RAM)](computer/ram.md)
 
 ## 数据库
 
@@ -96,6 +117,8 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Transaction 与 autocommit](database/mysql/transaction-and-autocommit.md)
 
 ## 设计
+
+记录平面设计的相关知识
 
 - [8 点栅格](design/8-point-grid.md)
 - [色彩空间](design/color-space.md)
@@ -196,7 +219,9 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 ## Go
 
+- [Go Module](go/go-module.md)
 - [Golang 学习](go/golang-learning.md)
+- [Gorutine](go/gorutine.md)
 
 ## Javascript
 
@@ -227,7 +252,17 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [重启 Pod 中的容器](k8s/restart-container-in-pod.md)
 - [configmap 和 secret 的滚动更新](k8s/rolling-update-of-configmap-and-secret.md)
 
+## 语言设计
+
+记录编程语言的内部设计与思想
+
+- [Actor 并发模型](language/actor.md)
+- [协程 (Coroutine)](language/coroutine.md)
+- [CSP 并发模型](language/csp.md)
+
 ## Linux
+
+记录 Linux 系统设计、系统命令，Linux 生态软件等相关知识
 
 - [XDG 基础目录标准](linux/XDG-base-directory-spec.md)
 - [ab 与 wrk 比较](linux/ab-vs-wrk.md)
@@ -246,6 +281,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [linux 命令被 hash 缓存](linux/command-be-hashed.md)
 - [compgen](linux/compgen.md)
 - [连接 tty](linux/connect-tty.md)
+- [上下文切换](linux/context-switch.md)
 - [CPU](linux/cpu.md)
 - [判断文件编码](linux/detect-encoding-of-file.md)
 - [diff 与 patch](linux/diff-and-patch.md)
@@ -266,6 +302,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Here Strings and Here Documents](linux/here-strings-and-here-documents.md)
 - [Hostname in Linux](linux/hostname.md)
 - [查看进程的环境变量](linux/inspect-process-environment.md)
+- [中断](linux/interrupt.md)
 - [调用原生 shell 命令](linux/invoke-origin-shell-command-with-backslash.md)
 - [IO、select、epoll](linux/io-select-epoll.md)
 - [iproute2 与 ifconfig 命令](linux/iproute2-vs-ifconfig.md)
@@ -277,6 +314,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [mount](linux/mount.md)
 - [netstat 与 ss](linux/netstat-and-ss.md)
 - [NTP 时间同步](linux/ntp.md)
+- [perf 命令](linux/perf.md)
 - [管道重定向](linux/pipe-redirect.md)
 - [进程内存](linux/process-memory.md)
 - [慎用双引号与单引号](linux/quotes-in-bash.md)
@@ -293,15 +331,21 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [systemd](linux/systemd.md)
 - [tailf](linux/tailf.md)
 - [基于内存的虚拟文件系统](linux/temporary-fs-in-memory.md)
+- [线程与进程](linux/thread-and-process.md)
 - [UNIX Domain Socket](linux/unix-domain-socket.md)
 - [unlink 是删除任何文件](linux/unlink.md)
 - [/usr/bin/env](linux/usr-bin-env.md)
+- [虚拟内存](linux/virtual-memory.md)
 - [奇怪的 ESC](linux/weird-esc-key.md)
 - [Welcome Message Banner](linux/welcome-message-banner.md)
 - [监听 0.0.0.0 与 127.0.0.1 的区别](linux/whats-the-difference-between-ip-address-0-0-0-0-and-127-0-0-1.md)
+- [为什么创建 Daemon 进程要 Fork 两次？](linux/why-fork-twice-when-create-daemon-process.md)
 - [Zsh 的坑](linux/zsh-pitfalls.md)
 
 ## Language Server Protocol (LSP)
+
+- https://microsoft.github.io/language-server-protocol/
+- https://langserver.org/
 
 - [YAML Language Server](lsp/yaml-language-server.md)
 
@@ -318,7 +362,16 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Tab 键不能切换弹出框的选中焦点](mac/tab-not-always-work.md)
 - [xcode 重新安装](mac/xcode.md)
 
+## 数学
+
+数学，不仅仅是算法
+
+- [豪斯多夫维数](math/hausdorff-besicovitch-dimension.md)
+- [空间填充曲线 (Space-Filling Curve)](math/space-filling-curve.md)
+
 ## 网络
+
+记录网络相关知识
 
 - [DNS SRV](network/dns_srv.md)
 - [HTTP Request/Response 网络包](network/http-request-and-response-package.md)
@@ -361,6 +414,8 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 ## 其他
 
+记录各种奇奇怪怪的小知识
+
 - [0.30000000000000004](others/0.30000000000000004.md)
 - [Today I learned (TIL) 资源列表](others/TIL.md)
 - [Alfred Workflow debug 技巧](others/alfred-workflow-debug.md)
@@ -372,6 +427,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [github 中 markdown 折叠文本](others/fold-text-in-github.md)
 - [从微信公众号提取原图](others/get-raw-image-from-weixin.md)
 - [Github Template (模板)](others/github-template.md)
+- [gRPC](others/grpc.md)
 - [通过 Hash 密码到 url 来验证密码](others/hashed-password-to-url.md)
 - [如何阅读标准](others/how-to-read-spec.md)
 - [如何审核代码](others/how-to-review-code.md)
@@ -381,10 +437,13 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Jinja2](others/jinja2.md)
 - [Language Server Protocol](others/language-server-protocol.md)
 - [箴言](others/maxim.md)
+- [元语法 （Metasyntax)](others/metasyntax.md)
 - [终端邮件客户端 Mutt](others/mutt.md)
 - [NFS](others/nfs.md)
+- [堆外内存](others/off-heap-memory.md)
 - [原码, 反码, 补码](others/one_complement-and-two_complement.md)
 - [Protocol Buffers](others/protocal-buffers.md)
+- [正则表达式的小技巧](others/regexp-tricks.md)
 - [在 Github Markdown 中如何填写图片的链接](others/relative-link-in-github-markdown.md)
 - [Markdown 里写反引号](others/reverse-quote-in-markdown.md)
 - [Semver](others/semver.md)
@@ -394,8 +453,10 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [UTF-8 vs UTF-16](others/utf-8-vs-utf-16.md)
 - [Vagrant DNS](others/vagrant-dns.md)
 - [vagrant-vbguest](others/vagrant-vbguest.md)
+- [查看 Chrome 通知历史列表](others/view-chrome-notification-history.md)
 - [Virtualbox VBoxManage](others/virtualbox-VBoxManage.md)
 - [水快速加热](others/water-heating-in-seconds.md)
+- [为何 Protobuf 3 移除了 required 和 optional](others/why-protobuf-3-remove-required-and-optional.md)
 - [zookeeper 健康检查](others/zookeeper-health-check.md)
 
 ## 哲学
@@ -428,6 +489,9 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 ## 思考
 
+记录我的碎片式思考
+
+- [CLD 图](thinking/causal-loop-diagram.md)
 - [项目代码如何组织](thinking/how-to-make-code-organization.md)
 - [如何编程](thinking/how-to-programming.md)
 - [不完整的函数](thinking/non-total-function.md)
@@ -450,6 +514,8 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [VIM 搜索和替换技巧](vim/vim-search-and-replace-tips.md)
 
 ## Web
+
+记录 Web 服务开发涉及的相关知识。
 
 - [URL QueryString 传数组参数](web/array-params-in-url.md)
 - [DNS](web/dns.md)

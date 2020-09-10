@@ -10,4 +10,8 @@ exports.categoryNameMap = {
     database: '数据库',
     lsp: 'Language Server Protocol (LSP)',
     network: '网络',
+    algorithm: '算法',
+    computer: '计算机',
+    language: '语言设计',
+    math: '数学',
 };
