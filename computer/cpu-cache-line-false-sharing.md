@@ -9,7 +9,9 @@
 ### 解决方案
 
 缓存行填充（也称缓存行对齐）。增加无意义的变量声明，增加冗余空间来填充到一个 Cache Line 的长度。
+
 Java 提供了 `@sun.misc.Contended` 注解来自动填充。
+Go 提供了 [`CacheLinePad`](https://pkg.go.dev/golang.org/x/sys/cpu#CacheLinePad) 来填充。
 
 ### 参考资料
 

@@ -35,6 +35,27 @@ L1/L2/L3 Cache 也有人分别称为 FLC(First-Level Cache), MLC(Mid-Level Cache
 
 L1, L2, L3 Cache。L2 必然包含同核的 L1 的所有 CL，L3 必然包含该 CPU 所有核的 L2 的所有 CL。
 
+可以通过命令 `getconf -a | grep CACHE` 查看 Cache Line Size，例如
+
+```
+> getconf -a | grep CACHE
+LEVEL1_ICACHE_SIZE                 32768
+LEVEL1_ICACHE_ASSOC                8
+LEVEL1_ICACHE_LINESIZE             64
+LEVEL1_DCACHE_SIZE                 32768
+LEVEL1_DCACHE_ASSOC                8
+LEVEL1_DCACHE_LINESIZE             64
+LEVEL2_CACHE_SIZE                  1048576
+LEVEL2_CACHE_ASSOC                 16
+LEVEL2_CACHE_LINESIZE              64
+LEVEL3_CACHE_SIZE                  34603008
+LEVEL3_CACHE_ASSOC                 11
+LEVEL3_CACHE_LINESIZE              64
+LEVEL4_CACHE_SIZE                  0
+LEVEL4_CACHE_ASSOC                 0
+LEVEL4_CACHE_LINESIZE              0
+```
+
 ### Cache Line 映射到主存
 
 组相联映射。组间采用直接映射，组内为全相联。

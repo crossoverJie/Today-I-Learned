@@ -15,3 +15,32 @@
 1. 安装 [gopls](https://github.com/golang/tools/blob/master/gopls/doc/user.md#installation)
 1. 安装 [gotags](https://github.com/jstemmer/gotags)
 1. 配置你的编辑器
+
+### 入门资料
+
+1. [Go by Example 中文版](https://gobyexample-cn.github.io/)
+2. [X 分钟速成 Y - Go](https://learnxinyminutes.com/docs/zh-cn/go-cn)
+3. https://tour.go-zh.org/
+4. [Draveness - Go 语言设计与实现](https://draveness.me/golang)
+5. https://github.com/a8m/golang-cheat-sheet
+
+### 命令
+
+https://golang.org/cmd/go
+
+### REPL
+
+- https://play.golang.org/
+- https://github.com/motemen/gore
+
+### 目录规范
+
+一般遵循 [project-layout](https://github.com/golang-standards/project-layout)。
+
+但也有少部分项目是直接源代码平铺在项目根目录的。
+
+### 编码规范
+
+- [Uber Go Style Guide](https://github.com/uber-go/guide/blob/master/style.md)
+- [Effective Go](https://golang.org/doc/effective_go.html)
+- [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments)
