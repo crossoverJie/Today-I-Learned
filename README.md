@@ -219,9 +219,13 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 ## Go
 
+- [go build](go/go-build.md)
+- [go doc](go/go-doc.md)
+- [go generate](go/go-generate.md)
 - [Go Module](go/go-module.md)
 - [Golang 学习](go/golang-learning.md)
 - [Gorutine](go/gorutine.md)
+- [interface 与 nil](go/interface-vs-nil.md)
 
 ## Javascript
 
@@ -262,7 +266,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 ## Linux
 
-记录 Linux 系统设计、系统命令，Linux 生态软件等相关知识
+记录 Linux 系统设计、系统命令，UNIX/Linux 命令和软件等相关知识
 
 - [XDG 基础目录标准](linux/XDG-base-directory-spec.md)
 - [ab 与 wrk 比较](linux/ab-vs-wrk.md)
@@ -295,6 +299,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [file 命令](linux/file-command.md)
 - [Linux 文件系统](linux/file-system.md)
 - [find -print0 的坑](linux/find-print0-pitfall.md)
+- [ftrace](linux/ftrace.md)
 - [GPG 与 Keybase](linux/gpg-and-keybase.md)
 - [gpg 与 gpg-agent](linux/gpg.md)
 - [grep](linux/grep.md)
@@ -320,6 +325,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [慎用双引号与单引号](linux/quotes-in-bash.md)
 - [命令行中提示用户 Yes/No](linux/read-prompt.md)
 - [rsync 与 scp](linux/rsync-and-scp.md)
+- [程序的退出码 (Exit Code)](linux/script-exit-code.md)
 - [在 alpine 中找不到 setup-apkcache 等 setup-* 命令](linux/setup-scripts-in-alpine.md)
 - [shebang](linux/shebang.md)
 - [共享内存](linux/shm.md)
@@ -332,6 +338,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [tailf](linux/tailf.md)
 - [基于内存的虚拟文件系统](linux/temporary-fs-in-memory.md)
 - [线程与进程](linux/thread-and-process.md)
+- [time 命令](linux/time.md)
 - [UNIX Domain Socket](linux/unix-domain-socket.md)
 - [unlink 是删除任何文件](linux/unlink.md)
 - [/usr/bin/env](linux/usr-bin-env.md)
@@ -380,11 +387,13 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 ## Nodejs
 
+- [MaxListenersExceededWarning](nodejs/MaxListenersExceededWarning.md)
 - [命令行的工具和类库](nodejs/cli-libraries-and-tools.md)
 - [不要对函数参数重新赋值](nodejs/don-t-reassign-function-arguments.md)
 - [EJS 渲染引擎的空白问题](nodejs/ejs-blanks.md)
 - [Error.captureStackTrace 的 stack 缺少 message 问题](nodejs/error-captureStackTrace.md)
 - [node 中发 ICMP 包](nodejs/icmp-in-node.md)
+- [Jest](nodejs/jest.md)
 - [npm publish 不会包含 .gitignore 文件](nodejs/missing-gitignore-when-node-publish.md)
 - [配置 node 开发环境](nodejs/node-dev.md)
 - [npm 命令](nodejs/npm-commands.md)
@@ -395,6 +404,8 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [require 路径名大小写问题](nodejs/require-typo.md)
 - [流 (stream)](nodejs/stream.md)
 - [EventEmitter 需要注意的三个地方](nodejs/three-notes-of-eventemitter.md)
+- [Warning 缺少堆栈信息](nodejs/warning-missing-stack.md)
+- [winston 日志库](nodejs/winston.md)
 - [Yarn 用法](nodejs/yarn-usage.md)
 
 ## 运维
