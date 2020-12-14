@@ -31,6 +31,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
   <ul>
     <li><a href="#%E7%AE%97%E6%B3%95">算法</a></li>
+    <li><a href="#android">Android</a></li>
     <li><a href="#%E8%AE%A1%E7%AE%97%E6%9C%BA">计算机</a></li>
     <li>
       <a href="#%E6%95%B0%E6%8D%AE%E5%BA%93">数据库</a>
@@ -81,6 +82,11 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 ## 算法
 
 - [Raft 算法](algorithm/raft.md)
+
+## Android
+
+- [Android Root](android/root.md)
+- [Termux](android/termux.md)
 
 ## 计算机
 
@@ -392,6 +398,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [不要对函数参数重新赋值](nodejs/don-t-reassign-function-arguments.md)
 - [EJS 渲染引擎的空白问题](nodejs/ejs-blanks.md)
 - [Error.captureStackTrace 的 stack 缺少 message 问题](nodejs/error-captureStackTrace.md)
+- [fs 函数抛出的异常没有堆栈信息](nodejs/fs-error-has-no-stack.md)
 - [node 中发 ICMP 包](nodejs/icmp-in-node.md)
 - [Jest](nodejs/jest.md)
 - [npm publish 不会包含 .gitignore 文件](nodejs/missing-gitignore-when-node-publish.md)
@@ -455,6 +462,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [原码, 反码, 补码](others/one_complement-and-two_complement.md)
 - [Protocol Buffers](others/protocal-buffers.md)
 - [正则表达式的小技巧](others/regexp-tricks.md)
+- [在中国注册 Google 账号](others/register-google-account-in-china.md)
 - [在 Github Markdown 中如何填写图片的链接](others/relative-link-in-github-markdown.md)
 - [Markdown 里写反引号](others/reverse-quote-in-markdown.md)
 - [Semver](others/semver.md)
