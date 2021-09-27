@@ -7,3 +7,6 @@
 
 - https://www.grainger.xyz/timezone-in-docker-alpine-not-using-environment-variable-tz/
 - https://github.com/gliderlabs/docker-alpine/issues/136#issuecomment-272703023
+
+
+其他系统，推荐阅读「[Docker 时区调整方案](https://cloud.tencent.com/developer/article/1626811)」
