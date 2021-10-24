@@ -73,6 +73,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
     <li><a href="#%E6%80%9D%E8%80%83">思考</a></li>
     <li><a href="#typescript">Typescript</a></li>
     <li><a href="#vim">Vim</a></li>
+    <li><a href="#vm">Vm</a></li>
     <li><a href="#web">Web</a></li>
   </ul>
 
@@ -137,18 +138,23 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 ## Docker
 
 - [Alpine 镜像](docker/alpine.md)
+- [ContainerD OverlayFS](docker/containerd-overlayfs.md)
+- [容器里的 Core Dump](docker/core-dump-in-container.md)
 - [device or resource busy](docker/device-or-resource-busy.md)
 - [docker-compose 启动容器顺序](docker/docker-compose-startup-order.md)
 - [Docker 容器与 Cgroup](docker/docker-container-and-cgroup.md)
 - [进入 docker for mac 的虚拟机](docker/docker-for-mac-tty.md)
 - [学习 Docker](docker/docker-learning.md)
+- [Docker OverlayFS](docker/docker-overlayfs.md)
 - [Docker Tag/Id/Digest](docker/docker-tag-id-digests.md)
 - [docker 小技巧](docker/docker-tricks.md)
 - [Dockerfile](docker/dockerfile.md)
+- [查找 Overlay ID 与哪个容器相关](docker/find-which-container-includes-overlay.md)
 - [修正 alpine 镜像的时区问题](docker/fix-timezone-in-alpine-image.md)
 - [修正 Docker for mac 时区问题](docker/fix-timezone-in-docker-for-mac.md)
 - [Docker for Mac 中磁盘文件占用过大](docker/large-disk-space-usage-in-docker-for-mac.md)
 - [在后台运行 docker 容器且不会自动退出](docker/run-docker-in-background.md)
+- [docker security_opt](docker/security-opt.md)
 - [volume](docker/volume.md)
 
 ## Elixir
@@ -249,7 +255,9 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 ## K8S
 
+- [调试 CrashLoopBackOff 状态的 Pod](k8s/debug-CrashLoopBackOff-pod.md)
 - [Helm](k8s/helm.md)
+- [Pod containerStatuses 的镜像版本与 Pod 指定版本不同](k8s/image-version-different-from-containerStatuses.md)
 - [K8S CSI 开发](k8s/k8s-csi.md)
 - [K8S Dashboard](k8s/k8s-dashboard.md)
 - [K8S 部署踩坑记](k8s/k8s-deployment.md)
@@ -291,6 +299,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [linux 命令被 hash 缓存](linux/command-be-hashed.md)
 - [compgen](linux/compgen.md)
 - [连接 tty](linux/connect-tty.md)
+- [conntrack](linux/conntrack.md)
 - [上下文切换](linux/context-switch.md)
 - [CPU](linux/cpu.md)
 - [判断文件编码](linux/detect-encoding-of-file.md)
@@ -325,6 +334,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [mount](linux/mount.md)
 - [netstat 与 ss](linux/netstat-and-ss.md)
 - [NTP 时间同步](linux/ntp.md)
+- [OverlayFS](linux/overylay-fs.md)
 - [perf 命令](linux/perf.md)
 - [管道重定向](linux/pipe-redirect.md)
 - [进程内存](linux/process-memory.md)
@@ -388,6 +398,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 - [DNS SRV](network/dns_srv.md)
 - [HTTP Request/Response 网络包](network/http-request-and-response-package.md)
+- [NAT](network/nat.md)
 - [TCP Buffer 大小](network/tcp-buffer-size.md)
 - [vxlan](network/vxlan.md)
 
@@ -408,6 +419,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [nvm 不是一个可执行文件，而是一个函数](nodejs/nvm-is-not-a-executable-but-a-function.md)
 - [npm 发包](nodejs/publish.md)
 - [调整 rejectUnauthorized 选项来容许 https 证书无效](nodejs/rejectUnauthorized-of-https.md)
+- [report 文件](nodejs/report-file.md)
 - [require 路径名大小写问题](nodejs/require-typo.md)
 - [流 (stream)](nodejs/stream.md)
 - [EventEmitter 需要注意的三个地方](nodejs/three-notes-of-eventemitter.md)
@@ -456,10 +468,12 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Language Server Protocol](others/language-server-protocol.md)
 - [箴言](others/maxim.md)
 - [元语法 （Metasyntax)](others/metasyntax.md)
+- [乱码问题](others/mojibake.md)
 - [终端邮件客户端 Mutt](others/mutt.md)
 - [NFS](others/nfs.md)
 - [堆外内存](others/off-heap-memory.md)
 - [原码, 反码, 补码](others/one_complement-and-two_complement.md)
+- [如何打开超大文件](others/open-huge-file-with-editor.md)
 - [Protocol Buffers](others/protocal-buffers.md)
 - [正则表达式的小技巧](others/regexp-tricks.md)
 - [在中国注册 Google 账号](others/register-google-account-in-china.md)
@@ -531,6 +545,10 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [在 vim 中运行终端，以及如何退出终端模式](vim/run-terminal-in-vim.md)
 - [学习 Vim](vim/vim-learning.md)
 - [VIM 搜索和替换技巧](vim/vim-search-and-replace-tips.md)
+
+## Vm
+
+- [Virtualbox](vm/virtualbox.md)
 
 ## Web
 
