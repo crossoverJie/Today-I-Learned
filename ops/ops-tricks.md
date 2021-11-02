@@ -1,15 +1,42 @@
 ## 运维小技巧
 
-### 守则
+<!-- MarkdownTOC GFM -->
+
+- [其他运维小技巧](#其他运维小技巧)
+- [编辑文件](#编辑文件)
+- [同步文件](#同步文件)
+- [远程执行命令](#远程执行命令)
+- [挂载远端目录](#挂载远端目录)
+- [查看服务器性能](#查看服务器性能)
+
+<!-- /MarkdownTOC -->
+
+### 其他运维小技巧
+
+- [硬件](./ops-tricks-hardwares.md)
+- [网络](./ops-tricks-networks.md)
+
+### 编辑文件
 
 - 修改任何文件前, 备份该文件，文件名可以为 `${原文件名}_${年月日时分秒}.bak`
 - 修改配置文件后，先检查 (lint) 配置内容有效性，后应用配置。
+- 修改配置文件，注意检查系统重启后配置是否依然生效。
 
-### 查看 CPU 信息
+### 同步文件
 
-`cat /proc/cpuinfo`
+用 rsync 或者 scp。
 
-http://coolnull.com/813.html
+### 远程执行命令
+
+`ssh <user>@<host> <command>`
+
+### 挂载远端目录
+
+用 NFS 客户端挂载目录。
+
+用 [sshfs](https://github.com/libfuse/sshfs) 把远端目录挂载到本地。
+
+`sshfs <user>@<host>:/path/to/folder /path/to/mount/point`
 
 ### 查看服务器性能
 
