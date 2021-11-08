@@ -99,7 +99,9 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [CPU 伪共享 (CPU Cache Line False Sharing)](computer/cpu-cache-line-false-sharing.md)
 - [CPU 缓存](computer/cpu-cache.md)
 - [CPU](computer/cpu.md)
+- [风扇](computer/fan.md)
 - [内存屏障](computer/memory-barrier.md)
+- [我的硬盘分区规划](computer/my-disk-partitions.md)
 - [随机存取存储器 (RAM)](computer/ram.md)
 
 ## 数据库
@@ -190,6 +192,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Functional CSS](front-end/functional-css.md)
 - [307 Internal Redirect 与浏览器的 HSTS 功能](front-end/hsts-307.md)
 - [HTTP 缓存机制](front-end/http-cache.md)
+- [Input Method Editor (IME)](front-end/input-method-editor.md)
 - [学习 Chrome DevTools](front-end/learning-chrome-dev-tools.md)
 - [前端工程的模块控制反转](front-end/module-ioc-in-web-application.md)
 - [redux 入门](front-end/redux-ABC.md)
@@ -269,6 +272,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [kustomize](k8s/kustomize.md)
 - [重启 Pod 中的容器](k8s/restart-container-in-pod.md)
 - [configmap 和 secret 的滚动更新](k8s/rolling-update-of-configmap-and-secret.md)
+- [多个 Pod 不重复部署在同一个节点上](k8s/two-pods-not-in-same-node.md)
 
 ## 语言设计
 
@@ -328,7 +332,9 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [iproute2 与 ifconfig 命令](linux/iproute2-vs-ifconfig.md)
 - [学习 iptables](linux/iptables.md)
 - [kswapd0](linux/kswapd0.md)
+- [KVM (Kernel-based Virtual Machine)](linux/kvm.md)
 - [lsof 与 fuser](linux/lsof-and-fuser.md)
+- [LVM (Logical Volume Manager)](linux/lvm.md)
 - [命令行中的乱码](linux/messy-codes-in-console.md)
 - [创建临时文件的命令](linux/mktemp.md)
 - [mount](linux/mount.md)
@@ -337,6 +343,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [OverlayFS](linux/overylay-fs.md)
 - [perf 命令](linux/perf.md)
 - [管道重定向](linux/pipe-redirect.md)
+- [/proc/interrupts](linux/proc-interrupts.md)
 - [进程内存](linux/process-memory.md)
 - [慎用双引号与单引号](linux/quotes-in-bash.md)
 - [命令行中提示用户 Yes/No](linux/read-prompt.md)
@@ -352,7 +359,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Linux 系统调用](linux/system-call.md)
 - [systemd](linux/systemd.md)
 - [tailf](linux/tailf.md)
-- [基于内存的虚拟文件系统](linux/temporary-fs-in-memory.md)
+- [基于内存的虚拟文件系统 tmpfs/ramfs/RamDisk](linux/temporary-fs-in-memory.md)
 - [线程与进程](linux/thread-and-process.md)
 - [time 命令](linux/time.md)
 - [UNIX Domain Socket](linux/unix-domain-socket.md)
@@ -363,6 +370,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Welcome Message Banner](linux/welcome-message-banner.md)
 - [监听 0.0.0.0 与 127.0.0.1 的区别](linux/whats-the-difference-between-ip-address-0-0-0-0-and-127-0-0-1.md)
 - [为什么创建 Daemon 进程要 Fork 两次？](linux/why-fork-twice-when-create-daemon-process.md)
+- [ZFS](linux/zfs.md)
 - [Zsh 的坑](linux/zsh-pitfalls.md)
 
 ## Language Server Protocol (LSP)
@@ -436,6 +444,8 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [DNF](ops/dnf.md)
 - [以太网](ops/ethernet.md)
 - [IPMI 与 BMC](ops/ipmi-and-bmc.md)
+- [运维小技巧 - 硬件](ops/ops-tricks-hardwares.md)
+- [运维小技巧 - 网络](ops/ops-tricks-networks.md)
 - [运维小技巧](ops/ops-tricks.md)
 - [RPM 创建仓库](ops/rpm-create-repo.md)
 - [RPM 制作和安装离线包](ops/rpm-offline-package-and-install.md)

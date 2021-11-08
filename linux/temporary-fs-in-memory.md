@@ -1,9 +1,10 @@
-## 基于内存的虚拟文件系统
+# 基于内存的虚拟文件系统 tmpfs/ramfs/RamDisk
 
-tmpfs、ramfs、RamDisk
+## tmpfs
 
-### tmpfs
+### /dev/shm
 
-/dev/shm
 
-http://www.361way.com/dev-shm/4029.html
+## 参考
+
+- http://www.361way.com/dev-shm/4029.html
