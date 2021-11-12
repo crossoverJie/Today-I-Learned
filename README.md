@@ -2,21 +2,27 @@
 
 > 博观而约取，厚积而薄发。
 
-碎片化知识笔记。文章内容可能会更新补充。文件路径不会变，以保证永久链接。
+碎片化知识笔记。
+
+所有文件一旦创建就不会改变路径，以保证永久链接。
+文章内容可能随时会改动。
+
+部分外部链接会引用 [archive.today 链接](https://archive.today/)，以保证永久链接。
+由于 archive.today 可能被国内屏蔽，因此建议挂代理浏览。
 
 
 ## 反馈问题或建议
 
 本项目不接受 Pull Request，如果你有什么好的想法，或者改进的建议，请使用 [Issue][] 与我探讨。
 
-建议 Watch 或 Star 本项目。但不要 Fork，这没有意义。
+**建议 Watch 或 Star 本项目。但不要 Fork，这没有意义。**
 
 [Issue]: https://github.com/adoyle-h/Today-I-Learned/issues
 
 
 ## 版权声明
 
-Copyright (c) 2016-2020 ADoyle. The project is licensed under the **BSD 3-clause License**.
+Copyright (c) 2016-2021 ADoyle (adoyle.h@gmail.com). The project is licensed under the **BSD 3-clause License**.
 
 See the [LICENSE][] file for the specific language governing permissions and limitations under the License.
 
@@ -69,6 +75,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
     <li><a href="#racket">Racket</a></li>
     <li><a href="#redis">Redis</a></li>
     <li><a href="#ruby">Ruby</a></li>
+    <li><a href="#%E5%AE%89%E5%85%A8%E6%94%BB%E9%98%B2">安全攻防</a></li>
     <li><a href="#startup">Startup</a></li>
     <li><a href="#%E6%80%9D%E8%80%83">思考</a></li>
     <li><a href="#typescript">Typescript</a></li>
@@ -148,6 +155,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [进入 docker for mac 的虚拟机](docker/docker-for-mac-tty.md)
 - [学习 Docker](docker/docker-learning.md)
 - [Docker OverlayFS](docker/docker-overlayfs.md)
+- [Docker Run With Namespace](docker/docker-run-with-namespace.md)
 - [Docker Tag/Id/Digest](docker/docker-tag-id-digests.md)
 - [docker 小技巧](docker/docker-tricks.md)
 - [Dockerfile](docker/dockerfile.md)
@@ -308,6 +316,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [CPU](linux/cpu.md)
 - [判断文件编码](linux/detect-encoding-of-file.md)
 - [diff 与 patch](linux/diff-and-patch.md)
+- [硬盘分区](linux/disk-partition.md)
 - [du](linux/du.md)
 - [编辑二进制文件](linux/edit-binary-file.md)
 - [终端开启真彩色 (true color)](linux/enable-true-color-in-terminal.md)
@@ -405,8 +414,10 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 记录网络相关知识
 
 - [DNS SRV](network/dns_srv.md)
+- [DoH 与 DoT](network/doh-and-dot.md)
 - [HTTP Request/Response 网络包](network/http-request-and-response-package.md)
 - [NAT](network/nat.md)
+- [pfctl](network/pfctl.md)
 - [TCP Buffer 大小](network/tcp-buffer-size.md)
 - [vxlan](network/vxlan.md)
 
@@ -460,6 +471,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Today I learned (TIL) 资源列表](others/TIL.md)
 - [Alfred Workflow debug 技巧](others/alfred-workflow-debug.md)
 - [Github Markdown 中的锚点引用](others/anchor-in-github-markdown.md)
+- [永久链接](others/archive-webpage.md)
 - [Chrome 小技巧](others/chrome-tricks.md)
 - [Mac 文件系统的剪切快捷键](others/cut-in-mac-file-system.md)
 - [YAML 中的 Date 类型陷阱](others/date-trap-in-yaml.md)
@@ -500,6 +512,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Virtualbox VBoxManage](others/virtualbox-VBoxManage.md)
 - [水快速加热](others/water-heating-in-seconds.md)
 - [为何 Protobuf 3 移除了 required 和 optional](others/why-protobuf-3-remove-required-and-optional.md)
+- [为什么 Unicode U+F8FF 是苹果 Logo？](others/why-unicode-f8ff-is-apple-logo.md)
 - [zookeeper 健康检查](others/zookeeper-health-check.md)
 
 ## 哲学
@@ -525,6 +538,11 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 ## Ruby
 
 - [使用 scientist 科学重构代码](ruby/using-scientist-for-refactoring.md)
+
+## 安全攻防
+
+- [Kali Linux](security/kali.md)
+- [Reverse Shell](security/reverse-shell.md)
 
 ## Startup
 

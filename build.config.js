@@ -14,4 +14,5 @@ exports.categoryNameMap = {
     computer: '计算机',
     language: '语言设计',
     math: '数学',
+    security: '安全攻防',
 };

@@ -18,6 +18,7 @@
     - [坏道检测](#坏道检测)
     - [查看是否 4K 对齐](#查看是否-4k-对齐)
     - [查看硬盘分区](#查看硬盘分区)
+    - [硬盘休眠](#硬盘休眠)
 - [挂载](#挂载)
     - [查看文件挂载](#查看文件挂载)
     - [获取分区 UUID](#获取分区-uuid)
@@ -116,6 +117,13 @@ Flags:               fpu vme ...
 ### 查看硬盘分区
 
 `lsblk /dev/sda`
+
+### 硬盘休眠
+
+- `hdparm -C /dev/sda` 查看状态
+- `hdparm -y /dev/sda` 休眠 (standby)
+- `hdparm -Y /dev/sda` 睡眠 (sleep)
+- `fdisk -l /dev/sda` 唤醒硬盘
 
 ## 挂载
 

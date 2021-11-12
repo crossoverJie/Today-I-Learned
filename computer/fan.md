@@ -6,7 +6,7 @@
 
 - [转速控制](#转速控制)
 - [/etc/fancontrol](#etcfancontrol)
-- [hwmon 重启后会变动，不是永久的](#hwmon-重启后会变动不是永久的)
+- [系统重启后，配置过期](#系统重启后配置过期)
 - [参考](#参考)
 
 <!-- /MarkdownTOC -->
@@ -120,13 +120,18 @@ MAXPWM=hwmon1/pwm2=255
 
 其中 DEVPATH 可以在 /sys/ 目录下找到，比如 /sys/devices/platform/nct6775.2592 和 /sys/devices/platform/coretemp.0。DEVPATH 的填值不要包含 `/sys/`。
 
-### hwmon 重启后会变动，不是永久的
+### 系统重启后，配置过期
+
+系统重启后 hwmon 的加载顺序可能会变，导致 fancontrol 的启动检查报下面的错。
 
 > Configuration appears to be outdated, please run pwmconfig again
 
-https://wiki.archlinux.org/title/Fan_speed_control#Device_paths_have_changed_in_/etc/fancontrol
+具体可以查看 /usr/sbin/fancontrol 里的`ValidateDevices` 函数内容。
+
+- https://github.com/lm-sensors/lm-sensors/issues/227
+- https://wiki.archlinux.org/title/Fan_speed_control#Device_paths_have_changed_in_/etc/fancontrol
 
 ### 参考
 
 - https://wiki.archlinux.org/title/Fan_speed_control_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
-- https://www.520cdr.com/2019/1378.html
+- [LINUX debian fancontrol 控制风扇转速记录](https://archive.ph/7ncMh)
