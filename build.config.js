@@ -15,4 +15,5 @@ exports.categoryNameMap = {
     language: '语言设计',
     math: '数学',
     security: '安全攻防',
+    vm: '虚拟机',
 };

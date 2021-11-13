@@ -80,7 +80,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
     <li><a href="#%E6%80%9D%E8%80%83">思考</a></li>
     <li><a href="#typescript">Typescript</a></li>
     <li><a href="#vim">Vim</a></li>
-    <li><a href="#vm">Vm</a></li>
+    <li><a href="#%E8%99%9A%E6%8B%9F%E6%9C%BA">虚拟机</a></li>
     <li><a href="#web">Web</a></li>
   </ul>
 
@@ -325,6 +325,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [快速删文件](linux/fast-remove-files.md)
 - [文件描述符，open file table 与 inode](linux/fd-oft-inode.md)
 - [file 命令](linux/file-command.md)
+- [CentOS 与 Debian 文件上的差异](linux/file-differences-between-centos-and-debian.md)
 - [Linux 文件系统](linux/file-system.md)
 - [find -print0 的坑](linux/find-print0-pitfall.md)
 - [ftrace](linux/ftrace.md)
@@ -332,7 +333,8 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [gpg 与 gpg-agent](linux/gpg.md)
 - [grep](linux/grep.md)
 - [hash 命令](linux/hash-command.md)
-- [Here Strings and Here Documents](linux/here-strings-and-here-documents.md)
+- [Here Strings 与 Here Documents](linux/here-strings-and-here-documents.md)
+- [隐藏进程](linux/hidden-process.md)
 - [Hostname in Linux](linux/hostname.md)
 - [查看进程的环境变量](linux/inspect-process-environment.md)
 - [中断](linux/interrupt.md)
@@ -341,7 +343,6 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [iproute2 与 ifconfig 命令](linux/iproute2-vs-ifconfig.md)
 - [学习 iptables](linux/iptables.md)
 - [kswapd0](linux/kswapd0.md)
-- [KVM (Kernel-based Virtual Machine)](linux/kvm.md)
 - [lsof 与 fuser](linux/lsof-and-fuser.md)
 - [LVM (Logical Volume Manager)](linux/lvm.md)
 - [命令行中的乱码](linux/messy-codes-in-console.md)
@@ -574,8 +575,12 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [学习 Vim](vim/vim-learning.md)
 - [VIM 搜索和替换技巧](vim/vim-search-and-replace-tips.md)
 
-## Vm
+## 虚拟机
 
+- [KVM (Kernel-based Virtual Machine)](vm/kvm.md)
+- [Libvirt](vm/libvirt.md)
+- [virsh shutdown 命令无效](vm/virsh-shutdown-not-work.md)
+- [virt-install Couldn't find kernel for install tree](vm/virt-install-cannot-find-kernel.md)
 - [Virtualbox](vm/virtualbox.md)
 
 ## Web

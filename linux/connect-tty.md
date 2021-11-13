@@ -9,6 +9,8 @@
 另外，可以使用 `tty` 命令查看当前 tty。
 
 
-## tty 与 pty
+### tty 与 pty
 
-- [Linux TTY/PTS 概述](https://segmentfault.com/a/1190000009082089)
+- [Linux TTY/PTS 概述](https://archive.ph/aQ6g3)
+
+### Stty
