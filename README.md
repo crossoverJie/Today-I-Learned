@@ -414,6 +414,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 记录网络相关知识
 
+- [ARP](network/arp.md)
 - [DNS SRV](network/dns_srv.md)
 - [DoH 与 DoT](network/doh-and-dot.md)
 - [HTTP Request/Response 网络包](network/http-request-and-response-package.md)
@@ -578,6 +579,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 ## 虚拟机
 
 - [KVM (Kernel-based Virtual Machine)](vm/kvm.md)
+- [Libvirt 网络](vm/libvirt-network.md)
 - [Libvirt](vm/libvirt.md)
 - [virsh shutdown 命令无效](vm/virsh-shutdown-not-work.md)
 - [virt-install Couldn't find kernel for install tree](vm/virt-install-cannot-find-kernel.md)
