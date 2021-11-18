@@ -71,6 +71,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
     <li><a href="#%E8%BF%90%E7%BB%B4">运维</a></li>
     <li><a href="#%E5%85%B6%E4%BB%96">其他</a></li>
     <li><a href="#%E5%93%B2%E5%AD%A6">哲学</a></li>
+    <li><a href="#%E7%AE%B4%E8%A8%80%E5%BD%95">箴言录</a></li>
     <li><a href="#python">Python</a></li>
     <li><a href="#racket">Racket</a></li>
     <li><a href="#redis">Redis</a></li>
@@ -305,6 +306,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [学习 Bash](linux/bash-learning.md)
 - [Bash 的坑](linux/bash-pitfalls.md)
 - [Bash 小技巧](linux/bash-tricks.md)
+- [在容器中构建 Package](linux/build-package-in-container.md)
 - [CFS (Completely Fair Scheduler)](linux/cfs.md)
 - [更改默认 shell](linux/change-default-shell.md)
 - [命令格式标准](linux/command-arguments-syntax-standard.md)
@@ -316,7 +318,9 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [CPU](linux/cpu.md)
 - [判断文件编码](linux/detect-encoding-of-file.md)
 - [diff 与 patch](linux/diff-and-patch.md)
+- [shutdown, poweroff, halt 的不同](linux/differences-between-shutdown-poweroff-halt.md)
 - [硬盘分区](linux/disk-partition.md)
+- [dnsmasq](linux/dnsmasq.md)
 - [du](linux/du.md)
 - [编辑二进制文件](linux/edit-binary-file.md)
 - [终端开启真彩色 (true color)](linux/enable-true-color-in-terminal.md)
@@ -367,6 +371,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [strace](linux/strace.md)
 - [sudo and su](linux/sudo-and-su.md)
 - [Linux 系统调用](linux/system-call.md)
+- [systemd-resolved](linux/systemd-resolved.md)
 - [systemd](linux/systemd.md)
 - [tailf](linux/tailf.md)
 - [基于内存的虚拟文件系统 tmpfs/ramfs/RamDisk](linux/temporary-fs-in-memory.md)
@@ -520,6 +525,13 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 ## 哲学
 
 - [Toulmin Model](philosophy/toulmin-model.md)
+
+## 箴言录
+
+- [箴言录 - 人生](proverbs/life.md)
+- [箴言录 - 哲学](proverbs/philosophy.md)
+- [箴言录 - 编程](proverbs/programming.md)
+- [箴言录 - 学习](proverbs/study.md)
 
 ## Python
 

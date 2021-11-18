@@ -29,4 +29,12 @@ Debian	       /install.386/vmlinuz/	       /isolinux/initrd.img
 - 针对 Fedora 系统，`--location $iso,initrd=live/initrd.img,kernel=pxeboot/vmlinuz`
 - 针对 Debian 系统，`--location $iso,initrd=install/initrd.gz,kernel=install/vmlinuz`
 
+```sh
+iso=/debian.iso
+
+virt-install \
+  --disk path=$iso,device=cdrom \
+  --location $iso,initrd=install/initrd.gz,kernel=install/vmlinuz \
+```
+
 这些[回答](https://askubuntu.com/questions/789358/virt-install-using-location-with-iso-image-no-longer-working)很有参考价值。
