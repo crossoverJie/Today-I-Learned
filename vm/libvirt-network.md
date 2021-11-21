@@ -1,6 +1,8 @@
 ## Libvirt 网络
 
-### 桥接
+网上的垃圾文字太多，先读[这个](https://wiki.libvirt.org/page/Networking)
+
+### 虚拟网络
 
 libvirt 会默认创建名为 `virbr0` 的网桥。创建 vm 的时候会对应创建一个 `vnetN` 设备。
 
@@ -27,5 +29,15 @@ libsh dumpxml 查看 vm 关机状态下是这样的
   <source network='default'/>
   <model type='virtio'/>
   <address type='pci' domain='0x0000' bus='0x01' slot='0x00' function='0x0'/>
+</interface>
+```
+
+### 桥接
+
+```xml
+<interface type='bridge'>
+  <source bridge='br0'/>
+  <mac address='52:54:00:b8:38:76'/>
+  <model type='virtio'/>
 </interface>
 ```

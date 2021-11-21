@@ -17,4 +17,5 @@ exports.categoryNameMap = {
     security: '安全攻防',
     vm: '虚拟机',
     proverbs: '箴言录',
+    hardware: '硬件',
 };

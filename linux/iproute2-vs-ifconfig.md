@@ -48,4 +48,4 @@ Linux 系统，`ip` 以及 `route` 命令添加的路由，机器重启或者网
 
 ### ifcfg
 
-`ifdown` `ifup` 关闭或启动 ifcfg-ethx（这里的 x 代表数字）。
+详见 [网络接口配置](./network-interface-configuration.md)。

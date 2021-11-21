@@ -59,6 +59,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
     </li>
     <li><a href="#git">Git</a></li>
     <li><a href="#go">Go</a></li>
+    <li><a href="#%E7%A1%AC%E4%BB%B6">硬件</a></li>
     <li><a href="#javascript">Javascript</a></li>
     <li><a href="#k8s">K8S</a></li>
     <li><a href="#%E8%AF%AD%E8%A8%80%E8%AE%BE%E8%AE%A1">语言设计</a></li>
@@ -251,6 +252,10 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Gorutine](go/gorutine.md)
 - [interface 与 nil](go/interface-vs-nil.md)
 
+## 硬件
+
+- [网件 R6900 刷梅林固件](hardware/netgear-R6900-asuswrt-merlin.md)
+
 ## Javascript
 
 - [babel 小技巧](javascript/babel-tricks.md)
@@ -353,6 +358,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [创建临时文件的命令](linux/mktemp.md)
 - [mount](linux/mount.md)
 - [netstat 与 ss](linux/netstat-and-ss.md)
+- [网络接口配置 (ifcfg)](linux/network-interface-configuration.md)
 - [NTP 时间同步](linux/ntp.md)
 - [OverlayFS](linux/overylay-fs.md)
 - [perf 命令](linux/perf.md)
@@ -420,11 +426,14 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 记录网络相关知识
 
 - [ARP](network/arp.md)
+- [网桥 (Bridge)](network/bridge.md)
+- [DHCP](network/dhcp.md)
 - [DNS SRV](network/dns_srv.md)
 - [DoH 与 DoT](network/doh-and-dot.md)
 - [HTTP Request/Response 网络包](network/http-request-and-response-package.md)
 - [NAT](network/nat.md)
 - [pfctl](network/pfctl.md)
+- [Samba](network/samba.md)
 - [TCP Buffer 大小](network/tcp-buffer-size.md)
 - [vxlan](network/vxlan.md)
 
