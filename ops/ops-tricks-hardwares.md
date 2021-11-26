@@ -121,8 +121,8 @@ Flags:               fpu vme ...
 ### 硬盘休眠
 
 - `hdparm -C /dev/sda` 查看状态
-- `hdparm -y /dev/sda` 休眠 (standby)
-- `hdparm -Y /dev/sda` 睡眠 (sleep)
+- `hdparm -y /dev/sda` 休眠 (standby)，降低硬盘转速
+- `hdparm -Y /dev/sda` 睡眠 (sleep)，完全停止硬盘转动
 - `fdisk -l /dev/sda` 唤醒硬盘
 
 ## 挂载

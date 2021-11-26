@@ -165,6 +165,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [修正 alpine 镜像的时区问题](docker/fix-timezone-in-alpine-image.md)
 - [修正 Docker for mac 时区问题](docker/fix-timezone-in-docker-for-mac.md)
 - [Docker for Mac 中磁盘文件占用过大](docker/large-disk-space-usage-in-docker-for-mac.md)
+- [ping: Operation not permitted](docker/ping-operation-not-permmitted.md)
 - [在后台运行 docker 容器且不会自动退出](docker/run-docker-in-background.md)
 - [docker security_opt](docker/security-opt.md)
 - [volume](docker/volume.md)
@@ -254,6 +255,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 ## 硬件
 
+- [固件 (Firmware)](hardware/firmware.md)
 - [网件 R6900 刷梅林固件](hardware/netgear-R6900-asuswrt-merlin.md)
 
 ## Javascript
@@ -311,6 +313,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [学习 Bash](linux/bash-learning.md)
 - [Bash 的坑](linux/bash-pitfalls.md)
 - [Bash 小技巧](linux/bash-tricks.md)
+- [BPF 与 XDP](linux/bpf-xdp.md)
 - [在容器中构建 Package](linux/build-package-in-container.md)
 - [CFS (Completely Fair Scheduler)](linux/cfs.md)
 - [更改默认 shell](linux/change-default-shell.md)
@@ -368,6 +371,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [慎用双引号与单引号](linux/quotes-in-bash.md)
 - [命令行中提示用户 Yes/No](linux/read-prompt.md)
 - [rsync 与 scp](linux/rsync-and-scp.md)
+- [SATA 热拔插](linux/sata-hotplug.md)
 - [程序的退出码 (Exit Code)](linux/script-exit-code.md)
 - [在 alpine 中找不到 setup-apkcache 等 setup-* 命令](linux/setup-scripts-in-alpine.md)
 - [shebang](linux/shebang.md)
@@ -508,6 +512,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [元语法 （Metasyntax)](others/metasyntax.md)
 - [乱码问题](others/mojibake.md)
 - [终端邮件客户端 Mutt](others/mutt.md)
+- [nextcloud](others/nextcloud.md)
 - [NFS](others/nfs.md)
 - [堆外内存](others/off-heap-memory.md)
 - [原码, 反码, 补码](others/one_complement-and-two_complement.md)
