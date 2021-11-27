@@ -15,3 +15,16 @@ https://linux.die.net/man/5/nfs
 `exportfs -s` 查看 nfs 服务已加载的配置情况。
 
 修改 `/etc/exports` 文件不会自动应用到当前 nfs，需要通过 `exportfs -rv` 重载。
+
+
+### NFS Kerberos
+
+
+### /etc/idmapd.conf
+
+
+### root 只能读，不能写
+
+`root_squash` 是默认选项，root 用户会被映射成匿名用户，即客户端的 UID 与 GID 都会变成 nobody 用户的 UID 和 GID。
+
+`no_root_squash` 选项，root 用户不会被映射成匿名用户。

@@ -14,3 +14,10 @@
 - [Linux TTY/PTS 概述](https://archive.ph/aQ6g3)
 
 ### Stty
+
+
+### 调整终端屏幕尺寸
+
+`stty size` 可以查看当前尺寸。
+如果终端屏幕尺寸过小，可以调用 `resize` 来调整到全屏。
+如果不存在 `resize` 命令，需要安装 `xterm` 这个软件。

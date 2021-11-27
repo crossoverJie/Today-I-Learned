@@ -1,3 +1,1 @@
-## 连接 MYSQL 显示中文
-
-`set names utf8`
+重定向至[这里](../../storage/mysql/encoding-in-connection.md)

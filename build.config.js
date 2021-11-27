@@ -1,3 +1,7 @@
+exports.hideCategories = [
+    'database',
+];
+
 exports.categoryNameMap = {
     k8s: 'K8S',
     philosophy: '哲学',
@@ -7,7 +11,7 @@ exports.categoryNameMap = {
     fp: '函数式编程',
     others: '其他',
     ops: '运维',
-    database: '数据库',
+    storage: '存储',
     lsp: 'Language Server Protocol (LSP)',
     network: '网络',
     algorithm: '算法',

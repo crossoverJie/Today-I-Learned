@@ -11,7 +11,7 @@ const json2md = require('json2md');
 const pkg = require('./package.json');
 const util = require('util');
 const _ = require('lodash');
-const {categoryNameMap} = require('./build.config.js');
+const {hideCategories, categoryNameMap} = require('./build.config.js');
 
 const debug = require('debug')('build');
 
@@ -206,10 +206,12 @@ async function build() {
         !name.startsWith('_') && !name.startsWith('.')
         && (!['node_modules'].includes(name)));
 
-    dirNames = await Promise.map(dirNames, ((dirName) => {
-        return getStat(absPath(dirName))
-            .then((stats) => (stats.isDirectory() ? dirName : null));
-    })).filter((name) => name);
+    dirNames = await Promise.map(dirNames, async (dirName) => {
+        if (hideCategories.includes(dirName)) return null;
+
+        const stats = await getStat(absPath(dirName));
+        return stats.isDirectory() ? dirName : null;
+    }).filter((name) => name);
 
     const rootCategories = await Promise.map(
         dirNames,

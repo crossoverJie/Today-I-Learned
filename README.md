@@ -39,14 +39,6 @@ See the [LICENSE][] file for the specific language governing permissions and lim
     <li><a href="#%E7%AE%97%E6%B3%95">算法</a></li>
     <li><a href="#android">Android</a></li>
     <li><a href="#%E8%AE%A1%E7%AE%97%E6%9C%BA">计算机</a></li>
-    <li>
-      <a href="#%E6%95%B0%E6%8D%AE%E5%BA%93">数据库</a>
-      <ul>
-        <li><a href="#etcd">Etcd</a></li>
-        <li><a href="#mongo">Mongo</a></li>
-        <li><a href="#mysql">Mysql</a></li>
-      </ul>
-    </li>
     <li><a href="#%E8%AE%BE%E8%AE%A1">设计</a></li>
     <li><a href="#docker">Docker</a></li>
     <li><a href="#elixir">Elixir</a></li>
@@ -79,6 +71,14 @@ See the [LICENSE][] file for the specific language governing permissions and lim
     <li><a href="#ruby">Ruby</a></li>
     <li><a href="#%E5%AE%89%E5%85%A8%E6%94%BB%E9%98%B2">安全攻防</a></li>
     <li><a href="#startup">Startup</a></li>
+    <li>
+      <a href="#%E5%AD%98%E5%82%A8">存储</a>
+      <ul>
+        <li><a href="#etcd">Etcd</a></li>
+        <li><a href="#mongo">Mongo</a></li>
+        <li><a href="#mysql">Mysql</a></li>
+      </ul>
+    </li>
     <li><a href="#%E6%80%9D%E8%80%83">思考</a></li>
     <li><a href="#typescript">Typescript</a></li>
     <li><a href="#vim">Vim</a></li>
@@ -113,27 +113,6 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [我的硬盘分区规划](computer/my-disk-partitions.md)
 - [随机存取存储器 (RAM)](computer/ram.md)
 
-## 数据库
-
-- [flyway 用法](database/flyway-usage.md)
-- [物理删除与逻辑删除](database/soft-delete.md)
-
-### Etcd
-
-- [etcdctl](database/etcd/etcdctl.md)
-- [ETCD 报错 request ignored (cluster ID mismatch)](database/etcd/request-ignored-cluster-id-mismatch.md)
-
-### Mongo
-
-- [MongoDB 的丢数据问题](database/mongo/data-lost.md)
-
-### Mysql
-
-- [连接 MYSQL 显示中文](database/mysql/encoding-in-connection.md)
-- [mysqldump](database/mysql/mysqldump.md)
-- [Date/Datetime/Timestamp 比较](database/mysql/timestamp-vs-datetime.md)
-- [Transaction 与 autocommit](database/mysql/transaction-and-autocommit.md)
-
 ## 设计
 
 记录平面设计的相关知识
@@ -150,6 +129,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 - [Alpine 镜像](docker/alpine.md)
 - [ContainerD OverlayFS](docker/containerd-overlayfs.md)
+- [Containerd](docker/containerd.md)
 - [容器里的 Core Dump](docker/core-dump-in-container.md)
 - [device or resource busy](docker/device-or-resource-busy.md)
 - [docker-compose 启动容器顺序](docker/docker-compose-startup-order.md)
@@ -166,6 +146,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [修正 Docker for mac 时区问题](docker/fix-timezone-in-docker-for-mac.md)
 - [Docker for Mac 中磁盘文件占用过大](docker/large-disk-space-usage-in-docker-for-mac.md)
 - [ping: Operation not permitted](docker/ping-operation-not-permmitted.md)
+- [Podman](docker/podman.md)
 - [在后台运行 docker 容器且不会自动退出](docker/run-docker-in-background.md)
 - [docker security_opt](docker/security-opt.md)
 - [volume](docker/volume.md)
@@ -307,6 +288,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [用户线程，内核线程，CPU 超线程技术](linux/about-multi-thread.md)
 - [Alfred 找不到文件](linux/alfred-cannot-find-files.md)
 - [ansible 部署到 centos7 时，不能找到 service](linux/ansible-deploy-fault-with-centos7-and-service.md)
+- [apt](linux/apt.md)
 - [bash error exit](linux/bash-error-exit.md)
 - [bash history](linux/bash-history.md)
 - [bash 开启 vi 模式](linux/bash-in-vi-mode.md)
@@ -434,6 +416,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [DHCP](network/dhcp.md)
 - [DNS SRV](network/dns_srv.md)
 - [DoH 与 DoT](network/doh-and-dot.md)
+- [网关 gateway](network/gateway.md)
 - [HTTP Request/Response 网络包](network/http-request-and-response-package.md)
 - [NAT](network/nat.md)
 - [pfctl](network/pfctl.md)
@@ -480,7 +463,6 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [运维小技巧](ops/ops-tricks.md)
 - [RPM 创建仓库](ops/rpm-create-repo.md)
 - [RPM 制作和安装离线包](ops/rpm-offline-package-and-install.md)
-- [SAN、NAS、DAS](ops/san-nas-das.md)
 - [YUM](ops/yum.md)
 
 ## 其他
@@ -575,6 +557,28 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 ## Startup
 
 - [商标注册](startup/trademark-registration.md)
+
+## 存储
+
+- [flyway 用法](storage/flyway-usage.md)
+- [物理删除与逻辑删除](storage/soft-delete.md)
+- [存储](storage/storage.md)
+
+### Etcd
+
+- [etcdctl](storage/etcd/etcdctl.md)
+- [ETCD 报错 request ignored (cluster ID mismatch)](storage/etcd/request-ignored-cluster-id-mismatch.md)
+
+### Mongo
+
+- [MongoDB 的丢数据问题](storage/mongo/data-lost.md)
+
+### Mysql
+
+- [连接 MYSQL 显示中文](storage/mysql/encoding-in-connection.md)
+- [mysqldump](storage/mysql/mysqldump.md)
+- [Date/Datetime/Timestamp 比较](storage/mysql/timestamp-vs-datetime.md)
+- [Transaction 与 autocommit](storage/mysql/transaction-and-autocommit.md)
 
 ## 思考
 
