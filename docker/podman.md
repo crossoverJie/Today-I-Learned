@@ -16,6 +16,8 @@ podman 的组成：
 - 网络
   - [netavark](https://github.com/containers/netavark) 负责管理容器网络
 
-podman 所有组件都在 https://github.com/orgs/containers/repositories?type=source
+podman 所有组件的源码都在 https://github.com/orgs/containers/repositories?type=source
 
 podman 没有 daemon，一个 podman 进程管理一个容器。docker 有 daemon，是 CS 结构。
+
+容器、镜像、volume 等数据存储在 `/var/lib/containers/` 目录。

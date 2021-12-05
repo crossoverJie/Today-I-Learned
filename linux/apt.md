@@ -45,8 +45,28 @@ echo 'APT::Default-Release "bullseye";' > /etc/apt/apt.conf.d/00local
 
 执行 `dpkp-reconfigure $pkg`
 
+### 下载包内容
+
+`apt download $pkg`
+
 ### 查看包的文件内容
 
-`dpkg -L $pkg`
+`dpkg -L $pkg`。或者安装 `apt-file`，调用 `apt-file list`。
 
 参考 https://cheat.readthedocs.io/en/latest/debian.html
+
+### 根据文件路径查对应的包
+
+```sh
+$ dpkg -S /bin/ls
+coreutils: /bin/ls
+```
+
+或者
+
+```sh
+$ apt-file search --regex '/bin/ls$'
+9base: /usr/lib/plan9/bin/ls
+coreutils: /bin/ls
+klibc-utils: /usr/lib/klibc/bin/ls
+```

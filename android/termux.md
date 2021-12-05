@@ -9,6 +9,7 @@ Termux 是 Android 手机上的一个终端 App。
 - 执行 `termux-change-repo` 设置镜像源，可以选 Cloudflare 源或者最下面四个国内高校的源，速度比较快。
 - 执行 `termux-setup-storage` 创建 `~/storage` 目录，用于访问手机内的存储文件。
 - 修改 `~/.termux/termux.properties` 文件可以设置底下的快捷按键和开启其他功能。
+- 按 `ctrl`-`alt`-`+` 或者 `ctrl`-`alt`-`-` 来调整字体大小。
 - 安装 [termux-style](https://github.com/adi1090x/termux-style)，设置终端样式和字体
 - 安装 [termux-services](https://github.com/termux/termux-services)，支持服务管理。
   - 服务放置在 $SVDIR 指向的目录
@@ -18,7 +19,8 @@ Termux 是 Android 手机上的一个终端 App。
 
 ### 包管理器
 
-Termux 装有 pkg、apt、dpkg。pkg 是官方推荐的包管理器。apt 和 dpkg 尽量少做修改，只用来查询。
+Termux 装有 pkg、apt、dpkg。pkg 是官方推荐的包管理器。
+apt、dpkg 和 Debian 的一模一样，尽量少做修改，只用来查询。
 
 ### 学习资料
 
