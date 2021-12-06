@@ -233,6 +233,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Go Module](go/go-module.md)
 - [Golang 学习](go/golang-learning.md)
 - [Gorutine](go/gorutine.md)
+- [在 MacOS 上使用 gvm install](go/gvm-install-in-macos.md)
 - [interface 与 nil](go/interface-vs-nil.md)
 
 ## 硬件
@@ -355,6 +356,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [慎用双引号与单引号](linux/quotes-in-bash.md)
 - [命令行中提示用户 Yes/No](linux/read-prompt.md)
 - [rsync 与 scp](linux/rsync-and-scp.md)
+- [runit](linux/runit.md)
 - [SATA 热拔插](linux/sata-hotplug.md)
 - [程序的退出码 (Exit Code)](linux/script-exit-code.md)
 - [在 alpine 中找不到 setup-apkcache 等 setup-* 命令](linux/setup-scripts-in-alpine.md)
