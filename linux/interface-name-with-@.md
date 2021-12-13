@@ -26,6 +26,25 @@ $ cat /sys/class/net/veth97e84578/ifindex
 - if iflink is itself (iflink == ifindex) It will not display any @. That's what should happen with real interfaces (eth0 ...) but can also be a bug (see later).
 - if iflink has a matching ifindex, it will display this index' name.
 
+### 查找另一个 veth 网络接口
+
+当出现 `@`，说明另一个 veth 网络接口在别的网络命名空间里。
+
+```sh
+# 列出所有网络命名空间
+$ lsns -t net
+        NS TYPE NPROCS    PID USER    NETNSID NSFS COMMAND
+4026532008 net     240      1 root unassigned      /lib/systemd/systemd --system --deserialize 39
+4026533163 net       6 803924 root          1      tail -f /dev/null
+
+# 在这些命名空间里用 `nsenter` 命令一个个查，就能找到对应的 `if94`。
+$ nsenter -t 803924 -n ip l
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+3: eth0@if94: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default
+    link/ether 7e:32:cc:da:dd:6c brd ff:ff:ff:ff:ff:ff link-netnsid 0
+```
+
 ### 参考
 
 - https://unix.stackexchange.com/questions/444892/what-does-if1if2-mean-in-interface-name-in-output-of-ip-address-command-on
