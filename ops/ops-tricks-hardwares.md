@@ -14,11 +14,13 @@
     - [查看 CPU 的主频](#查看-cpu-的主频)
     - [功耗统计](#功耗统计)
 - [硬盘](#硬盘)
+    - [查看硬盘列表](#查看硬盘列表)
+    - [查看硬盘信息](#查看硬盘信息)
+    - [查看硬盘分区](#查看硬盘分区)
     - [健康状况](#健康状况)
     - [坏道检测](#坏道检测)
     - [查看是否 4K 对齐](#查看是否-4k-对齐)
-    - [查看硬盘分区](#查看硬盘分区)
-    - [硬盘休眠](#硬盘休眠)
+    - [硬盘待机](#硬盘待机)
 - [挂载](#挂载)
     - [查看文件挂载](#查看文件挂载)
     - [获取分区 UUID](#获取分区-uuid)
@@ -99,6 +101,20 @@ Flags:               fpu vme ...
 
 ## 硬盘
 
+### 查看硬盘列表
+
+`fdisk -l`
+
+### 查看硬盘信息
+
+- `hdparm -I /dev/sda`
+- `smartctl -A /dev/sda`
+- `smartctl -i /dev/sda`
+
+### 查看硬盘分区
+
+`lsblk /dev/sda`
+
 ### 健康状况
 
 - `smartctl -H /dev/sda`
@@ -114,16 +130,17 @@ Flags:               fpu vme ...
 
 如果显示 `Partition does not start on physical sector boundary.`，就说明没有对齐。
 
-### 查看硬盘分区
-
-`lsblk /dev/sda`
-
-### 硬盘休眠
+### 硬盘待机
 
 - `hdparm -C /dev/sda` 查看状态
-- `hdparm -y /dev/sda` 休眠 (standby)，降低硬盘转速
+- `hdparm -y /dev/sda` 待机 (standby/spindown)，降低硬盘转速
 - `hdparm -Y /dev/sda` 睡眠 (sleep)，完全停止硬盘转动
 - `fdisk -l /dev/sda` 唤醒硬盘
+
+- `hdparm -B` 设置待机转速
+- `hdparm -S` 设置空闲多少时间后待机
+
+对于西部数码 (Western Digital) 的机械硬盘，hdparm `-B` 和 `-S` 选项可能无效。可以试试 [https://github.com/adelolmo/hd-idle](https://github.com/adelolmo/hd-idle)。
 
 ## 挂载
 
