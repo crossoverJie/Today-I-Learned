@@ -30,6 +30,33 @@ systemctl 命令操作 systemd 来管理服务，取代了 systemV 的service、
 
 `systemctl start` 不会自启动服务，需要通过 `systemctl enable` 设置。
 
+### 用户级 systemd
+
+`systemctl --user` 会以当前用户单独启动 systemd 进程。这个进程与系统的 systemd 进程互不相干。
+
+```sh
+adoyle    926413       1  0 15:08 ?        00:00:00 /lib/systemd/systemd --user
+adoyle    926414  926413  0 15:08 ?        00:00:00 (sd-pam)
+```
+
+即使当前账户登出了，这个 systemd 进程也不会退出。
+可以用 `systemctl --user exit` 来退出这个进程。这不会导致关机。
+
+用户的服务可以在以下目录找到(按优先级从低到高排序）：
+
+- `/usr/lib/systemd/user/` 这里存放的是各个软件包安装的服务。
+- `~/.local/share/systemd/user/` 这里存放的是HOME目录中已安装的软件包的单元。
+- `/etc/systemd/user/` 这里存放的是由系统管理员维护的系统范围的用户服务。
+- `~/.config/systemd/user/` 这里存放的是用户自身的服务。
+
+从 systemd 226 版本开始，`/etc/pam.d/system-login` 默认配置中的 `pam_systemd` 模块会在用户首次登录的时候, 自动运行一个 `systemd --user` 实例。
+只要用户还有会话存在，这个进程就不会退出；
+用户所有会话退出时，进程将会被销毁。
+
+当设置 `loginctl enable-linger $username` 随系统自动启动 systemd 用户实例启用时, 这个用户实例将在系统启动时加载，并且不会被销毁。systemd 用户实例负责管理用户服务。
+
+参考 https://wiki.archlinux.org/title/Systemd_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)/User_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E9%9A%8F%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%8A%A8%E5%90%AF%E5%8A%A8_systemd_%E7%94%A8%E6%88%B7%E5%AE%9E%E4%BE%8B
+
 ### journalctl
 
 > journalctl 用来查询 systemd-journald 服务收集到的日志。systemd-journald 服务是 systemd init 系统提供的收集系统日志的服务。
