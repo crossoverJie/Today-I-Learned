@@ -1,5 +1,14 @@
 ## docker 小技巧
 
+### 避免总是用 sudo 以及 shell 补全不完整
+
+针对 Linux 系统，非 root 用户总是要 sudo 来执行 docker 命令。
+而且 `docker inspect <tab>` 没法补全，因为列出可选项需要去访问 docker，但此时没执行 sudo。
+
+更好的方法是把当前用户加到 docker 组里。这样就可以通过 unix socket 来操作 docker。
+
+执行 `usermod -a -G docker <当前用户名>`，然后重新登录用户使修改生效。
+
 ### 保持 shell 一直启动
 
 ENTRYPOINT ["tail", "-f", "/dev/null"]
