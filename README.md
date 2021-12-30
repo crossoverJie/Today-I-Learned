@@ -262,6 +262,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [调试 CrashLoopBackOff 状态的 Pod](k8s/debug-CrashLoopBackOff-pod.md)
 - [Helm](k8s/helm.md)
 - [Pod containerStatuses 的镜像版本与 Pod 指定版本不同](k8s/image-version-different-from-containerStatuses.md)
+- [容器里装 K3S](k8s/k3s-in-container.md)
 - [K8S CSI 开发](k8s/k8s-csi.md)
 - [K8S Dashboard](k8s/k8s-dashboard.md)
 - [K8S 部署踩坑记](k8s/k8s-deployment.md)
@@ -346,6 +347,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [Linux 日志文件](linux/log-files.md)
 - [lsof 与 fuser](linux/lsof-and-fuser.md)
 - [LVM (Logical Volume Manager)](linux/lvm.md)
+- [制作 deb 包](linux/make-deb-package.md)
 - [命令行中的乱码](linux/messy-codes-in-console.md)
 - [创建临时文件的命令](linux/mktemp.md)
 - [mount](linux/mount.md)
@@ -572,6 +574,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 ## 存储
 
 - [flyway 用法](storage/flyway-usage.md)
+- [RAID](storage/raid.md)
 - [物理删除与逻辑删除](storage/soft-delete.md)
 - [存储](storage/storage.md)
 
