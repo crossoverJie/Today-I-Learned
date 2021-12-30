@@ -22,11 +22,11 @@ containerd 的配置文件路径默认是 `/etc/containerd/config.toml`
 
 ctr 是 containerd 的客户端 CLI，类似简单版的 docker 客户端。
 
-ctr 有 namespace，一般来说 docker 对应的是 `moby`，k8s 对应的是 `k8s.io`。
-
 ```sh
+# ctr 用 namespace 分离数据，一般来说 docker 对应的是 `moby`，k8s 对应的是 `k8s.io`。
 $ ctr ns ls
 NAME LABELS
+k8s.io
 moby
 
 # 等价于 docker ps
@@ -37,6 +37,11 @@ CONTAINER                                                           IMAGE    RUN
 # 等价于 docker images。但一般来说是空的，因为 docker images 元数据都存在 docker 的 data 目录，不在 containerd 的目录下。
 $ ctr -n moby images ls
 REF TYPE DIGEST SIZE PLATFORMS LABELS
+
+# k8s 直接使用 containerd，所以能看到镜像列表
+$ ctr -n k8s.io images ls
+REF TYPE DIGEST SIZE PLATFORMS LABELS
+docker.io/rancher/pause:3.6 application/vnd.docker.distribution.manifest.list.v2+json sha256:036d575e82945c112ef84e4585caff3648322a2f9ed4c3a6ce409dd10abc4f34 292.4 KiB linux/amd64,linux/s390x,windows/amd64 io.cri-containerd.image=managed
 
 # 列出镜像和容器等内容。这里的 DIGEST 对应 docker image 的 RepoDigests
 $ ctr -n moby content ls
