@@ -518,6 +518,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [在 Github Markdown 中如何填写图片的链接](others/relative-link-in-github-markdown.md)
 - [Markdown 里写反引号](others/reverse-quote-in-markdown.md)
 - [Semver](others/semver.md)
+- [SSL 证书](others/ssl-cert.md)
 - [mac 里的 tmux 内无法用 sublime 打开文件](others/subl-in-tmux-on-mac.md)
 - [vim textwidth=78 的约定](others/textwidth-78-of-vim.md)
 - [KB 与 KiB 的不同](others/the-difference-between-kb-and-kib.md)
