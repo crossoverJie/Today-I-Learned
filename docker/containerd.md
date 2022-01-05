@@ -1,6 +1,31 @@
 ## Containerd
 
-https://containerd.io/scope/ 可以看到 containerd 的组件构成。
+<!-- MarkdownTOC GFM -->
+
+- [基本概念](#基本概念)
+- [进程结构](#进程结构)
+- [config.toml](#configtoml)
+- [crictl](#crictl)
+- [ctr](#ctr)
+    - [ctr 命名空间](#ctr-命名空间)
+    - [ctr 基本操作](#ctr-基本操作)
+- [用 ctr 停止容器](#用-ctr-停止容器)
+- [ctr shell 自动补全](#ctr-shell-自动补全)
+
+<!-- /MarkdownTOC -->
+
+### 基本概念
+
+- [namespace](#ctr-命名空间)
+- image
+- container
+- task
+- content
+- leases
+- snapshot
+- plugin
+
+https://containerd.io/scope/#scope 可以看到 containerd 的功能规划。
 
 ### 进程结构
 
@@ -14,6 +39,8 @@ https://containerd.io/scope/ 可以看到 containerd 的组件构成。
 
 containerd 的配置文件路径默认是 `/etc/containerd/config.toml`
 
+目录结构和配置具体见 https://github.com/containerd/containerd/blob/main/docs/ops.md
+
 ### crictl
 
 [crictl](https://github.com/kubernetes-sigs/cri-tools/blob/master/docs/crictl.md) 是遵循 CRI 接口规范的 kubelet 专用 CLI 工具。用来检查和管理 kubelet 节点上的容器运行时和镜像。
@@ -22,13 +49,26 @@ containerd 的配置文件路径默认是 `/etc/containerd/config.toml`
 
 ctr 是 containerd 的客户端 CLI，类似简单版的 docker 客户端。
 
+#### ctr 命名空间
+
 ```sh
-# ctr 用 namespace 分离数据，一般来说 docker 对应的是 `moby`，k8s 对应的是 `k8s.io`。
+# ctr 用 namespace 分离数据，一般来说 docker 对应 `moby`，k8s 对应 `k8s.io`，buildkit 对应 `buildkit`。
 $ ctr ns ls
 NAME LABELS
+buildkit
 k8s.io
 moby
+```
 
+所有 ctr 一般都要带上 `-n <namespace>` 指定命名空间，否则用的是 default 命名空间，通常这个命名空间都没有东西。
+
+> If you do not provide a namespace, ctr client commands will all use the default namespace, which is simply named "default".
+
+https://github.com/containerd/containerd/blob/main/docs/namespaces.md#inspecting-namespaces
+
+#### ctr 基本操作
+
+```sh
 # 等价于 docker ps
 $ ctr -n moby containers ls
 CONTAINER                                                           IMAGE    RUNTIME
@@ -60,3 +100,39 @@ sha256:cffc8dd2df93619abeecc219fec2f2070a130cb26698a1bbea65ee002ccec432 736B    
 sha256:d73ca8aeb30461ac010b03e9759b98e86bda9898ca5f6ec9a14bc3193de1a2c4 1.862kB 7 days          -
 sha256:e7d88de73db3d3fd9b2d63aa7f447a10fd0220b7cbf39803c803f2af9ba256b3 528B    7 days          -
 ```
+
+### 用 ctr 停止容器
+
+`ctr container` 只有 `rm` 命令，没有 `stop` 命令。
+
+要停止容器需要执行 `ctr task kill`。
+
+```sh
+# 查看运行中的 task
+$ ctr -n k8s.io task ls
+TASK                                                                PID       STATUS
+33c2291ab2ab21829cf4ad55bebcb03ca841f1b6577de2d314f577c5aa573722    141842    RUNNING
+368fb09b4b9a65251179fec90274ca81cf76673283c46aef73fa2b9ce74f2510    142118    RUNNING
+0afb12de38d45f0f8e03594f1158a80f5928da3c52d423357c4209997d67e0b9    141807    RUNNING
+1f1ba56a4808cbd05c0f06a4f14a34ef27f39a2e5cbb4e0101911686908de61d    141991    RUNNING
+6af20e392355c2f0bd87d96c9f6dfa703cd8bbdb27dbf59bd3a2d963dbd9c5ae    143557    RUNNING
+1e691ddb33b8812ae746e8554b1762bb3b52c247026f0eb15310510c8ce7e083    143641    RUNNING
+12f4fd075298343e6c8e77caf47c2d36658cf2da02754269fc2250a7502c1f03    143672    RUNNING
+d2e59bc8c827ae168669194324b901925267822999e5d64e9fcfcf64f2fd99ed    143508    RUNNING
+b675f8032f31d6c5be35e98ce19c28527817d7c9f05cf7aba554d879f7628694    141990    RUNNING
+78aa82b621abdb886616b47b24c82973db404f279f5f65fb0edda2f1abd62fb4    143594    RUNNING
+dbe515f07196c27624aa19dc60585a5972de9d9380c1c65717e55e60cfc7d8d2    142114    RUNNING
+
+# 停止所有 task，即向容器发送 SIGTERM 信号
+$ ctr -n k8s.io task ls -q | xargs -n 1 ctr -n k8s.io task kill
+
+# 对于 kill 不掉的进程，可以试试发送 SIGKILL 信号
+$ ctr -n k8s.io task ls -q | xargs -n 1 ctr -n k8s.io task kill --signal SIGKILL
+
+# 彻底删除容器
+$ ctr -n k8s.io c ls -q | xargs -n 1 ctr -n k8s.io c rm
+```
+
+### ctr shell 自动补全
+
+见 https://github.com/containerd/containerd/tree/main/contrib/autocomplete

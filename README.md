@@ -259,6 +259,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 
 ## K8S
 
+- [Cilium](k8s/cilium.md)
 - [调试 CrashLoopBackOff 状态的 Pod](k8s/debug-CrashLoopBackOff-pod.md)
 - [Helm](k8s/helm.md)
 - [Pod containerStatuses 的镜像版本与 Pod 指定版本不同](k8s/image-version-different-from-containerStatuses.md)
@@ -319,7 +320,9 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [硬盘分区](linux/disk-partition.md)
 - [dnsmasq](linux/dnsmasq.md)
 - [du](linux/du.md)
+- [eBPF 与 XDP](linux/ebpf-and-xdp.md)
 - [编辑二进制文件](linux/edit-binary-file.md)
+- [ELF 文件](linux/elf.md)
 - [终端开启真彩色 (true color)](linux/enable-true-color-in-terminal.md)
 - [用环境变量替换文本内容 envsubst](linux/envsubst.md)
 - [快速创建大文件](linux/fast-generate-large-file.md)
@@ -344,6 +347,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [IO、select、epoll](linux/io-select-epoll.md)
 - [iproute2 与 ifconfig 命令](linux/iproute2-vs-ifconfig.md)
 - [学习 iptables](linux/iptables.md)
+- [Linux 内核模块](linux/kernel-module.md)
 - [kswapd0](linux/kswapd0.md)
 - [Linux 日志文件](linux/log-files.md)
 - [lsof 与 fuser](linux/lsof-and-fuser.md)
