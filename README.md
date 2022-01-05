@@ -294,6 +294,7 @@ See the [LICENSE][] file for the specific language governing permissions and lim
 - [ABI](linux/abi.md)
 - [用户线程，内核线程，CPU 超线程技术](linux/about-multi-thread.md)
 - [Alfred 找不到文件](linux/alfred-cannot-find-files.md)
+- [anon_inode](linux/anon_inode.md)
 - [ansible 部署到 centos7 时，不能找到 service](linux/ansible-deploy-fault-with-centos7-and-service.md)
 - [apt](linux/apt.md)
 - [bash error exit](linux/bash-error-exit.md)

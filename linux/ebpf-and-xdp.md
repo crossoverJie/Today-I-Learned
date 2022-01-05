@@ -26,7 +26,7 @@
 
 - bpftool: 查询 BPF programs 的工具
   - 很好的教程 https://qmonnet.github.io/whirl-offload/2021/09/23/bpftool-features-thread/
-- bps: 列出所有 BPF programs. `ps` for BPF programs
+- bps: 列出所有 BPF programs 与 map。program 与 map 之间的关系很直观易懂，[举例](https://github.com/iovisor/bcc/blob/master/introspection/bps_example.txt)
   - Debian 系统可以安装这个包 bpfcc-introspection
   - 里面的 BID 即 prog_id，即 BPF 的 program ID
 - [bcc](https://github.com/iovisor/bcc) (BPF Compiler Collection): 基于 eBPF 的 Linux 内核分析、跟踪、网络监控工具。
@@ -93,3 +93,16 @@ drwxr-xr-x 3 root root 0 Jan  5 04:23 ..
 ```
 
 [libbpf]: https://github.com/libbpf/libbpf
+
+### 查找哪些进程连接了 bpf
+
+通过进程打开的文件描述符，可以找到 `anon_inode:bpf-map` 和 `anon_inode:bpf-prog`。也就可以找到对应的进程了。
+
+```sh
+$ ls -l /proc/*/fd | grep bpf
+
+lrwx------ 1 root root 64 Jan  5 14:22 31 -> anon_inode:bpf-map
+lrwx------ 1 root root 64 Jan  4 23:25 34 -> anon_inode:bpf-prog
+```
+
+什么是 anon_inode？详见[这里](./anon_inode.md)。
