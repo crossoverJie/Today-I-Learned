@@ -1,6 +1,6 @@
-## 学习 iptables
+## iptables 与 nftables
 
-iptables 基于 netfilter。主要用于网络防火墙的场景。
+iptables 基于 [netfilter](./netfilter.md)。主要用于网络防火墙的场景。
 
 ### 从内核详解 iptables 原理
 
@@ -28,6 +28,7 @@ https://firewalld.org/
 - [Nftables HOWTO 中文版](https://farkasity.gitbooks.io/nftables-howto-zh/content/)
   - [原版](https://wiki.nftables.org/wiki-nftables/index.php/Main_Page)
 - [从实现上对比 iptables 和 nftables](https://blog.csdn.net/dog250/article/details/41526421)
+- https://wiki.nftables.org/wiki-nftables/index.php/Netfilter_hooks
 
 ### UFW
 
@@ -37,7 +38,7 @@ https://firewalld.org/
 
 ### 其他
 
-所以 iptables 的效率是比较低的，能用 nftables
+iptables 的可读性和操作效率不如 nftables，强烈推荐 nftables。
 
 ip6tables 是 IPv6 版本的 iptables。
 

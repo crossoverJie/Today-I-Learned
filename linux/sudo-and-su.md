@@ -6,6 +6,10 @@
 
 `su` 命令是当前用户用来切换到另一个用户的命令，参数为用户名。例如 `su admin`。执行时会要求输入密码，这个密码是你要切换到的用户的密码。
 
+### sudo 忽略已有的 alias
+
+设置 `alias sudo='sudo '` 就行了。原理解释见[这篇文章](https://archive.ph/dargq)。
+
 ### sudo su
 
 `sudo su` 输出当前用户的密码，当前用户需要有 root 权限，切换到 root 用户。
